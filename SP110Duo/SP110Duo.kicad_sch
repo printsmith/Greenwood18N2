@@ -6184,7 +6184,7 @@
   (symbol (lib_id "power:GND") (at 177.8 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 00d33ddd-794d-4164-bba1-eebeb3e71f24)
-    (property "Reference" "#PWR08" (at 177.8 77.47 0)
+    (property "Reference" "#PWR011" (at 177.8 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 177.8 76.2 0)
@@ -6198,9 +6198,9 @@
     )
     (pin "1" (uuid 751fab08-a640-40ea-9b51-110af299abe4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -6215,7 +6215,7 @@
     (property "Value" "Switch w/LED" (at 702.31 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 707.39 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 707.39 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 709.93 431.8 90)
@@ -6228,7 +6228,7 @@
     (pin "5" (uuid e89dcc62-ddfd-47e6-a135-2a475f3124aa))
     (pin "6" (uuid b5e87e8f-7a23-4dad-996f-38385efdcefa))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW92") (unit 1)
         )
@@ -6260,7 +6260,7 @@
     (pin "1" (uuid 8a8d0a1b-0c34-487d-b003-f9b7ca0ff4a8))
     (pin "2" (uuid 0f586578-9edc-45ea-945d-ce2f92b0d1a3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D32") (unit 1)
         )
@@ -6271,7 +6271,7 @@
   (symbol (lib_id "Device:RotaryEncoder_Switch") (at 290.83 387.35 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 071edee1-055a-4fdb-8152-92c1f7c7896a)
-    (property "Reference" "SW61" (at 290.83 378.46 0)
+    (property "Reference" "SW75" (at 290.83 378.46 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RotaryEncoder_Switch" (at 295.91 381 0)
@@ -6289,9 +6289,9 @@
     (pin "S1" (uuid fa8bcc5b-94aa-45c7-a948-b06f2d1b3479))
     (pin "S2" (uuid c283ed67-d8e4-49b3-ac6f-6dc2da07cae3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW61") (unit 1)
+          (reference "SW75") (unit 1)
         )
       )
     )
@@ -6321,7 +6321,7 @@
     (pin "1" (uuid ae5b47f0-0e16-4341-b869-db00d96b4501))
     (pin "2" (uuid 744baa86-328f-44ab-ab11-d95a4ada7d11))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D108") (unit 1)
         )
@@ -6332,7 +6332,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 525.78 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0a1fed4a-e669-45e3-b6ef-1a2c73278cd6)
-    (property "Reference" "D13" (at 528.32 246.38 90)
+    (property "Reference" "D12" (at 528.32 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 528.32 248.92 90)
@@ -6353,9 +6353,9 @@
     (pin "1" (uuid 84ae3821-ac81-4a68-a638-b367680d2db6))
     (pin "2" (uuid c613dc08-6f95-4f10-90c4-2cd39d519830))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D13") (unit 1)
+          (reference "D12") (unit 1)
         )
       )
     )
@@ -6370,7 +6370,7 @@
     (property "Value" "Switch w/LED" (at 210.82 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 215.9 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 215.9 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 218.44 298.45 90)
@@ -6383,7 +6383,7 @@
     (pin "5" (uuid 6d0ea9e3-6efc-4e5f-b4cc-6920e4ccfef4))
     (pin "6" (uuid af9f2516-1754-4502-9fe6-ad47524a6b5e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW22") (unit 1)
         )
@@ -6400,7 +6400,7 @@
     (property "Value" "Switch w/LED" (at 312.42 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_2.25u" (at 317.5 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_2.25u" (at 317.5 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 320.04 431.8 90)
@@ -6413,7 +6413,7 @@
     (pin "5" (uuid 083c4d48-1a87-4624-8a30-3f717292cae8))
     (pin "6" (uuid 848df5df-0b91-46c8-aada-5838f3280cc3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW80") (unit 1)
         )
@@ -6424,13 +6424,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 627.38 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0f2ee339-5ad5-4a89-9575-20a5a4d452fb)
-    (property "Reference" "SW17" (at 615.95 248.92 0)
+    (property "Reference" "SW16" (at 615.95 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 617.22 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 622.3 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 622.3 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 624.84 254 90)
@@ -6443,9 +6443,9 @@
     (pin "5" (uuid 3c68dee2-34ec-4868-a56c-6c2e334db165))
     (pin "6" (uuid f35759b7-4ba8-41fb-a7fb-9b5af8fdf210))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW17") (unit 1)
+          (reference "SW16") (unit 1)
         )
       )
     )
@@ -6460,7 +6460,7 @@
     (property "Value" "Switch w/LED" (at 515.62 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_2.25u" (at 520.7 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_2.25u" (at 520.7 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 523.24 476.25 90)
@@ -6473,7 +6473,7 @@
     (pin "5" (uuid 7fd98f1f-c9d5-4580-b95f-5456d44cc36a))
     (pin "6" (uuid 31e1ba9f-1d56-4086-9645-410fa8c5cd00))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW101") (unit 1)
         )
@@ -6484,13 +6484,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 712.47 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1088755e-5526-471f-a76e-1fe7024a0009)
-    (property "Reference" "SW75" (at 701.04 382.27 0)
+    (property "Reference" "SW74" (at 701.04 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 702.31 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 707.39 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 707.39 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 709.93 387.35 90)
@@ -6503,9 +6503,9 @@
     (pin "5" (uuid 3175473a-9274-4e03-ac10-69a4ed7d7b37))
     (pin "6" (uuid 4e73211f-f897-4338-9311-3bbeac68c24a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW75") (unit 1)
+          (reference "SW74") (unit 1)
         )
       )
     )
@@ -6535,7 +6535,7 @@
     (pin "1" (uuid bc4bbfae-e4ae-4e34-91ed-a7f9a1db99ce))
     (pin "2" (uuid 8a0dccf4-7d68-4a39-b4be-48fd4e0d80db))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D46") (unit 1)
         )
@@ -6552,7 +6552,7 @@
     (property "Value" "Switch w/LED" (at 388.62 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 393.7 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 393.7 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 396.24 431.8 90)
@@ -6565,7 +6565,7 @@
     (pin "5" (uuid 6150765a-e8a5-46bc-a6d6-5f35ce105b6c))
     (pin "6" (uuid 301b5e02-8817-407a-8ca1-78a962e9e888))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW82") (unit 1)
         )
@@ -6576,7 +6576,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 449.58 381 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 13aef47b-d3e3-49ec-a909-02ea843f9eb2)
-    (property "Reference" "D67" (at 452.12 379.73 90)
+    (property "Reference" "D66" (at 452.12 379.73 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 452.12 382.27 90)
@@ -6597,9 +6597,9 @@
     (pin "1" (uuid bab193e4-4fa2-4ac7-96b4-5ffb08d67ee2))
     (pin "2" (uuid d0fdf9be-f9b0-47a0-83eb-b3b2778be92e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D67") (unit 1)
+          (reference "D66") (unit 1)
         )
       )
     )
@@ -6614,7 +6614,7 @@
     (property "Value" "Switch w/LED" (at 160.02 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_2u_90deg" (at 165.1 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_2u_90deg" (at 165.1 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 431.8 90)
@@ -6627,7 +6627,7 @@
     (pin "5" (uuid acca8c23-ee05-4611-b3ee-43bcbff31acd))
     (pin "6" (uuid e61d8abc-8f8c-45b8-8ba3-499f338a3353))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW76") (unit 1)
         )
@@ -6644,7 +6644,7 @@
     (property "Value" "Switch w/LED" (at 185.42 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 190.5 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 190.5 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 342.9 90)
@@ -6657,7 +6657,7 @@
     (pin "5" (uuid 5b974f3d-7b8c-4383-9818-109dfb155658))
     (pin "6" (uuid 4e87cb6d-6241-439b-84a7-4024b7ff5af9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW40") (unit 1)
         )
@@ -6668,7 +6668,7 @@
   (symbol (lib_id "Device:C") (at 247.65 123.19 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 15547059-029b-4ce7-af56-1806cb458dbf)
-    (property "Reference" "C5" (at 251.46 121.92 0)
+    (property "Reference" "C10" (at 251.46 121.92 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100nF" (at 251.46 124.46 0)
@@ -6683,9 +6683,9 @@
     (pin "1" (uuid 3a455524-7f60-491d-8f52-781a5fdad30e))
     (pin "2" (uuid a20339e4-b110-4fad-8ba5-e23478532b36))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "C5") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -6694,13 +6694,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 525.78 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 15b48108-7ee3-48a0-847a-cffc335e12bf)
-    (property "Reference" "SW13" (at 514.35 248.92 0)
+    (property "Reference" "SW12" (at 514.35 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 515.62 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 520.7 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 520.7 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 523.24 254 90)
@@ -6713,9 +6713,9 @@
     (pin "5" (uuid 282fed9e-ecf4-4dd7-87ac-322e5ef3c63d))
     (pin "6" (uuid 4310a881-2159-4249-8044-0f946e07b051))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW13") (unit 1)
+          (reference "SW12") (unit 1)
         )
       )
     )
@@ -6724,7 +6724,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 123.19 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 161fa443-4500-4d9c-9fb8-af2ebfe3eed8)
-    (property "Reference" "RESET" (at 123.19 105.41 0)
+    (property "Reference" "RESET1" (at 123.19 105.41 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "SW_Push" (at 123.19 107.95 0)
@@ -6739,9 +6739,9 @@
     (pin "1" (uuid 36902a25-63e1-4ed8-b683-b7731e9bd52e))
     (pin "2" (uuid 7f6fdcdc-d7c8-4c6e-97ac-2d67a27820cc))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "RESET") (unit 1)
+          (reference "RESET1") (unit 1)
         )
       )
     )
@@ -6750,7 +6750,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 551.18 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 169463ae-abca-44dc-98e2-d296eb48f1dd)
-    (property "Reference" "D14" (at 553.72 246.38 90)
+    (property "Reference" "D13" (at 553.72 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 553.72 248.92 90)
@@ -6771,9 +6771,9 @@
     (pin "1" (uuid 62b0a0f2-d248-4824-8b4b-387ab4cfdd10))
     (pin "2" (uuid eb0f9dbf-ccca-449f-a2b2-727d792b9e9b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D14") (unit 1)
+          (reference "D13") (unit 1)
         )
       )
     )
@@ -6782,7 +6782,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 195.58 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 17be6c6f-2504-4e9f-9b9f-e3247a6b39b0)
-    (property "Reference" "D2" (at 198.12 246.38 90)
+    (property "Reference" "D1" (at 198.12 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 198.12 248.92 90)
@@ -6803,9 +6803,9 @@
     (pin "1" (uuid 2dde4cc5-56a3-4e86-a541-dff519365652))
     (pin "2" (uuid 0ba070df-a920-4cad-8d88-0ed15e9a6702))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D2") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -6814,7 +6814,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 424.18 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 17dcfcb1-c966-468d-b349-1eb949bddd4f)
-    (property "Reference" "D66" (at 426.72 379.73 90)
+    (property "Reference" "D65" (at 426.72 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 426.72 382.27 90)
@@ -6835,9 +6835,9 @@
     (pin "1" (uuid a8190150-f741-4ddc-8d2a-0977dd2e4b91))
     (pin "2" (uuid f91c9d25-619b-4744-b363-73794954ef83))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D66") (unit 1)
+          (reference "D65") (unit 1)
         )
       )
     )
@@ -6867,7 +6867,7 @@
     (pin "1" (uuid 9ad27f6b-6a41-4617-beab-c611ae6c2b60))
     (pin "2" (uuid f681dc43-4d1f-4cf6-8980-3226ce6a4747))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D41") (unit 1)
         )
@@ -6892,7 +6892,7 @@
     )
     (pin "1" (uuid fdfa75e3-c05b-4c7b-a4a5-d13edbea5acd))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR026") (unit 1)
         )
@@ -6909,7 +6909,7 @@
     (property "Value" "Switch w/LED" (at 236.22 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 241.3 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 241.3 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 243.84 431.8 90)
@@ -6922,7 +6922,7 @@
     (pin "5" (uuid 24b14394-f98b-4711-a453-e40ca1302a5b))
     (pin "6" (uuid 0646f1a3-f398-477e-8599-444f5c8f9b8b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW79") (unit 1)
         )
@@ -6939,7 +6939,7 @@
     (property "Value" "Switch w/LED" (at 274.32 435.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 279.4 440.69 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 279.4 440.69 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 281.94 438.15 90)
@@ -6952,7 +6952,7 @@
     (pin "5" (uuid 05dc2df3-9b7b-46d3-b435-da99d9ab67e4))
     (pin "6" (uuid b115223e-417c-4ac3-899f-4109a8d0373e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW93") (unit 1)
         )
@@ -6969,7 +6969,7 @@
     (property "Value" "Switch w/LED" (at 363.22 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 368.3 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 368.3 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 370.84 342.9 90)
@@ -6982,7 +6982,7 @@
     (pin "5" (uuid bb26e321-1c77-4534-a0bb-30ff557c08dc))
     (pin "6" (uuid aae2038f-6d74-4d91-ac3f-6e3505eae782))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW45") (unit 1)
         )
@@ -7007,7 +7007,7 @@
     )
     (pin "1" (uuid 953a8cfc-b598-4ac3-b59b-5caa923cc007))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR022") (unit 1)
         )
@@ -7018,7 +7018,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 474.98 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1bce9088-1e79-4c85-84a9-a39d6be68c9a)
-    (property "Reference" "D11" (at 477.52 246.38 90)
+    (property "Reference" "D10" (at 477.52 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 477.52 248.92 90)
@@ -7039,9 +7039,9 @@
     (pin "1" (uuid d4c5f3cc-c170-48ef-8ee3-21b142828301))
     (pin "2" (uuid 4c1369ec-79b6-4e8d-b1d5-5545ba51c424))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D11") (unit 1)
+          (reference "D10") (unit 1)
         )
       )
     )
@@ -7056,7 +7056,7 @@
     (property "Value" "Switch w/LED" (at 414.02 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_2.75u" (at 419.1 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_2.75u" (at 419.1 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 421.64 476.25 90)
@@ -7069,7 +7069,7 @@
     (pin "5" (uuid cdf564d2-1fa2-4077-a7c5-643e7d97a1f5))
     (pin "6" (uuid 2c5781bc-b5a2-4975-87cc-644ccee81feb))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW99") (unit 1)
         )
@@ -7080,7 +7080,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 551.18 381 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c7a8906-b401-463d-82fb-0c8b55eebdf8)
-    (property "Reference" "D71" (at 553.72 379.73 90)
+    (property "Reference" "D70" (at 553.72 379.73 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 553.72 382.27 90)
@@ -7101,9 +7101,9 @@
     (pin "1" (uuid 39e2f904-9a98-4e9a-8bb5-c553479cb2be))
     (pin "2" (uuid 19243182-5281-4305-9733-6059bec5893d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D71") (unit 1)
+          (reference "D70") (unit 1)
         )
       )
     )
@@ -7118,7 +7118,7 @@
     (property "Value" "Switch w/LED" (at 210.82 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 215.9 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 215.9 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 218.44 476.25 90)
@@ -7131,7 +7131,7 @@
     (pin "5" (uuid 0271aa4a-b627-4265-b5dd-f9da36867a9e))
     (pin "6" (uuid 510b0695-86ad-4019-a8b8-bb68cecd700c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW96") (unit 1)
         )
@@ -7142,13 +7142,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 398.78 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1d553075-789a-4cd2-98e9-dc1b594b46d0)
-    (property "Reference" "SW65" (at 387.35 382.27 0)
+    (property "Reference" "SW64" (at 387.35 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 388.62 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 393.7 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 393.7 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 396.24 387.35 90)
@@ -7161,9 +7161,9 @@
     (pin "5" (uuid 54ac3e44-8d9a-4863-bc82-9ba6956d1d52))
     (pin "6" (uuid 09570c21-ab70-44c8-a77d-e1220c0a6c0e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW65") (unit 1)
+          (reference "SW64") (unit 1)
         )
       )
     )
@@ -7193,7 +7193,7 @@
     (pin "1" (uuid 73b808ee-22dc-47c9-a1cb-abe2ddd27b95))
     (pin "2" (uuid b203accc-a9c2-48bc-814a-413a55e7d36a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D57") (unit 1)
         )
@@ -7217,7 +7217,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H6") (unit 1)
         )
@@ -7249,7 +7249,7 @@
     (pin "1" (uuid 726bc47d-1bac-4b81-a235-d6b59a25db5b))
     (pin "2" (uuid 823efcee-030b-4e60-8ba9-2a0b9fcef0e7))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D25") (unit 1)
         )
@@ -7260,7 +7260,7 @@
   (symbol (lib_id "power:VCC") (at 142.24 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2116a7a6-4508-440a-a8db-afd64a7e51b8)
-    (property "Reference" "#PWR03" (at 142.24 44.45 0)
+    (property "Reference" "#PWR02" (at 142.24 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 142.24 35.56 0)
@@ -7274,9 +7274,9 @@
     )
     (pin "1" (uuid 44581bc9-cb64-4036-a4a1-6e6d6b36105b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -7306,7 +7306,7 @@
     (pin "1" (uuid 6920c245-3439-43fe-b59b-ef94c0895c79))
     (pin "2" (uuid 5f6595f6-a299-407f-917e-9c7c6612e56e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D77") (unit 1)
         )
@@ -7317,7 +7317,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 246.38 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 22731968-7cff-406b-8d4c-cd3e2b180fdb)
-    (property "Reference" "D4" (at 248.92 246.38 90)
+    (property "Reference" "D3" (at 248.92 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 248.92 248.92 90)
@@ -7338,9 +7338,9 @@
     (pin "1" (uuid ad40beec-e915-4b07-8217-b302ceb148ca))
     (pin "2" (uuid bd61e79a-5aef-450b-81aa-5d6d35e33eca))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D4") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -7355,7 +7355,7 @@
     (property "Value" "Switch w/LED" (at 236.22 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 241.3 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 241.3 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 243.84 387.35 90)
@@ -7368,7 +7368,7 @@
     (pin "5" (uuid fd71e985-1ecc-408c-b505-3249e387046f))
     (pin "6" (uuid 1fee2e08-d7b1-4611-a36d-ee00a931c6de))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW60") (unit 1)
         )
@@ -7379,7 +7379,7 @@
   (symbol (lib_id "power:GND") (at 259.08 116.84 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 26571924-31d1-45fc-9655-5db1dd7f69eb)
-    (property "Reference" "#PWR015" (at 265.43 116.84 0)
+    (property "Reference" "#PWR014" (at 265.43 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 262.89 116.84 90)
@@ -7393,9 +7393,9 @@
     )
     (pin "1" (uuid e81d8b1b-e01e-42b0-863a-d9ad6cfa53d9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -7410,7 +7410,7 @@
     (property "Value" "Switch w/LED" (at 617.22 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 622.3 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 622.3 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 624.84 298.45 90)
@@ -7423,7 +7423,7 @@
     (pin "5" (uuid 42e2f50b-0c95-4eb6-a368-0cd38d52181f))
     (pin "6" (uuid 480b6b9a-973f-46ee-9cfd-306647b7b5e0))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW36") (unit 1)
         )
@@ -7434,7 +7434,7 @@
   (symbol (lib_id "power:+3V3") (at 144.78 125.73 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 27d1b97b-2a66-4360-a583-8e0cf6fe5095)
-    (property "Reference" "#PWR010" (at 148.59 125.73 0)
+    (property "Reference" "#PWR017" (at 148.59 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 140.97 125.73 90)
@@ -7448,9 +7448,9 @@
     )
     (pin "1" (uuid 4ac6a908-66a8-43b2-9dd3-0c6d1a1833d6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -7465,7 +7465,7 @@
     (property "Value" "Switch w/LED" (at 363.22 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 368.3 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 368.3 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 370.84 431.8 90)
@@ -7478,7 +7478,7 @@
     (pin "5" (uuid 77086f1b-a295-465a-8d79-74788a5d1109))
     (pin "6" (uuid 5d538583-cb1f-49b0-8eec-f590e7a0ed76))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW81") (unit 1)
         )
@@ -7489,7 +7489,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 525.78 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2acecaff-c2a9-42cc-82f3-7b663608d1ed)
-    (property "Reference" "D70" (at 528.32 379.73 90)
+    (property "Reference" "D69" (at 528.32 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 528.32 382.27 90)
@@ -7510,9 +7510,9 @@
     (pin "1" (uuid 9b527261-eac2-474e-838e-4c951e52a4a1))
     (pin "2" (uuid d9a0474f-5a17-4eba-ae18-0ae0e303a96d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D70") (unit 1)
+          (reference "D69") (unit 1)
         )
       )
     )
@@ -7527,7 +7527,7 @@
     (property "Value" "Switch w/LED" (at 515.62 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 520.7 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 520.7 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 523.24 431.8 90)
@@ -7540,7 +7540,7 @@
     (pin "5" (uuid c780ce70-af29-4d3a-bd1c-ce5d7e0fd7da))
     (pin "6" (uuid d800b561-10da-478d-aa88-09b713abab48))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW87") (unit 1)
         )
@@ -7557,7 +7557,7 @@
     (property "Value" "Switch w/LED" (at 185.42 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 190.5 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 190.5 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 476.25 90)
@@ -7570,7 +7570,7 @@
     (pin "5" (uuid 6ac81d8b-e888-4ec5-85c2-3e0742d19c49))
     (pin "6" (uuid a4fc528f-a8d4-49b1-8a01-5a4904cda655))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW95") (unit 1)
         )
@@ -7587,7 +7587,7 @@
     (property "Value" "Switch w/LED" (at 439.42 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 444.5 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 444.5 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 447.04 342.9 90)
@@ -7600,7 +7600,7 @@
     (pin "5" (uuid 986ac098-57fe-4837-bee2-6e0ddf40ea63))
     (pin "6" (uuid d1dc3d91-c475-4b44-9a5c-d2b927240be1))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW48") (unit 1)
         )
@@ -7611,13 +7611,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 195.58 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2ca3ab2f-b763-4f3d-818c-1879c854d0fd)
-    (property "Reference" "SW2" (at 184.15 248.92 0)
+    (property "Reference" "SW1" (at 184.15 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 185.42 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 190.5 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 190.5 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 254 90)
@@ -7630,9 +7630,9 @@
     (pin "5" (uuid 78111af8-01c9-40c2-8bea-19261c01193b))
     (pin "6" (uuid 34616ae1-095a-48bb-b07f-44be5c36155a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW2") (unit 1)
+          (reference "SW1") (unit 1)
         )
       )
     )
@@ -7647,7 +7647,7 @@
     (property "Value" "Switch w/LED" (at 414.02 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 419.1 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 419.1 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 421.64 431.8 90)
@@ -7660,7 +7660,7 @@
     (pin "5" (uuid bd9e4de8-8adf-40be-bf23-f8a2105e620c))
     (pin "6" (uuid 63162653-eb24-4b8f-ad5f-fbf44c12941b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW83") (unit 1)
         )
@@ -7677,7 +7677,7 @@
     (property "Value" "Switch w/LED" (at 541.02 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 546.1 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 546.1 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 548.64 342.9 90)
@@ -7690,7 +7690,7 @@
     (pin "5" (uuid 9ab431da-dbe4-48f2-8c1f-8e6bb661fae1))
     (pin "6" (uuid 68d7132c-d3fb-47da-bba7-842965ef2b18))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW52") (unit 1)
         )
@@ -7701,7 +7701,7 @@
   (symbol (lib_id "ScottoKeebs:MCU_Raspberry_Pi_Pico") (at 160.02 139.7 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2ff3b7a7-7a11-45e1-b8a7-1c8b326276d8)
-    (property "Reference" "U2" (at 160.02 107.95 0)
+    (property "Reference" "U3" (at 160.02 107.95 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Raspberry_Pi_Pico" (at 160.02 110.49 0)
@@ -7757,9 +7757,9 @@
     (pin "8" (uuid f64088be-14ab-4bea-9f53-d6418cdaffc6))
     (pin "9" (uuid ece724a5-7105-4f1a-b3c2-e158f23bfb55))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "U2") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -7781,7 +7781,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H5") (unit 1)
         )
@@ -7792,13 +7792,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 474.98 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 30d04b09-5681-42a2-996d-c1f351f8da22)
-    (property "Reference" "SW68" (at 463.55 382.27 0)
+    (property "Reference" "SW67" (at 463.55 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 464.82 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 469.9 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 469.9 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 472.44 387.35 90)
@@ -7811,9 +7811,9 @@
     (pin "5" (uuid 293b80e3-af1f-451d-90c4-6a5e0d4e3973))
     (pin "6" (uuid b44678b1-0dff-44c4-858f-ca0f0f65524f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW68") (unit 1)
+          (reference "SW67") (unit 1)
         )
       )
     )
@@ -7828,7 +7828,7 @@
     (property "Value" "Switch w/LED" (at 299.72 476.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 304.8 481.33 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 304.8 481.33 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 307.34 478.79 90)
@@ -7841,7 +7841,7 @@
     (pin "5" (uuid 33c53fd9-514b-4f0e-8254-2c3a8185b8b9))
     (pin "6" (uuid 0993ca18-fddb-47cd-bf33-1baf6f7be51c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW107") (unit 1)
         )
@@ -7858,7 +7858,7 @@
     (property "Value" "Switch w/LED" (at 651.51 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1.5u" (at 656.59 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1.5u" (at 656.59 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 659.13 342.9 90)
@@ -7871,7 +7871,7 @@
     (pin "5" (uuid 00c2d488-3cc5-4459-8ac2-b5e24391979f))
     (pin "6" (uuid f3c63c93-909c-4a81-aa12-2fd62b091ff7))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW56") (unit 1)
         )
@@ -7888,7 +7888,7 @@
     (property "Value" "Switch w/LED" (at 160.02 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_2u_90deg" (at 165.1 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_2u_90deg" (at 165.1 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 342.9 90)
@@ -7901,7 +7901,7 @@
     (pin "5" (uuid 0d2bd5ff-6a50-41bd-acb5-795508337fe1))
     (pin "6" (uuid 2df8c382-377d-49dc-a55d-4677c9c0d2c3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW39") (unit 1)
         )
@@ -7912,13 +7912,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 525.78 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 340893d2-8c1a-4518-9a6c-51873f80bbcc)
-    (property "Reference" "SW70" (at 514.35 382.27 0)
+    (property "Reference" "SW69" (at 514.35 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 515.62 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 520.7 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 520.7 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 523.24 387.35 90)
@@ -7931,9 +7931,9 @@
     (pin "5" (uuid 600ed822-1828-497b-8255-ffb4a5299325))
     (pin "6" (uuid f547eaa4-9e03-4608-bceb-f8fa0e9c3c81))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW70") (unit 1)
+          (reference "SW69") (unit 1)
         )
       )
     )
@@ -7963,7 +7963,7 @@
     (pin "1" (uuid 994af132-405d-480e-a78f-510d377577c8))
     (pin "2" (uuid 2e68da76-a0a7-4dce-bfd2-5e0c53d00982))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D52") (unit 1)
         )
@@ -7980,7 +7980,7 @@
     (property "Value" "Switch w/LED" (at 185.42 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 190.5 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 190.5 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 298.45 90)
@@ -7993,7 +7993,7 @@
     (pin "5" (uuid aa5942a8-9632-4037-954e-fe90d6fedea4))
     (pin "6" (uuid c8c9b6a3-c4cc-4afd-953f-f424e3df5eb4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW21") (unit 1)
         )
@@ -8025,7 +8025,7 @@
     (pin "1" (uuid 8652283e-40eb-42fa-87de-8a5941d27d0b))
     (pin "2" (uuid 84339ad3-5ebb-4fbf-a05a-4eccefb04315))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D21") (unit 1)
         )
@@ -8036,7 +8036,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 339.09 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 35e33017-d1d0-4065-aaf7-1835446edad2)
-    (property "Reference" "C6" (at 342.9 115.951 0)
+    (property "Reference" "C5" (at 342.9 115.951 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100uF" (at 342.9 118.491 0)
@@ -8051,9 +8051,9 @@
     (pin "1" (uuid e1eb1710-b4c4-4512-8e15-1dff0c3134a4))
     (pin "2" (uuid 82657d8c-b04b-427a-8f6f-5b7cf9ab8a7a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "C6") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -8083,7 +8083,7 @@
     (pin "1" (uuid 15c607ed-4801-44f7-b811-99a502e15fb9))
     (pin "2" (uuid 5419ba1e-9ba7-4697-84b1-dbc17487ac0f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D94") (unit 1)
         )
@@ -8094,7 +8094,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 354.33 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 37f9ba9a-9afb-4e7e-ad37-ce5372dd9f59)
-    (property "Reference" "C7" (at 358.14 115.951 0)
+    (property "Reference" "C6" (at 358.14 115.951 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100uF" (at 358.14 118.491 0)
@@ -8109,9 +8109,9 @@
     (pin "1" (uuid 4505e1f2-22da-4539-aaa4-c994415f0d66))
     (pin "2" (uuid b2d4570e-94df-4a6e-a08d-c12aac356a7b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "C7") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -8120,13 +8120,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 633.73 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 38030145-ed0e-437a-9359-5af76c761416)
-    (property "Reference" "SW74" (at 622.3 382.27 0)
+    (property "Reference" "SW73" (at 622.3 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 623.57 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_2.25u" (at 628.65 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_2.25u" (at 628.65 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 631.19 387.35 90)
@@ -8139,9 +8139,9 @@
     (pin "5" (uuid 6aa1b474-f90e-48a2-94c5-f49743fa7082))
     (pin "6" (uuid 40ac880d-a8c2-4407-afb6-6d2b552b9323))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW74") (unit 1)
+          (reference "SW73") (unit 1)
         )
       )
     )
@@ -8150,7 +8150,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 576.58 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 382508c3-363e-4bf7-8c3d-a437da4ba6f1)
-    (property "Reference" "D72" (at 579.12 379.73 90)
+    (property "Reference" "D71" (at 579.12 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 579.12 382.27 90)
@@ -8171,9 +8171,9 @@
     (pin "1" (uuid 82a53e41-be91-41dd-985e-bf247f989c35))
     (pin "2" (uuid 53322c64-5cc5-4fc2-a6c8-27dd5bd0c1bf))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D72") (unit 1)
+          (reference "D71") (unit 1)
         )
       )
     )
@@ -8203,7 +8203,7 @@
     (pin "1" (uuid f6080254-1b8c-4706-8238-729fda3fb5a8))
     (pin "2" (uuid 9a6230ba-df97-4207-bcfc-467499f87b0e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D79") (unit 1)
         )
@@ -8228,7 +8228,7 @@
     )
     (pin "1" (uuid bd32bc09-5fe2-4b02-b052-073a399a22b3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR024") (unit 1)
         )
@@ -8245,7 +8245,7 @@
     (property "Value" "Switch w/LED" (at 337.82 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 342.9 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 342.9 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 345.44 342.9 90)
@@ -8258,7 +8258,7 @@
     (pin "5" (uuid ba03fa8c-6b64-4222-b155-7bf0ab276c30))
     (pin "6" (uuid 5db3cefb-cb1c-4657-b10f-568437582ee5))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW44") (unit 1)
         )
@@ -8290,7 +8290,7 @@
     (pin "1" (uuid ae500153-11ae-47b4-84e8-75719b9c897d))
     (pin "2" (uuid bfd6645d-16b0-4f81-a27b-8f90690343db))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D35") (unit 1)
         )
@@ -8301,13 +8301,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 347.98 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 438217b8-bfce-415e-8a5d-e72e78262ff1)
-    (property "Reference" "SW6" (at 336.55 248.92 0)
+    (property "Reference" "SW5" (at 336.55 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 337.82 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 342.9 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 342.9 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 345.44 254 90)
@@ -8320,9 +8320,9 @@
     (pin "5" (uuid 6c1c88b6-f0f9-4747-a613-f89317c35bc0))
     (pin "6" (uuid a694fa40-2043-4685-ad7b-aaaca7e21147))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW6") (unit 1)
+          (reference "SW5") (unit 1)
         )
       )
     )
@@ -8331,13 +8331,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 576.58 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 451d73c6-d1b0-4812-95cc-1c34ca3c1856)
-    (property "Reference" "SW15" (at 565.15 248.92 0)
+    (property "Reference" "SW14" (at 565.15 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 566.42 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 571.5 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 571.5 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 574.04 254 90)
@@ -8350,9 +8350,9 @@
     (pin "5" (uuid 84239692-25e6-4fc2-aff1-5d0e24278bb2))
     (pin "6" (uuid b11928c4-042d-41c9-9de1-ea4b90ce75c0))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW15") (unit 1)
+          (reference "SW14") (unit 1)
         )
       )
     )
@@ -8376,7 +8376,7 @@
     (pin "1" (uuid 633d34d5-c88d-4592-a6b1-50361d8689dd))
     (pin "2" (uuid 068aa9b1-cc41-4cc3-85bc-aa19222ab35c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "R1") (unit 1)
         )
@@ -8387,7 +8387,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 220.98 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 45edf09a-6dfb-441d-a932-d881cd0466ef)
-    (property "Reference" "D3" (at 223.52 246.38 90)
+    (property "Reference" "D2" (at 223.52 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 223.52 248.92 90)
@@ -8408,9 +8408,9 @@
     (pin "1" (uuid 0d746124-5e15-4a53-b00c-9768b8826b6f))
     (pin "2" (uuid 3c27516d-e5e2-48db-b5b0-b12bd7524fc6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D3") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -8432,7 +8432,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H8") (unit 1)
         )
@@ -8464,7 +8464,7 @@
     (pin "1" (uuid 2b844634-4658-491a-b4ce-45f2202f54e8))
     (pin "2" (uuid 82f93202-14a7-48bd-9cd9-3389b369293b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D110") (unit 1)
         )
@@ -8496,7 +8496,7 @@
     (pin "1" (uuid 3d3d3b7e-d890-4c65-b1b1-ac59575904d7))
     (pin "2" (uuid 5096148a-058f-40d3-8424-64fc3c7aa0fc))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D33") (unit 1)
         )
@@ -8528,7 +8528,7 @@
     (pin "1" (uuid a50676e1-c145-4a0f-a872-6a0efd52eb24))
     (pin "2" (uuid 7c228a47-6762-4a48-9e16-20d0cd16f6df))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D56") (unit 1)
         )
@@ -8539,7 +8539,7 @@
   (symbol (lib_id "power:GND") (at 267.97 46.99 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4a5dc05e-39b6-451a-aa26-de6c1f5a04b6)
-    (property "Reference" "#PWR012" (at 274.32 46.99 0)
+    (property "Reference" "#PWR06" (at 274.32 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 271.78 46.99 90)
@@ -8553,9 +8553,9 @@
     )
     (pin "1" (uuid 985282af-69ef-4c67-9e01-f1396b66d741))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -8585,7 +8585,7 @@
     (pin "1" (uuid d7e95706-02e0-4e25-b1ca-c612c5ac750c))
     (pin "2" (uuid a5f6d80c-817f-496c-9f13-e3994fd9bdff))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D101") (unit 1)
         )
@@ -8596,7 +8596,7 @@
   (symbol (lib_id "74xGxx:74AHC1G125") (at 267.97 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4cc519f3-36ca-40ad-86cd-870751e0ce7f)
-    (property "Reference" "U3" (at 274.32 53.34 0)
+    (property "Reference" "U2" (at 274.32 53.34 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74AHC1G125" (at 279.4 60.96 0)
@@ -8614,9 +8614,9 @@
     (pin "4" (uuid 808193e1-5fcd-40ad-824a-451942cbe06c))
     (pin "5" (uuid c9a87d2e-e2d4-4989-9e64-c629c521cc8d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "U3") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -8646,7 +8646,7 @@
     (pin "1" (uuid e23ed577-5cc1-40ae-8eed-22182da52892))
     (pin "2" (uuid 730ca042-c6d4-410b-8f2c-a7d2cc5b0cd7))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D59") (unit 1)
         )
@@ -8678,7 +8678,7 @@
     (pin "1" (uuid 8fe4deca-31a5-4720-bca9-5f6b8539f6ea))
     (pin "2" (uuid 103d125e-fbb2-49f0-8775-7bc418a998f9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D39") (unit 1)
         )
@@ -8704,7 +8704,7 @@
     (pin "1" (uuid 9c4639f8-7d15-4e34-975f-94189c609b5a))
     (pin "2" (uuid bb8e8cdd-f9cd-41ae-8fff-325758468c34))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "C2") (unit 1)
         )
@@ -8736,7 +8736,7 @@
     (pin "1" (uuid 21821aba-49e9-4a29-9601-cf17d20ca481))
     (pin "2" (uuid ce42fa11-cbd9-4577-875e-6f2a5159b23e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D55") (unit 1)
         )
@@ -8768,7 +8768,7 @@
     (pin "1" (uuid 0578ec0e-baf6-40be-a045-f5b399b01a5c))
     (pin "2" (uuid a6786a22-ded0-4eef-908a-ba04d24d6fb4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D93") (unit 1)
         )
@@ -8779,7 +8779,7 @@
   (symbol (lib_id "power:GND") (at 398.78 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4f3656a8-0432-49b9-a0a8-85e9b8498aba)
-    (property "Reference" "#PWR04" (at 398.78 128.27 0)
+    (property "Reference" "#PWR016" (at 398.78 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 398.78 127 0)
@@ -8793,9 +8793,9 @@
     )
     (pin "1" (uuid bde10add-39f7-4f98-8222-c3e440b5416d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -8825,7 +8825,7 @@
     (pin "1" (uuid 116782de-dbab-4ebf-9457-0c14b4d46ee2))
     (pin "2" (uuid 9862744d-2471-4cc9-94d2-87b9b442da7e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D98") (unit 1)
         )
@@ -8857,7 +8857,7 @@
     (pin "1" (uuid fc6840f0-6fc4-48b0-aea6-1c29233dbddd))
     (pin "2" (uuid 44677dcd-8b18-467d-b399-827686ff414f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D88") (unit 1)
         )
@@ -8882,7 +8882,7 @@
     )
     (pin "1" (uuid 7869093a-fbad-4163-b463-a7ca96591cba))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR025") (unit 1)
         )
@@ -8914,7 +8914,7 @@
     (pin "1" (uuid 90da97e7-98db-4223-9c1e-9994af3116f8))
     (pin "2" (uuid f057aacf-8805-4978-8fbd-144d166f452f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D22") (unit 1)
         )
@@ -8946,7 +8946,7 @@
     (pin "1" (uuid e92946ed-0331-42d6-85f0-ac1047e0ad56))
     (pin "2" (uuid ea7ed44b-0cc9-461d-90b0-86926a1038f9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D92") (unit 1)
         )
@@ -8963,7 +8963,7 @@
     (property "Value" "Switch w/LED" (at 185.42 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 190.5 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 190.5 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 431.8 90)
@@ -8976,7 +8976,7 @@
     (pin "5" (uuid 401c7f41-1e27-40d3-8967-0fcad6ead5da))
     (pin "6" (uuid 428fdfde-aa04-4c29-bfa6-ffaeda55f8ac))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW77") (unit 1)
         )
@@ -9008,7 +9008,7 @@
     (pin "1" (uuid 046b4cdf-2f3c-43ce-b421-e5478584ebe0))
     (pin "2" (uuid 8cf7ce4c-e009-4b18-8316-c14ed4308450))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D91") (unit 1)
         )
@@ -9034,7 +9034,7 @@
     (pin "1" (uuid 762f8114-ca7e-4bf9-b163-5847edfc6df3))
     (pin "2" (uuid d09a66b7-660f-478e-a7df-3dc6c3801124))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "R3") (unit 1)
         )
@@ -9051,7 +9051,7 @@
     (property "Value" "Switch w/LED" (at 210.82 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 215.9 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 215.9 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 218.44 431.8 90)
@@ -9064,7 +9064,7 @@
     (pin "5" (uuid 10378840-2eaf-4594-baa0-26da8f3d4068))
     (pin "6" (uuid 446c65a2-d789-45c5-9bd2-ba22299d32b2))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW78") (unit 1)
         )
@@ -9096,7 +9096,7 @@
     (pin "1" (uuid a0df9366-f535-49db-8b0e-5ee8a4967e51))
     (pin "2" (uuid 4c6a93eb-66b6-477c-89e5-b31965880a3a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D87") (unit 1)
         )
@@ -9107,7 +9107,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 474.98 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 57cadd12-7f9c-4e14-8bed-93e74ccdf49b)
-    (property "Reference" "D68" (at 477.52 379.73 90)
+    (property "Reference" "D67" (at 477.52 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 477.52 382.27 90)
@@ -9128,9 +9128,9 @@
     (pin "1" (uuid 3792ccc2-5909-4480-8e99-1c7b3d68f130))
     (pin "2" (uuid 024f5ba4-2d4d-441b-b7b8-47346c044725))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D68") (unit 1)
+          (reference "D67") (unit 1)
         )
       )
     )
@@ -9145,7 +9145,7 @@
     (property "Value" "Switch w/LED" (at 160.02 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 165.1 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 165.1 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 167.64 298.45 90)
@@ -9158,7 +9158,7 @@
     (pin "5" (uuid 122c5bbd-809a-4ce2-ba4c-529395b94a5a))
     (pin "6" (uuid 5d1fb689-244d-4a2d-bb56-cec04a2cfc6e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW20") (unit 1)
         )
@@ -9190,7 +9190,7 @@
     (pin "1" (uuid 2e4e29ba-2efa-4fc3-a521-6143e341cf4c))
     (pin "2" (uuid ad3a5442-6cc9-4995-a2ba-e41c8344026e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D60") (unit 1)
         )
@@ -9215,7 +9215,7 @@
     )
     (pin "1" (uuid 2b33c047-d75d-4332-b17e-e014ce5dc327))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR01") (unit 1)
         )
@@ -9247,7 +9247,7 @@
     (pin "1" (uuid 6341bc71-5134-4ccd-8ac2-6fb88844b944))
     (pin "2" (uuid 277a9449-9d92-4bbe-bb7c-5b12274f6ec9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D36") (unit 1)
         )
@@ -9279,7 +9279,7 @@
     (pin "1" (uuid 4b51cdc9-f455-4d17-bcab-6c47121872c2))
     (pin "2" (uuid a9d1a3f4-5490-49e7-acc5-b7a2b2cdeb2a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D42") (unit 1)
         )
@@ -9290,7 +9290,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 398.78 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 618d42a5-c2a6-45d2-a123-c60e903500a4)
-    (property "Reference" "C10" (at 402.59 115.951 0)
+    (property "Reference" "C9" (at 402.59 115.951 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100uF" (at 402.59 118.491 0)
@@ -9305,9 +9305,9 @@
     (pin "1" (uuid 632a8477-7bf1-4b4d-95ca-7167ccf56896))
     (pin "2" (uuid f5b7c7f4-ab24-4fa1-bdcd-7b669679efe4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "C10") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -9337,7 +9337,7 @@
     (pin "1" (uuid 0f633c47-1abf-4c54-9a9f-fb02f3b76b71))
     (pin "2" (uuid 8be6ea71-ac2f-49a9-ac8e-c5491b195e8f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D99") (unit 1)
         )
@@ -9354,7 +9354,7 @@
     (property "Value" "Switch w/LED" (at 702.31 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 707.39 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 707.39 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 709.93 342.9 90)
@@ -9367,7 +9367,7 @@
     (pin "5" (uuid 642b1f23-7a9f-4b73-b4b1-e4514960e53e))
     (pin "6" (uuid 5e992b37-2eac-49e6-8eef-8ed1ae356913))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW57") (unit 1)
         )
@@ -9378,7 +9378,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 373.38 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 628c0697-5f09-405e-ae30-1e72303a667f)
-    (property "Reference" "D7" (at 375.92 246.38 90)
+    (property "Reference" "D6" (at 375.92 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 375.92 248.92 90)
@@ -9399,9 +9399,9 @@
     (pin "1" (uuid 86918a40-ebd7-4d37-8acd-233ad93b78ea))
     (pin "2" (uuid 433470c9-e3de-4c46-97d8-3e86584fae12))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D7") (unit 1)
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -9431,7 +9431,7 @@
     (pin "1" (uuid a9d4ef3e-ced7-4673-85a6-1b64f0bc9186))
     (pin "2" (uuid ebc4e091-6c8f-4e24-a442-ffcfa2bc24b5))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D83") (unit 1)
         )
@@ -9448,7 +9448,7 @@
     (property "Value" "Switch w/LED" (at 248.92 476.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 254 481.33 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 254 481.33 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 256.54 478.79 90)
@@ -9461,7 +9461,7 @@
     (pin "5" (uuid 1b0226a4-8bf9-487b-8ea1-aa8455d3902e))
     (pin "6" (uuid b95dfddd-b121-497e-997c-6223de116f0e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW105") (unit 1)
         )
@@ -9493,7 +9493,7 @@
     (pin "1" (uuid a9c4438e-2e11-4382-b97c-65ffce46ed26))
     (pin "2" (uuid d94ad161-0dd0-4a52-a81d-79a9c7760164))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D43") (unit 1)
         )
@@ -9510,7 +9510,7 @@
     (property "Value" "Switch w/LED" (at 566.42 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 571.5 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 571.5 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 574.04 342.9 90)
@@ -9523,7 +9523,7 @@
     (pin "5" (uuid 05e17a50-2d89-433a-a485-ce3d52844c31))
     (pin "6" (uuid de9700ff-90eb-40b3-9b90-169093d01ea9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW53") (unit 1)
         )
@@ -9534,13 +9534,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 424.18 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65ff9b77-8b7e-45e4-8adf-8fdec4c2b72b)
-    (property "Reference" "SW9" (at 412.75 248.92 0)
+    (property "Reference" "SW8" (at 412.75 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 414.02 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 419.1 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 419.1 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 421.64 254 90)
@@ -9553,9 +9553,9 @@
     (pin "5" (uuid a5dd8e3e-f49e-43d4-8d32-6794b1991110))
     (pin "6" (uuid 5d55eaa6-1656-4f0b-9138-f3dd10d00326))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW9") (unit 1)
+          (reference "SW8") (unit 1)
         )
       )
     )
@@ -9570,7 +9570,7 @@
     (property "Value" "Switch w/LED" (at 651.51 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 656.59 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 656.59 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 659.13 298.45 90)
@@ -9583,7 +9583,7 @@
     (pin "5" (uuid 8a53ec93-0792-4ffd-838e-12f64160daf9))
     (pin "6" (uuid 80318d1f-7b94-4fa7-963a-5edcbc8872bb))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW37") (unit 1)
         )
@@ -9615,7 +9615,7 @@
     (pin "1" (uuid bd198482-a0a3-4a13-9e0d-9ca1c7a90fbd))
     (pin "2" (uuid e1c6da6f-8f41-4953-aabb-ccb33aeedf8e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D28") (unit 1)
         )
@@ -9626,13 +9626,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 449.58 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 681bbbcf-0d17-4b04-8355-af3d319045e7)
-    (property "Reference" "SW67" (at 438.15 382.27 0)
+    (property "Reference" "SW66" (at 438.15 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 439.42 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 444.5 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 444.5 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 447.04 387.35 90)
@@ -9645,9 +9645,9 @@
     (pin "5" (uuid be0dfb50-e2c7-47b3-a17e-0ff19e28c46d))
     (pin "6" (uuid 9d7dfec4-13ae-4dd8-bbc1-a2c6b707b4af))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW67") (unit 1)
+          (reference "SW66") (unit 1)
         )
       )
     )
@@ -9656,13 +9656,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 322.58 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 68578ca9-b3ef-46cc-ad85-856110387555)
-    (property "Reference" "SW62" (at 311.15 382.27 0)
+    (property "Reference" "SW61" (at 311.15 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 312.42 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1.75u" (at 317.5 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1.75u" (at 317.5 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 320.04 387.35 90)
@@ -9675,9 +9675,9 @@
     (pin "5" (uuid e1c9c184-3ac7-44de-8bde-f9cea3da2a3a))
     (pin "6" (uuid e2a8e0ad-533c-4a01-a798-9342ffe939bb))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW62") (unit 1)
+          (reference "SW61") (unit 1)
         )
       )
     )
@@ -9692,7 +9692,7 @@
     (property "Value" "Switch w/LED" (at 439.42 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 444.5 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 444.5 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 447.04 431.8 90)
@@ -9705,7 +9705,7 @@
     (pin "5" (uuid 6433e09d-fb58-451a-a480-5418d74b82bd))
     (pin "6" (uuid 10c99787-34e8-4dc5-af80-470fa7630a77))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW84") (unit 1)
         )
@@ -9716,13 +9716,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 576.58 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6ab2a816-b2e2-45f5-8766-7b61d769de83)
-    (property "Reference" "SW72" (at 565.15 382.27 0)
+    (property "Reference" "SW71" (at 565.15 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 566.42 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 571.5 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 571.5 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 574.04 387.35 90)
@@ -9735,9 +9735,9 @@
     (pin "5" (uuid 22a510a0-2466-4051-b9d5-1d559b46d392))
     (pin "6" (uuid 28e6633d-a796-4d97-9c4a-7232b4de9478))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW72") (unit 1)
+          (reference "SW71") (unit 1)
         )
       )
     )
@@ -9760,7 +9760,7 @@
     )
     (pin "1" (uuid 5cbab58a-5ff8-413c-82f0-6d833cac55ce))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR020") (unit 1)
         )
@@ -9771,13 +9771,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 220.98 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b4b5137-521c-461c-a926-a74773fba141)
-    (property "Reference" "SW3" (at 209.55 248.92 0)
+    (property "Reference" "SW2" (at 209.55 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 210.82 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 215.9 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 215.9 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 218.44 254 90)
@@ -9790,9 +9790,9 @@
     (pin "5" (uuid 32c8b978-2589-4da2-a815-a0197fff8e88))
     (pin "6" (uuid 9255488d-710e-445b-af3f-cae0ec9f26d0))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW3") (unit 1)
+          (reference "SW2") (unit 1)
         )
       )
     )
@@ -9822,7 +9822,7 @@
     (pin "1" (uuid f994b824-01ef-406b-985e-a734a93e157a))
     (pin "2" (uuid f5ffb190-e20e-44d7-b8e5-6f82e6d6ae89))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D48") (unit 1)
         )
@@ -9833,7 +9833,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 398.78 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6c24011a-537e-44e4-9ccb-bae9bcdc1abf)
-    (property "Reference" "D8" (at 401.32 246.38 90)
+    (property "Reference" "D7" (at 401.32 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 401.32 248.92 90)
@@ -9854,9 +9854,9 @@
     (pin "1" (uuid 84ab2673-2b80-4ac4-9c65-ab3273e5627e))
     (pin "2" (uuid 253f151f-6f2f-4456-89b0-cd9e249dbe16))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D8") (unit 1)
+          (reference "D7") (unit 1)
         )
       )
     )
@@ -9871,7 +9871,7 @@
     (property "Value" "Switch w/LED" (at 363.22 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 368.3 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 368.3 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 370.84 298.45 90)
@@ -9884,7 +9884,7 @@
     (pin "5" (uuid b69cbe49-ca78-4b48-ae9e-587575cc76f3))
     (pin "6" (uuid a24f4fa3-0186-4c0a-bcfc-4c45e05b579f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW26") (unit 1)
         )
@@ -9916,7 +9916,7 @@
     (pin "1" (uuid e8561864-8fc9-4d9d-b3fb-6415528b8217))
     (pin "2" (uuid 5b238aa2-7298-4794-9238-72b1e790aa20))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D95") (unit 1)
         )
@@ -9948,7 +9948,7 @@
     (pin "1" (uuid c1698a5e-be9a-416c-bfa5-1717a977fe0e))
     (pin "2" (uuid 04bf4694-7132-46d6-bedf-ce027f76d5a8))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D78") (unit 1)
         )
@@ -9959,7 +9959,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 661.67 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 71f1a484-fcf0-4563-bfcd-17cfab3301c5)
-    (property "Reference" "D18" (at 664.21 246.38 90)
+    (property "Reference" "D17" (at 664.21 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 664.21 248.92 90)
@@ -9980,9 +9980,9 @@
     (pin "1" (uuid 8880046f-d941-4d9b-b222-71d03a965ede))
     (pin "2" (uuid b6e2b431-f6ad-45e5-8e1d-72bf9972a7ca))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D18") (unit 1)
+          (reference "D17") (unit 1)
         )
       )
     )
@@ -9997,7 +9997,7 @@
     (property "Value" "Switch w/LED" (at 337.82 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1.5u" (at 342.9 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1.5u" (at 342.9 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 345.44 476.25 90)
@@ -10010,7 +10010,7 @@
     (pin "5" (uuid aedd0564-1b10-4bc6-a891-14110f7bde5f))
     (pin "6" (uuid 9bbb827b-cf8f-4326-a6cf-f1632279bb1e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW97") (unit 1)
         )
@@ -10036,7 +10036,7 @@
     (pin "1" (uuid 72abfe64-f212-4a7c-ae22-f05415dff35b))
     (pin "2" (uuid 11af7746-3583-4053-b21f-86c35ae235c7))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "C4") (unit 1)
         )
@@ -10068,7 +10068,7 @@
     (pin "1" (uuid ed476ae5-bf47-459e-b6f5-ace98e660e26))
     (pin "2" (uuid 7b92e501-8543-40ea-b60a-a61cd14f38d4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D23") (unit 1)
         )
@@ -10079,7 +10079,7 @@
   (symbol (lib_id "power:+3V3") (at 349.25 48.26 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 75357474-8c5c-4084-addc-07471762d850)
-    (property "Reference" "#PWR014" (at 353.06 48.26 0)
+    (property "Reference" "#PWR07" (at 353.06 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 345.44 48.26 90)
@@ -10093,9 +10093,9 @@
     )
     (pin "1" (uuid f7eeea62-1fc1-4eda-8a42-e681295fdf1a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -10104,7 +10104,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 500.38 381 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76479f3f-a559-4c6a-b7df-b458ad859260)
-    (property "Reference" "D69" (at 502.92 379.73 90)
+    (property "Reference" "D68" (at 502.92 379.73 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 502.92 382.27 90)
@@ -10125,9 +10125,9 @@
     (pin "1" (uuid 11886ec7-53c1-4c72-8346-db7364c410d6))
     (pin "2" (uuid d0b4aea9-ba74-44c9-b938-81e25dd6a6a4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D69") (unit 1)
+          (reference "D68") (unit 1)
         )
       )
     )
@@ -10142,7 +10142,7 @@
     (property "Value" "Switch w/LED" (at 210.82 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 215.9 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 215.9 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 218.44 387.35 90)
@@ -10155,7 +10155,7 @@
     (pin "5" (uuid 21cd8c86-935f-4140-b5a3-063af5dee99d))
     (pin "6" (uuid 5d0910e4-a646-4875-bc34-ef513054a2dd))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW59") (unit 1)
         )
@@ -10166,13 +10166,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 690.88 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 76c49574-6a2a-4a50-b6b3-e2bcb99bb277)
-    (property "Reference" "SW19" (at 679.45 248.92 0)
+    (property "Reference" "SW18" (at 679.45 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 680.72 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 685.8 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 685.8 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 688.34 254 90)
@@ -10185,9 +10185,9 @@
     (pin "5" (uuid 54054964-49d3-41d8-996e-cc32f40c1137))
     (pin "6" (uuid 6f654b84-a941-4bad-8263-7c08dea18321))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW19") (unit 1)
+          (reference "SW18") (unit 1)
         )
       )
     )
@@ -10202,7 +10202,7 @@
     (property "Value" "Switch w/LED" (at 541.02 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 546.1 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 546.1 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 548.64 476.25 90)
@@ -10215,7 +10215,7 @@
     (pin "5" (uuid 915fa5dd-1ae4-4252-b68f-59d27f963d18))
     (pin "6" (uuid 255b1059-4b74-4cb2-bec6-624ae309fb8c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW102") (unit 1)
         )
@@ -10232,7 +10232,7 @@
     (property "Value" "Switch w/LED" (at 464.82 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 469.9 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 469.9 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 472.44 342.9 90)
@@ -10245,7 +10245,7 @@
     (pin "5" (uuid 6fe66e3f-c676-426e-bfd2-f8361d425f4b))
     (pin "6" (uuid 71e4e1a5-4337-4f72-930b-470b8d950a8a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW49") (unit 1)
         )
@@ -10256,7 +10256,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 368.3 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 799d2073-5a8b-4173-b16c-5448762715a4)
-    (property "Reference" "C8" (at 372.11 115.951 0)
+    (property "Reference" "C7" (at 372.11 115.951 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100uF" (at 372.11 118.491 0)
@@ -10271,9 +10271,9 @@
     (pin "1" (uuid e3378d71-d800-4f9a-844e-73ecd2577ddd))
     (pin "2" (uuid 3add18f3-d67a-4775-99ca-6ec920bcfb2f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "C8") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -10303,7 +10303,7 @@
     (pin "1" (uuid 4812e2ed-17c9-499a-bfcf-908d33a791fe))
     (pin "2" (uuid 4a9147f0-8953-4355-9476-e59d5d80c7a1))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D53") (unit 1)
         )
@@ -10327,7 +10327,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H4") (unit 1)
         )
@@ -10352,7 +10352,7 @@
     )
     (pin "1" (uuid 5b279a25-851f-4fa2-b758-929ee32b28b1))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR019") (unit 1)
         )
@@ -10377,7 +10377,7 @@
     )
     (pin "1" (uuid 7851835e-c994-46fc-b7b4-80b96307cd07))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR018") (unit 1)
         )
@@ -10388,7 +10388,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 500.38 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7c15ac66-aef1-4f66-9b34-88d634897fb2)
-    (property "Reference" "D12" (at 502.92 246.38 90)
+    (property "Reference" "D11" (at 502.92 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 502.92 248.92 90)
@@ -10409,9 +10409,9 @@
     (pin "1" (uuid e944c7c7-17c2-4a11-a130-4b6a3534250c))
     (pin "2" (uuid e87396a8-0be1-4907-8371-b7562593bbc0))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D12") (unit 1)
+          (reference "D11") (unit 1)
         )
       )
     )
@@ -10420,7 +10420,7 @@
   (symbol (lib_id "power:GND") (at 248.92 46.99 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7cb1c557-69ac-4c32-a65a-494ce4f8e3e6)
-    (property "Reference" "#PWR011" (at 242.57 46.99 0)
+    (property "Reference" "#PWR05" (at 242.57 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 245.11 46.99 90)
@@ -10434,9 +10434,9 @@
     )
     (pin "1" (uuid 2edb1296-a97b-466a-8dfc-641e304209e4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -10451,7 +10451,7 @@
     (property "Value" "Switch w/LED" (at 464.82 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 469.9 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 469.9 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 472.44 431.8 90)
@@ -10464,7 +10464,7 @@
     (pin "5" (uuid d52da265-9063-4d36-9eb4-708c489ec525))
     (pin "6" (uuid 7a75b373-db16-4b7e-b499-577cd1e4153e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW85") (unit 1)
         )
@@ -10496,7 +10496,7 @@
     (pin "1" (uuid 66a89cd9-d95f-4363-923e-3255489c399c))
     (pin "2" (uuid f2210f2b-71f9-468a-9571-37ae59f935a9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D51") (unit 1)
         )
@@ -10528,7 +10528,7 @@
     (pin "1" (uuid 0b1bc585-29e4-4424-8a8e-19b7ed4ed3e9))
     (pin "2" (uuid 25f723f2-e9f0-48e5-8c22-b82e863258fe))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D76") (unit 1)
         )
@@ -10560,7 +10560,7 @@
     (pin "1" (uuid 053ca37b-2bb7-4ece-83de-2607835199ce))
     (pin "2" (uuid 08f343d1-9133-4b8b-a0c6-55f9b44d3c00))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D26") (unit 1)
         )
@@ -10571,13 +10571,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 398.78 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7f4e0afe-4345-4b0e-81c2-ef4e109104ba)
-    (property "Reference" "SW8" (at 387.35 248.92 0)
+    (property "Reference" "SW7" (at 387.35 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 388.62 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 393.7 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 393.7 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 396.24 254 90)
@@ -10590,9 +10590,9 @@
     (pin "5" (uuid 479b6015-04ef-4562-808c-b4a0240855f2))
     (pin "6" (uuid 8fd0f53d-b830-4123-a57a-cffa08c3719c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW8") (unit 1)
+          (reference "SW7") (unit 1)
         )
       )
     )
@@ -10607,7 +10607,7 @@
     (property "Value" "Switch w/LED" (at 414.02 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 419.1 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 419.1 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 421.64 298.45 90)
@@ -10620,7 +10620,7 @@
     (pin "5" (uuid 0d50cb55-2971-4d0f-a58d-9232d3492a37))
     (pin "6" (uuid e1a24a61-970c-489a-87f8-30ac474f6b6d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW28") (unit 1)
         )
@@ -10652,7 +10652,7 @@
     (pin "1" (uuid 8b20745c-188d-460d-a429-ef9558f7d45b))
     (pin "2" (uuid 6182dcd3-6e0f-48b8-bc67-deb9848fda5e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D20") (unit 1)
         )
@@ -10663,7 +10663,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 347.98 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 81306d86-73d5-45db-8891-bb3b473556b6)
-    (property "Reference" "D6" (at 350.52 246.38 90)
+    (property "Reference" "D5" (at 350.52 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 350.52 248.92 90)
@@ -10684,9 +10684,9 @@
     (pin "1" (uuid 7b2aaad8-b5df-42d1-98e1-57503e66b239))
     (pin "2" (uuid 50516168-55eb-4a93-a6dc-57d3d6dc915d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D6") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -10701,7 +10701,7 @@
     (property "Value" "Switch w/LED" (at 566.42 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 571.5 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 571.5 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 574.04 476.25 90)
@@ -10714,7 +10714,7 @@
     (pin "5" (uuid 4c6bc00b-3997-4734-b6c1-e2a0fdf2caca))
     (pin "6" (uuid 230e130b-5f1a-4e07-bd6e-7d493575d4cf))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW103") (unit 1)
         )
@@ -10731,7 +10731,7 @@
     (property "Value" "Switch w/LED" (at 490.22 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 495.3 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 495.3 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 497.84 431.8 90)
@@ -10744,7 +10744,7 @@
     (pin "5" (uuid 865d3896-84cf-466b-b535-268e213a6dda))
     (pin "6" (uuid a1783416-cb3f-4a6d-9b78-f2cc35765df3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW86") (unit 1)
         )
@@ -10776,7 +10776,7 @@
     (pin "1" (uuid 0f3c196d-2a9b-494e-a083-c1fa55ada836))
     (pin "2" (uuid 1314af8a-88ea-4a02-b7ec-ce8215b1e67a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D38") (unit 1)
         )
@@ -10787,13 +10787,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 347.98 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83729cd2-e8b0-4a19-8159-a579e61acee4)
-    (property "Reference" "SW63" (at 336.55 382.27 0)
+    (property "Reference" "SW62" (at 336.55 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 337.82 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 342.9 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 342.9 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 345.44 387.35 90)
@@ -10806,9 +10806,9 @@
     (pin "5" (uuid b47a8b48-a39c-4d55-b097-8040b918a5f5))
     (pin "6" (uuid 0eeb3d0c-6d95-41ff-9907-8a6d4ee8c243))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW63") (unit 1)
+          (reference "SW62") (unit 1)
         )
       )
     )
@@ -10817,13 +10817,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 474.98 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 84581395-81ed-4ba5-887e-94e7841a06cb)
-    (property "Reference" "SW11" (at 463.55 248.92 0)
+    (property "Reference" "SW10" (at 463.55 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 464.82 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 469.9 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 469.9 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 472.44 254 90)
@@ -10836,9 +10836,9 @@
     (pin "5" (uuid 78a16bec-8398-44c0-8532-cbc0fef7f525))
     (pin "6" (uuid 65bac79b-4f86-4edf-a2a7-adf54b217b0c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW11") (unit 1)
+          (reference "SW10") (unit 1)
         )
       )
     )
@@ -10853,7 +10853,7 @@
     (property "Value" "Switch w/LED" (at 464.82 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 469.9 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 469.9 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 472.44 298.45 90)
@@ -10866,7 +10866,7 @@
     (pin "5" (uuid 82116566-24a7-439f-afa2-0aecd9d612ee))
     (pin "6" (uuid aa8ed154-087d-4195-bf1d-20d0e0607250))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW30") (unit 1)
         )
@@ -10883,7 +10883,7 @@
     (property "Value" "Switch w/LED" (at 274.32 476.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 279.4 481.33 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 279.4 481.33 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 281.94 478.79 90)
@@ -10896,7 +10896,7 @@
     (pin "5" (uuid 0ebc36c3-4748-451b-af58-d6b9f5fcd2c4))
     (pin "6" (uuid 83afee8f-ddbc-46bb-a3f5-072054fc9552))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW106") (unit 1)
         )
@@ -10920,7 +10920,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H7") (unit 1)
         )
@@ -10952,7 +10952,7 @@
     (pin "1" (uuid b6e8cc8e-5641-4e8a-b017-022ec0d2e9ab))
     (pin "2" (uuid 9a3809a2-d9ad-4542-9d97-7bcdb9a8cb6d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D50") (unit 1)
         )
@@ -10984,7 +10984,7 @@
     (pin "1" (uuid eabf26e9-d326-49ed-9a65-440747985da3))
     (pin "2" (uuid af43aa49-b0ae-4155-8cd7-a31424d7e457))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D104") (unit 1)
         )
@@ -11014,7 +11014,7 @@
     (pin "5" (uuid 68b651ae-0590-41f4-99f6-1131680e26e8))
     (pin "6" (uuid 44b238e2-ecb6-4e7a-97e5-7f5063e0c0eb))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "U1") (unit 1)
         )
@@ -11031,7 +11031,7 @@
     (property "Value" "Switch w/LED" (at 591.82 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 596.9 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 596.9 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 599.44 431.8 90)
@@ -11044,7 +11044,7 @@
     (pin "5" (uuid bd9a3de7-59f6-466d-ab6f-91ae2d890203))
     (pin "6" (uuid 21951e4d-50ac-449d-857d-0c46378592d0))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW90") (unit 1)
         )
@@ -11055,7 +11055,7 @@
   (symbol (lib_id "power:GND") (at 160.02 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 87171203-98c2-47b0-a761-ad9e0f7a26d0)
-    (property "Reference" "#PWR07" (at 160.02 77.47 0)
+    (property "Reference" "#PWR010" (at 160.02 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 160.02 76.2 0)
@@ -11069,9 +11069,9 @@
     )
     (pin "1" (uuid 850410d2-35f3-419c-9a75-c62535488ecc))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -11086,7 +11086,7 @@
     (property "Value" "Switch w/LED" (at 591.82 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 596.9 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 596.9 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 599.44 476.25 90)
@@ -11099,7 +11099,7 @@
     (pin "5" (uuid 80a6d1c2-ea33-4974-a6e0-d4e6d17f7e4b))
     (pin "6" (uuid ee0b8eec-8d2c-47bb-9948-732cc84d9606))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW104") (unit 1)
         )
@@ -11131,7 +11131,7 @@
     (pin "1" (uuid cf1bc1e7-7c9c-4853-96fb-24933e89f19e))
     (pin "2" (uuid 02e36591-f93c-4dd3-8170-61cf40b2cbca))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D96") (unit 1)
         )
@@ -11142,7 +11142,7 @@
   (symbol (lib_id "power:GND") (at 349.25 45.72 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8ce32ffd-ddac-4f76-b799-00057fc8b5fb)
-    (property "Reference" "#PWR013" (at 342.9 45.72 0)
+    (property "Reference" "#PWR04" (at 342.9 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 345.186 45.72 90)
@@ -11156,9 +11156,9 @@
     )
     (pin "1" (uuid 4a908518-a594-4e2a-b471-8c2e0ef7a524))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -11167,13 +11167,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 322.58 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8d5b5e42-59d2-4dbb-ba8b-785b987a5b1a)
-    (property "Reference" "SW5" (at 311.15 248.92 0)
+    (property "Reference" "SW4" (at 311.15 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 312.42 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 317.5 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 317.5 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 320.04 254 90)
@@ -11186,9 +11186,9 @@
     (pin "5" (uuid 5c1cab63-182d-42f5-b0a5-fe364d0eb098))
     (pin "6" (uuid 7cff0df6-24f5-4fed-bd2a-67f22422d1cc))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW5") (unit 1)
+          (reference "SW4") (unit 1)
         )
       )
     )
@@ -11197,13 +11197,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 373.38 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8dd3f0ab-04ce-48d9-83e9-53adf5515507)
-    (property "Reference" "SW7" (at 361.95 248.92 0)
+    (property "Reference" "SW6" (at 361.95 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 363.22 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 368.3 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 368.3 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 370.84 254 90)
@@ -11216,9 +11216,9 @@
     (pin "5" (uuid 9644cadf-3186-44aa-b20b-4f5056283c6f))
     (pin "6" (uuid 449b6c52-fe6c-44f7-afac-14d77c9b579b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW7") (unit 1)
+          (reference "SW6") (unit 1)
         )
       )
     )
@@ -11227,13 +11227,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 424.18 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f63ce94-09e0-47d5-bdef-4f5ad4482b77)
-    (property "Reference" "SW66" (at 412.75 382.27 0)
+    (property "Reference" "SW65" (at 412.75 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 414.02 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 419.1 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 419.1 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 421.64 387.35 90)
@@ -11246,9 +11246,9 @@
     (pin "5" (uuid 88707210-bcb1-4652-bb54-8344cf4b72ae))
     (pin "6" (uuid f886d6f8-ed44-4932-b9fd-4b51573f3d55))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW66") (unit 1)
+          (reference "SW65") (unit 1)
         )
       )
     )
@@ -11257,7 +11257,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 383.54 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f885b85-ef33-4f40-b8dd-2b60cb052ada)
-    (property "Reference" "C9" (at 387.35 115.951 0)
+    (property "Reference" "C8" (at 387.35 115.951 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100uF" (at 387.35 118.491 0)
@@ -11272,9 +11272,9 @@
     (pin "1" (uuid 20afb813-5feb-4de6-a4dc-9aa7d9f1a65e))
     (pin "2" (uuid c6147e87-f2d1-420a-a645-8a719b231efa))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "C9") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -11289,7 +11289,7 @@
     (property "Value" "Switch w/LED" (at 660.4 478.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 665.48 483.87 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 665.48 483.87 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 668.02 481.33 90)
@@ -11302,7 +11302,7 @@
     (pin "5" (uuid 1fe41b67-09da-43a1-9e57-5ab62e44ba87))
     (pin "6" (uuid 44dabf97-2acf-438b-8293-d7975fb2d334))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW109") (unit 1)
         )
@@ -11313,7 +11313,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 322.58 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 912d0599-c93c-41c5-9e65-2f35e47496e4)
-    (property "Reference" "D62" (at 325.12 379.73 90)
+    (property "Reference" "D61" (at 325.12 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 325.12 382.27 90)
@@ -11334,9 +11334,9 @@
     (pin "1" (uuid f4154a55-bcb9-462a-9790-cb504d2bdfc3))
     (pin "2" (uuid e8a84e93-f518-4dca-8acd-c462f8d69d77))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D62") (unit 1)
+          (reference "D61") (unit 1)
         )
       )
     )
@@ -11351,7 +11351,7 @@
     (property "Value" "Switch w/LED" (at 566.42 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 571.5 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 571.5 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 574.04 298.45 90)
@@ -11364,7 +11364,7 @@
     (pin "5" (uuid f0241b08-23d6-4cc1-b645-37354c8e80be))
     (pin "6" (uuid e1bc27c3-ce24-4da5-a35f-4b1292ccce54))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW34") (unit 1)
         )
@@ -11375,7 +11375,7 @@
   (symbol (lib_id "power:GND") (at 128.27 113.03 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 97a46e77-e868-47ac-a13e-bee625c10e95)
-    (property "Reference" "#PWR05" (at 134.62 113.03 0)
+    (property "Reference" "#PWR012" (at 134.62 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 132.08 113.03 90)
@@ -11389,9 +11389,9 @@
     )
     (pin "1" (uuid 4c19d89b-1b7b-4ea6-830b-98a5e6bdaf4d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -11406,7 +11406,7 @@
     (property "Value" "Switch w/LED" (at 635 478.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 640.08 483.87 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 640.08 483.87 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 642.62 481.33 90)
@@ -11419,7 +11419,7 @@
     (pin "5" (uuid 58995a7e-c223-4d07-af59-a3e0cfb6ed01))
     (pin "6" (uuid 642511f7-e45e-4495-9bed-d1fd70f51c6e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW108") (unit 1)
         )
@@ -11451,7 +11451,7 @@
     (pin "1" (uuid db8139b4-e2b8-437b-b8a9-932a9a92c7b2))
     (pin "2" (uuid 3f02f63c-bc13-45b0-bb43-7918052d0851))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D106") (unit 1)
         )
@@ -11462,7 +11462,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 633.73 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9b07c88d-00a7-4e19-9225-79de7c3ce410)
-    (property "Reference" "D74" (at 636.27 379.73 90)
+    (property "Reference" "D73" (at 636.27 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 636.27 382.27 90)
@@ -11483,9 +11483,9 @@
     (pin "1" (uuid f2224569-800d-4b0e-8182-947958801ad5))
     (pin "2" (uuid 6563c710-0d00-4031-be24-a3c4966864e8))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D74") (unit 1)
+          (reference "D73") (unit 1)
         )
       )
     )
@@ -11500,7 +11500,7 @@
     (property "Value" "Switch w/LED" (at 236.22 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 241.3 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 241.3 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 243.84 342.9 90)
@@ -11513,7 +11513,7 @@
     (pin "5" (uuid 501d4dbd-9a9a-415b-ae40-f1c775e8e245))
     (pin "6" (uuid edbc0ff4-a173-443e-959c-9f6cbfacc412))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW42") (unit 1)
         )
@@ -11524,7 +11524,7 @@
   (symbol (lib_id "power:GND") (at 297.18 116.84 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9bca93d2-8d9b-46f3-9470-60117b638d1a)
-    (property "Reference" "#PWR016" (at 303.53 116.84 0)
+    (property "Reference" "#PWR015" (at 303.53 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 300.99 116.84 90)
@@ -11538,9 +11538,9 @@
     )
     (pin "1" (uuid 65b5eafb-e5a8-4099-a72c-4a1d973e31c5))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -11570,7 +11570,7 @@
     (pin "1" (uuid 058f046c-78ae-467f-b7ba-52eaed2991ca))
     (pin "2" (uuid dd5c26b6-7725-487f-a918-0482a90bb671))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D100") (unit 1)
         )
@@ -11594,7 +11594,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H9") (unit 1)
         )
@@ -11626,7 +11626,7 @@
     (pin "1" (uuid adedc2bd-6745-4bba-a0c4-b72bd33d605d))
     (pin "2" (uuid 0db8a502-2e58-4326-ac53-e508b5adc416))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D44") (unit 1)
         )
@@ -11658,7 +11658,7 @@
     (pin "1" (uuid 334dfdee-99e9-4966-b95a-68e3a0adee7c))
     (pin "2" (uuid 1c394ee3-6765-4cd2-92be-95d6a97a860a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D37") (unit 1)
         )
@@ -11690,7 +11690,7 @@
     (pin "1" (uuid 663ed2c7-240e-4d7a-b864-aa27723918ff))
     (pin "2" (uuid dc86dd93-b95b-40e9-a142-52a7a3196acb))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D89") (unit 1)
         )
@@ -11701,13 +11701,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 601.98 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a0795adf-1d8f-4029-8b7a-fa57beaf0801)
-    (property "Reference" "SW16" (at 590.55 248.92 0)
+    (property "Reference" "SW15" (at 590.55 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 591.82 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 596.9 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 596.9 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 599.44 254 90)
@@ -11720,9 +11720,9 @@
     (pin "5" (uuid 46e91cde-cc96-47ae-940a-7c377236c721))
     (pin "6" (uuid 1fe5b444-24f4-4ef7-bf92-b9961b273e88))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW16") (unit 1)
+          (reference "SW15") (unit 1)
         )
       )
     )
@@ -11737,7 +11737,7 @@
     (property "Value" "Switch w/LED" (at 337.82 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 342.9 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 342.9 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 345.44 298.45 90)
@@ -11750,7 +11750,7 @@
     (pin "5" (uuid c1c5598f-4d48-451e-93c0-a221dcfbf028))
     (pin "6" (uuid e0340fb0-bfd1-44d1-9897-71d72874771b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW25") (unit 1)
         )
@@ -11782,7 +11782,7 @@
     (pin "1" (uuid 4561f556-18d3-4715-acb3-6e6b20f2e34e))
     (pin "2" (uuid a2a6f6df-845a-4a26-8e74-5b5ed196a453))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D82") (unit 1)
         )
@@ -11799,7 +11799,7 @@
     (property "Value" "Switch w/LED" (at 439.42 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 444.5 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 444.5 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 447.04 298.45 90)
@@ -11812,7 +11812,7 @@
     (pin "5" (uuid d7ef75ce-d257-4839-b1e5-b1c061ffe076))
     (pin "6" (uuid 3654fe03-738d-40bb-b31c-c71de079966c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW29") (unit 1)
         )
@@ -11844,7 +11844,7 @@
     (pin "1" (uuid 1279853e-973e-4a74-ba32-acf1f5a1bd33))
     (pin "2" (uuid 4174d2fd-8c7d-4e93-aa2d-748a916e2082))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D85") (unit 1)
         )
@@ -11870,7 +11870,7 @@
     (pin "1" (uuid d9eb03a1-ea7c-4ffe-b78b-bf7b6e26f77d))
     (pin "2" (uuid 9a46957a-19ae-4154-b5b1-338a83b3e5fc))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "R2") (unit 1)
         )
@@ -11896,7 +11896,7 @@
     (pin "1" (uuid 78dc5d93-9aff-4799-8df0-b413c0b23932))
     (pin "2" (uuid bae8788f-d08d-4a29-87b0-94206f0bf1cf))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "C1") (unit 1)
         )
@@ -11907,13 +11907,13 @@
   (symbol (lib_id "Device:RotaryEncoder_Switch") (at 163.83 254 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a6cd65f0-a4bd-4fc2-b050-6330569295f2)
-    (property "Reference" "SW1" (at 163.83 245.11 0)
+    (property "Reference" "SW19" (at 163.83 245.11 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RotaryEncoder_Switch" (at 168.91 247.65 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Greenwood:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_Centred" (at 167.64 258.064 0)
+    (property "Footprint" "KeebLib:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm_Centred" (at 167.64 258.064 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 163.83 260.604 0)
@@ -11925,9 +11925,9 @@
     (pin "S1" (uuid c7c42948-d4be-4375-812f-ebec40484c53))
     (pin "S2" (uuid d78bdfe1-9cef-4f95-b85f-0e9a9f67cb12))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW1") (unit 1)
+          (reference "SW19") (unit 1)
         )
       )
     )
@@ -11957,7 +11957,7 @@
     (pin "1" (uuid 78383f17-db26-4609-9fb8-c65c6e1ef5f4))
     (pin "2" (uuid 7dd8b0dd-1613-4b37-9fb1-07fc6c564b9a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D30") (unit 1)
         )
@@ -11989,7 +11989,7 @@
     (pin "1" (uuid 218e3f7f-f9df-4f17-9f9e-02e3936e2d03))
     (pin "2" (uuid a6bde2b4-7fd5-4c6d-a72a-8c860d57e739))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D97") (unit 1)
         )
@@ -12021,7 +12021,7 @@
     (pin "1" (uuid 8beedf74-a3b2-412c-9d51-12391902d985))
     (pin "2" (uuid b071966f-e3a0-47b9-9ea4-ef2896f63890))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D49") (unit 1)
         )
@@ -12032,13 +12032,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 551.18 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a89f940e-2a56-4c55-8c08-35faaa44bf46)
-    (property "Reference" "SW14" (at 539.75 248.92 0)
+    (property "Reference" "SW13" (at 539.75 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 541.02 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 546.1 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 546.1 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 548.64 254 90)
@@ -12051,9 +12051,9 @@
     (pin "5" (uuid 21fd34b8-44ba-43f2-b689-806e2090ff8a))
     (pin "6" (uuid eba4d0f3-38fe-4f0d-9d69-ebceee017b67))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW14") (unit 1)
+          (reference "SW13") (unit 1)
         )
       )
     )
@@ -12068,7 +12068,7 @@
     (property "Value" "Switch w/LED" (at 541.02 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 546.1 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 546.1 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 548.64 298.45 90)
@@ -12081,7 +12081,7 @@
     (pin "5" (uuid 514a8803-4739-4a3c-ada4-aa7c155830c9))
     (pin "6" (uuid 0228bf26-dab6-40a5-a737-ba7b6aa1ce78))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW33") (unit 1)
         )
@@ -12092,13 +12092,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 661.67 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aac0a730-f5bc-455d-be58-8e04df5cc8ea)
-    (property "Reference" "SW18" (at 650.24 248.92 0)
+    (property "Reference" "SW17" (at 650.24 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 651.51 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 656.59 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 656.59 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 659.13 254 90)
@@ -12111,9 +12111,9 @@
     (pin "5" (uuid 7c0fc288-ac0a-406c-8bf5-287022719c29))
     (pin "6" (uuid d67cf356-23cd-4375-9758-c878ff8f21f6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW18") (unit 1)
+          (reference "SW17") (unit 1)
         )
       )
     )
@@ -12122,13 +12122,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 246.38 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab509c9c-865a-49cd-9df6-845f5b755688)
-    (property "Reference" "SW4" (at 234.95 248.92 0)
+    (property "Reference" "SW3" (at 234.95 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 236.22 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 241.3 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 241.3 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 243.84 254 90)
@@ -12141,9 +12141,9 @@
     (pin "5" (uuid b3bfe9ab-7eae-4923-8dbe-ec8830a5320e))
     (pin "6" (uuid f56c2f57-6384-4699-a302-1861bd3e4a46))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW4") (unit 1)
+          (reference "SW3") (unit 1)
         )
       )
     )
@@ -12152,13 +12152,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 373.38 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid abe2b282-191e-4d8d-95f9-61afb0bf3de2)
-    (property "Reference" "SW64" (at 361.95 382.27 0)
+    (property "Reference" "SW63" (at 361.95 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 363.22 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 368.3 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 368.3 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 370.84 387.35 90)
@@ -12171,9 +12171,9 @@
     (pin "5" (uuid 9ba4fe4d-674d-43a1-bbf8-fec80dbc9a4a))
     (pin "6" (uuid 164b3e5f-c853-4092-a038-e30eb0075430))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW64") (unit 1)
+          (reference "SW63") (unit 1)
         )
       )
     )
@@ -12203,7 +12203,7 @@
     (pin "1" (uuid c028fb86-5f0c-4989-a620-bad63ca9e51e))
     (pin "2" (uuid 2c4de524-8363-4e5f-a902-2f45bbddddb3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D58") (unit 1)
         )
@@ -12227,7 +12227,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H2") (unit 1)
         )
@@ -12244,7 +12244,7 @@
     (property "Value" "Switch w/LED" (at 515.62 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 520.7 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 520.7 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 523.24 298.45 90)
@@ -12257,7 +12257,7 @@
     (pin "5" (uuid ac23c00f-7e75-4ad4-b6ad-c313b198c8d5))
     (pin "6" (uuid 5b635b20-c851-4b55-bb37-1900d4611ba3))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW32") (unit 1)
         )
@@ -12289,7 +12289,7 @@
     (pin "1" (uuid 098a9295-db0a-41ec-8aa1-721464382f56))
     (pin "2" (uuid 0d5890a6-aab2-45a8-ace0-49b959ffe575))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D24") (unit 1)
         )
@@ -12300,13 +12300,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 551.18 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b42917f3-7d66-4e2a-b39f-828142175049)
-    (property "Reference" "SW71" (at 539.75 382.27 0)
+    (property "Reference" "SW70" (at 539.75 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 541.02 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 546.1 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 546.1 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 548.64 387.35 90)
@@ -12319,9 +12319,9 @@
     (pin "5" (uuid 3178d402-8c80-4695-b433-dd2664dc971c))
     (pin "6" (uuid dec558b2-82b7-4109-862a-a4ac830f3599))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW71") (unit 1)
+          (reference "SW70") (unit 1)
         )
       )
     )
@@ -12351,7 +12351,7 @@
     (pin "1" (uuid e9c6ea8d-f3f9-4445-aace-db8579d8756b))
     (pin "2" (uuid d3069a56-1d1a-4542-9649-3362a87e80a6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D45") (unit 1)
         )
@@ -12368,7 +12368,7 @@
     (property "Value" "Switch w/LED" (at 414.02 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 419.1 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 419.1 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 421.64 342.9 90)
@@ -12381,7 +12381,7 @@
     (pin "5" (uuid 3374eee8-389e-4788-8676-a485b6e708f8))
     (pin "6" (uuid f74457ad-8652-457d-9970-ea9a89ff68c5))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW47") (unit 1)
         )
@@ -12413,7 +12413,7 @@
     (pin "1" (uuid 96b843dc-5c70-4564-bf0d-a376d3cef1e4))
     (pin "2" (uuid 7bcf84d3-588a-40c9-a213-ea0b240ec584))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D27") (unit 1)
         )
@@ -12424,7 +12424,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 398.78 381 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b86f4451-9306-4325-9bb7-3cc44e215dcf)
-    (property "Reference" "D65" (at 401.32 379.73 90)
+    (property "Reference" "D64" (at 401.32 379.73 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 401.32 382.27 90)
@@ -12445,9 +12445,9 @@
     (pin "1" (uuid 826a3748-986a-46a7-9827-4f7d628a99b3))
     (pin "2" (uuid e974acd4-99b2-47a2-b2d3-b039a42766c6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D65") (unit 1)
+          (reference "D64") (unit 1)
         )
       )
     )
@@ -12456,7 +12456,7 @@
   (symbol (lib_id "power:VCC") (at 140.97 115.57 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b8cb3327-c257-4f06-96cb-2066911ccd17)
-    (property "Reference" "#PWR09" (at 140.97 119.38 0)
+    (property "Reference" "#PWR013" (at 140.97 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 140.97 110.49 0)
@@ -12470,9 +12470,9 @@
     )
     (pin "1" (uuid 01f2a3c8-daca-45da-b9ba-bca77129d009))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -12481,7 +12481,7 @@
   (symbol (lib_id "power:GND") (at 120.65 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ba4e03fa-332f-43b0-86f3-5a362b08299f)
-    (property "Reference" "#PWR02" (at 120.65 50.8 0)
+    (property "Reference" "#PWR03" (at 120.65 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 120.65 49.53 0)
@@ -12495,9 +12495,9 @@
     )
     (pin "1" (uuid a24e10f5-746b-4c3a-a511-8b4f6cef34fc))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -12512,7 +12512,7 @@
     (property "Value" "Switch w/LED" (at 363.22 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1.5u" (at 368.3 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1.5u" (at 368.3 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 370.84 476.25 90)
@@ -12525,7 +12525,7 @@
     (pin "5" (uuid eb2a7ce7-c496-4bb8-9eaf-d2e27183fd0f))
     (pin "6" (uuid 91d3efd4-761e-44eb-b5a1-9d7d183f4716))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW98") (unit 1)
         )
@@ -12542,7 +12542,7 @@
     (property "Value" "Switch w/LED" (at 685.8 478.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 690.88 483.87 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 690.88 483.87 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 693.42 481.33 90)
@@ -12555,7 +12555,7 @@
     (pin "5" (uuid 98670554-fc20-4c64-ae53-6d6c3d15b1c6))
     (pin "6" (uuid a3acffc4-6daa-4949-807f-116f1cb34c52))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW110") (unit 1)
         )
@@ -12572,7 +12572,7 @@
     (property "Value" "Switch w/LED" (at 617.22 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1.75u" (at 622.3 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1.75u" (at 622.3 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 624.84 431.8 90)
@@ -12585,7 +12585,7 @@
     (pin "5" (uuid d5dee639-22e4-4e84-83c3-02b57b3642e8))
     (pin "6" (uuid d87d2d10-ceff-4fad-8e87-6308fd39cfdd))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW91") (unit 1)
         )
@@ -12596,7 +12596,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 347.98 381 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf3277bb-461b-4a60-beb4-360c4be0f47c)
-    (property "Reference" "D63" (at 350.52 379.73 90)
+    (property "Reference" "D62" (at 350.52 379.73 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 350.52 382.27 90)
@@ -12617,9 +12617,9 @@
     (pin "1" (uuid d22cc5c9-8dd4-464e-837a-83c31651d565))
     (pin "2" (uuid 3a247fe5-09ef-4608-99a9-c1c293066cef))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D63") (unit 1)
+          (reference "D62") (unit 1)
         )
       )
     )
@@ -12628,7 +12628,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 601.98 381 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c0d2e19d-6031-4539-8e0d-573ee9b1a8d4)
-    (property "Reference" "D73" (at 604.52 379.73 90)
+    (property "Reference" "D72" (at 604.52 379.73 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 604.52 382.27 90)
@@ -12649,9 +12649,9 @@
     (pin "1" (uuid 59065f17-4028-497c-a2e3-f8826e72389d))
     (pin "2" (uuid d4df5ccd-e8fa-4b14-ad5b-3828d84a236a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D73") (unit 1)
+          (reference "D72") (unit 1)
         )
       )
     )
@@ -12680,7 +12680,7 @@
     (pin "6" (uuid dc60ebb8-9bea-4fbf-a6e9-564c8b7d51aa))
     (pin "7" (uuid 1ef0e1c8-5913-447e-ae40-4261cf10baf8))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "OLED1") (unit 1)
         )
@@ -12697,7 +12697,7 @@
     (property "Value" "Switch w/LED" (at 464.82 473.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1.25u" (at 469.9 478.79 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1.25u" (at 469.9 478.79 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 472.44 476.25 90)
@@ -12710,7 +12710,7 @@
     (pin "5" (uuid 96531502-75da-4201-a558-5e5cdf240717))
     (pin "6" (uuid 1658f1aa-63ef-462d-8a1b-8697432a8ca6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW100") (unit 1)
         )
@@ -12734,7 +12734,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H1") (unit 1)
         )
@@ -12766,7 +12766,7 @@
     (pin "1" (uuid 79fa9c7c-7cda-4448-8898-0309c3395925))
     (pin "2" (uuid dabc4be2-711f-4c1d-8e87-7bb57c20916f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D31") (unit 1)
         )
@@ -12777,7 +12777,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 152.4 252.73 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c6d8acb3-356d-4404-adb0-5ac8e31d7298)
-    (property "Reference" "D1" (at 144.78 251.46 90)
+    (property "Reference" "D19" (at 144.78 251.46 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 144.78 254 90)
@@ -12798,9 +12798,9 @@
     (pin "1" (uuid 33a79623-45e7-44a4-bcd0-f9b82ec1b3d7))
     (pin "2" (uuid 6fca021e-97fd-4e35-9a6e-ef95182bfa7a))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D1") (unit 1)
+          (reference "D19") (unit 1)
         )
       )
     )
@@ -12809,7 +12809,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 712.47 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c6e29b5b-8c99-464e-b059-331216421cb2)
-    (property "Reference" "D75" (at 715.01 379.73 90)
+    (property "Reference" "D74" (at 715.01 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 715.01 382.27 90)
@@ -12830,9 +12830,9 @@
     (pin "1" (uuid f5d31f95-760e-45b2-8fdd-1357a4281d51))
     (pin "2" (uuid 4d895141-1f41-427b-b0f8-19b628f07382))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D75") (unit 1)
+          (reference "D74") (unit 1)
         )
       )
     )
@@ -12847,7 +12847,7 @@
     (property "Value" "Switch w/LED" (at 210.82 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 215.9 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 215.9 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 218.44 342.9 90)
@@ -12860,7 +12860,7 @@
     (pin "5" (uuid 17dfa860-2a3d-414d-812a-89abb7c77e81))
     (pin "6" (uuid d21e4e35-dd7b-4786-94f3-540bb7542739))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW41") (unit 1)
         )
@@ -12892,7 +12892,7 @@
     (pin "1" (uuid 6f293458-2fb0-454f-bd6a-28ae7688672b))
     (pin "2" (uuid 07e96714-6602-4389-8126-256d95128d43))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D84") (unit 1)
         )
@@ -12916,7 +12916,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "H3") (unit 1)
         )
@@ -12927,13 +12927,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 500.38 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cbf6f4c9-b1e3-4004-b074-3b9dafea361d)
-    (property "Reference" "SW12" (at 488.95 248.92 0)
+    (property "Reference" "SW11" (at 488.95 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 490.22 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 495.3 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 495.3 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 497.84 254 90)
@@ -12946,9 +12946,9 @@
     (pin "5" (uuid 2e09937b-b06a-4acf-86a4-adbdf7db868a))
     (pin "6" (uuid d34fb4cc-0234-4e5f-865e-88b564b1ef47))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW12") (unit 1)
+          (reference "SW11") (unit 1)
         )
       )
     )
@@ -12957,7 +12957,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 322.58 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc6248e4-e33d-4b27-8527-04652618501c)
-    (property "Reference" "D5" (at 325.12 246.38 90)
+    (property "Reference" "D4" (at 325.12 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 325.12 248.92 90)
@@ -12978,9 +12978,9 @@
     (pin "1" (uuid 588fd1e9-0fe9-451b-9d42-c3d927e50733))
     (pin "2" (uuid f5dd1aa5-1366-4ae1-856a-5e8d4f73b929))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D5") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -12989,7 +12989,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 576.58 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cd707c4e-e21d-4ef5-a73e-0fd5636e9926)
-    (property "Reference" "D15" (at 579.12 246.38 90)
+    (property "Reference" "D14" (at 579.12 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 579.12 248.92 90)
@@ -13010,9 +13010,9 @@
     (pin "1" (uuid 1c4da462-f220-4d5c-a83b-e22e7267bd95))
     (pin "2" (uuid 72790878-f651-434f-b226-a2f75acae91d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D15") (unit 1)
+          (reference "D14") (unit 1)
         )
       )
     )
@@ -13021,7 +13021,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 373.38 381 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cf29c47e-d723-4ded-ac62-cb1d9933d4e8)
-    (property "Reference" "D64" (at 375.92 379.73 90)
+    (property "Reference" "D63" (at 375.92 379.73 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 375.92 382.27 90)
@@ -13042,9 +13042,9 @@
     (pin "1" (uuid 50921164-9fb3-4a51-bf97-d767d362051b))
     (pin "2" (uuid 0d2fd1c5-1072-47bb-8aa9-c3a23e436b83))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D64") (unit 1)
+          (reference "D63") (unit 1)
         )
       )
     )
@@ -13074,7 +13074,7 @@
     (pin "1" (uuid 3435df60-1bb0-4e94-a13f-615d144cfa5b))
     (pin "2" (uuid f265a0dd-fa9b-43aa-9213-25dcfd63a73d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D102") (unit 1)
         )
@@ -13091,7 +13091,7 @@
     (property "Value" "Switch w/LED" (at 566.42 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 571.5 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 571.5 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 574.04 431.8 90)
@@ -13104,7 +13104,7 @@
     (pin "5" (uuid 9318a381-f5d3-47a6-9cb0-c2d63a1181e5))
     (pin "6" (uuid d13e5b6e-40af-4dab-81b2-2b9279e0a33f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW89") (unit 1)
         )
@@ -13115,7 +13115,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 449.58 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d49c922b-8c13-45c3-8ae1-b2b0475f3ad3)
-    (property "Reference" "D10" (at 452.12 246.38 90)
+    (property "Reference" "D9" (at 452.12 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 452.12 248.92 90)
@@ -13136,9 +13136,9 @@
     (pin "1" (uuid 8edc6678-c66b-4840-9711-15f04551cabe))
     (pin "2" (uuid b254691d-217f-4ec9-a696-1de437417930))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D10") (unit 1)
+          (reference "D9") (unit 1)
         )
       )
     )
@@ -13168,7 +13168,7 @@
     (pin "1" (uuid 1ff6f595-c89e-4be2-9270-cb6e351e8fce))
     (pin "2" (uuid 89b70837-e4a9-42a8-946d-dd997c56c72e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D90") (unit 1)
         )
@@ -13193,7 +13193,7 @@
     )
     (pin "1" (uuid 7cd75eb5-0f1f-43d9-9965-b6008a18186e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR021") (unit 1)
         )
@@ -13210,7 +13210,7 @@
     (property "Value" "Switch w/LED" (at 515.62 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 520.7 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 520.7 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 523.24 342.9 90)
@@ -13223,7 +13223,7 @@
     (pin "5" (uuid 15a1e1b0-4961-4dd5-8fd4-9d60fbe35ace))
     (pin "6" (uuid 2a07f5df-7a5c-4192-b1e8-d6920c76694c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW51") (unit 1)
         )
@@ -13234,13 +13234,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 500.38 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d749dc61-df5c-453c-9b50-be324475731d)
-    (property "Reference" "SW69" (at 488.95 382.27 0)
+    (property "Reference" "SW68" (at 488.95 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 490.22 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 495.3 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 495.3 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 497.84 387.35 90)
@@ -13253,9 +13253,9 @@
     (pin "5" (uuid d57e972e-0860-40fe-b467-aa011f45dada))
     (pin "6" (uuid a2824714-54a3-4acd-8158-97ebf463b2e8))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW69") (unit 1)
+          (reference "SW68") (unit 1)
         )
       )
     )
@@ -13270,7 +13270,7 @@
     (property "Value" "Switch w/LED" (at 702.31 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 707.39 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 707.39 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 709.93 298.45 90)
@@ -13283,7 +13283,7 @@
     (pin "5" (uuid 018c3d87-83e6-4bc1-a9b1-6a2f7b64d91a))
     (pin "6" (uuid 38316a2c-74f0-4434-8c5f-be90e3673335))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW38") (unit 1)
         )
@@ -13300,7 +13300,7 @@
     (property "Value" "Switch w/LED" (at 388.62 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 393.7 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 393.7 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 396.24 342.9 90)
@@ -13313,7 +13313,7 @@
     (pin "5" (uuid c83b9b64-cf0e-4e76-922f-6e28f24522bf))
     (pin "6" (uuid a5a86652-d638-4ef5-bfe4-e68aec24dace))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW46") (unit 1)
         )
@@ -13330,7 +13330,7 @@
     (property "Value" "Switch w/LED" (at 388.62 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 393.7 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 393.7 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 396.24 298.45 90)
@@ -13343,7 +13343,7 @@
     (pin "5" (uuid d2b3451b-a9c1-4948-9dc1-e126a59358e6))
     (pin "6" (uuid 3e5f6c30-c6f2-4df8-8124-41724c6227da))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW27") (unit 1)
         )
@@ -13354,7 +13354,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 690.88 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d986cc83-6f8b-4fbd-ba92-1bbdf919aa47)
-    (property "Reference" "D19" (at 697.23 246.38 90)
+    (property "Reference" "D18" (at 697.23 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 698.5 248.92 90)
@@ -13375,9 +13375,9 @@
     (pin "1" (uuid ab35d461-7bb8-4827-8ae0-7deab6cbe02b))
     (pin "2" (uuid dff0881a-9781-435b-b082-d69a90b8f99d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D19") (unit 1)
+          (reference "D18") (unit 1)
         )
       )
     )
@@ -13392,7 +13392,7 @@
     (property "Value" "Switch w/LED" (at 660.4 435.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 665.48 440.69 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 665.48 440.69 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 668.02 438.15 90)
@@ -13405,7 +13405,7 @@
     (pin "5" (uuid 8fc46306-a553-4cfe-b705-9d3bfe46edd4))
     (pin "6" (uuid c994b159-a2e4-4d0c-99f1-f354ec7e4c82))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW94") (unit 1)
         )
@@ -13437,7 +13437,7 @@
     (pin "1" (uuid 6656df7e-f188-47c9-8800-b1b3f18555a8))
     (pin "2" (uuid 68979766-7666-4cbb-b9fb-498e642ac7c9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D81") (unit 1)
         )
@@ -13448,13 +13448,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 449.58 251.46 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dbf524b3-9b40-4301-9b9d-bf24cb51592d)
-    (property "Reference" "SW10" (at 438.15 248.92 0)
+    (property "Reference" "SW9" (at 438.15 248.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 439.42 251.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 444.5 256.54 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 444.5 256.54 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 447.04 254 90)
@@ -13467,9 +13467,9 @@
     (pin "5" (uuid 9486edb7-7762-428f-8352-a8294b925a6c))
     (pin "6" (uuid e21ce5f0-a548-4f92-bf59-287600001d33))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW10") (unit 1)
+          (reference "SW9") (unit 1)
         )
       )
     )
@@ -13492,7 +13492,7 @@
     )
     (pin "1" (uuid 17bf0838-5cab-4d25-ba23-a92bc9c1dfbe))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR023") (unit 1)
         )
@@ -13503,13 +13503,13 @@
   (symbol (lib_id "KeebLib:Switch w/LED") (at 601.98 384.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e0b0c52c-57db-438c-8510-de4989710d66)
-    (property "Reference" "SW73" (at 590.55 382.27 0)
+    (property "Reference" "SW72" (at 590.55 382.27 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Switch w/LED" (at 591.82 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 596.9 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 596.9 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 599.44 387.35 90)
@@ -13522,9 +13522,9 @@
     (pin "5" (uuid d194d009-c116-45c0-a8da-8ac55e39f7e5))
     (pin "6" (uuid 32c67c06-cd7d-407c-bbcc-e3a79e621768))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "SW73") (unit 1)
+          (reference "SW72") (unit 1)
         )
       )
     )
@@ -13539,7 +13539,7 @@
     (property "Value" "Switch w/LED" (at 591.82 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 596.9 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 596.9 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 599.44 298.45 90)
@@ -13552,7 +13552,7 @@
     (pin "5" (uuid 23489c3e-e19d-4b7a-9e81-de4232b25efa))
     (pin "6" (uuid 24d1bd25-264a-41d5-a0e1-c20c2c7ea88d))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW35") (unit 1)
         )
@@ -13584,7 +13584,7 @@
     (pin "1" (uuid 6e801f61-df1a-4a63-bbf6-8c6e442695ef))
     (pin "2" (uuid d639fb6f-2b44-4214-8b14-0a59d923ddc2))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D80") (unit 1)
         )
@@ -13616,7 +13616,7 @@
     (pin "1" (uuid 4c0ba4bf-47da-4d1c-adf4-f3ecea20af32))
     (pin "2" (uuid 7e3d7ba7-f0d7-44a7-94fd-6ac808270721))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D54") (unit 1)
         )
@@ -13648,7 +13648,7 @@
     (pin "1" (uuid 0bdba28e-0417-4283-9bff-b2f55943a95b))
     (pin "2" (uuid bc4849f8-e286-4d05-b22a-f8e9d6574cb8))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D107") (unit 1)
         )
@@ -13659,7 +13659,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 601.98 247.65 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e4b3276e-47f7-4086-ac0d-a656ae26b5f6)
-    (property "Reference" "D16" (at 604.52 246.38 90)
+    (property "Reference" "D15" (at 604.52 246.38 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 604.52 248.92 90)
@@ -13680,9 +13680,9 @@
     (pin "1" (uuid 5b955cd5-d280-4a7e-8a7e-950cd0e85566))
     (pin "2" (uuid e667dcf4-c3d9-4199-9d69-966cf3fbf3b9))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D16") (unit 1)
+          (reference "D15") (unit 1)
         )
       )
     )
@@ -13697,7 +13697,7 @@
     (property "Value" "Switch w/LED" (at 490.22 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 495.3 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 495.3 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 497.84 298.45 90)
@@ -13710,7 +13710,7 @@
     (pin "5" (uuid a916000d-1f39-48a2-8c58-d0964a599dfc))
     (pin "6" (uuid 71ea3be8-7e89-49b0-99b0-0f28f06a310b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW31") (unit 1)
         )
@@ -13727,7 +13727,7 @@
     (property "Value" "Switch w/LED" (at 236.22 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 241.3 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 241.3 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 243.84 298.45 90)
@@ -13740,7 +13740,7 @@
     (pin "5" (uuid b2262d49-a863-4713-880d-48f9ad188daf))
     (pin "6" (uuid 4923859f-0147-477f-a7ec-68055523cd78))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW23") (unit 1)
         )
@@ -13757,7 +13757,7 @@
     (property "Value" "Switch w/LED" (at 312.42 295.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 317.5 300.99 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 317.5 300.99 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 320.04 298.45 90)
@@ -13770,7 +13770,7 @@
     (pin "5" (uuid 9402fde6-c218-4912-a7dd-7d39fd0c1e24))
     (pin "6" (uuid f89251c2-2193-47d8-982c-81d8bfc28796))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW24") (unit 1)
         )
@@ -13781,7 +13781,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 278.13 386.08 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e941efa5-d70d-48a7-9a2d-b4b90ddffdb5)
-    (property "Reference" "D61" (at 270.51 384.81 90)
+    (property "Reference" "D75" (at 270.51 384.81 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Diode" (at 270.51 387.35 90)
@@ -13802,9 +13802,9 @@
     (pin "1" (uuid 4187271a-1c4b-4560-9a6c-0ca006887d6e))
     (pin "2" (uuid 10a489f8-bd67-4ed4-877a-1f671b8fbe53))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D61") (unit 1)
+          (reference "D75") (unit 1)
         )
       )
     )
@@ -13819,7 +13819,7 @@
     (property "Value" "Switch w/LED" (at 591.82 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 596.9 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 596.9 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 599.44 342.9 90)
@@ -13832,7 +13832,7 @@
     (pin "5" (uuid d5d6b1c8-ee01-407a-bc66-c24a91c6522c))
     (pin "6" (uuid b3f67d03-0b4f-4f00-b4db-d1e8a81863f4))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW54") (unit 1)
         )
@@ -13864,7 +13864,7 @@
     (pin "1" (uuid 86f928fb-8a28-468e-a648-bd6b0d4d2510))
     (pin "2" (uuid 0a2027d3-717f-4a98-a7b9-7b4c85677293))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D86") (unit 1)
         )
@@ -13881,7 +13881,7 @@
     (property "Value" "Switch w/LED" (at 541.02 429.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 546.1 434.34 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 546.1 434.34 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 548.64 431.8 90)
@@ -13894,7 +13894,7 @@
     (pin "5" (uuid 7ddb2c58-e199-4038-ac4a-65656c48271d))
     (pin "6" (uuid 0789e20b-8f04-4374-9c01-2a72b0a50bc1))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW88") (unit 1)
         )
@@ -13911,7 +13911,7 @@
     (property "Value" "Switch w/LED" (at 312.42 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1.5u" (at 317.5 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1.5u" (at 317.5 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 320.04 342.9 90)
@@ -13924,7 +13924,7 @@
     (pin "5" (uuid 8e456489-a7d0-444c-81a2-44b9006b0734))
     (pin "6" (uuid 91b7a946-9bc5-43b5-954d-6ea0b4787daf))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW43") (unit 1)
         )
@@ -13935,7 +13935,7 @@
   (symbol (lib_id "power:GND") (at 142.24 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ebbbe36f-43f2-4ad0-ba74-a352e902d918)
-    (property "Reference" "#PWR06" (at 142.24 77.47 0)
+    (property "Reference" "#PWR09" (at 142.24 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 142.24 76.2 0)
@@ -13949,9 +13949,9 @@
     )
     (pin "1" (uuid 5d6f4d0e-bf7f-4fd4-9721-2aa6a54c4594))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -13981,7 +13981,7 @@
     (pin "1" (uuid 460943aa-dc25-4373-863a-c06edc81e4ee))
     (pin "2" (uuid e44692e9-86d6-4970-9e55-48e2145db09e))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D109") (unit 1)
         )
@@ -14007,7 +14007,7 @@
     (pin "1" (uuid 425d8753-b071-43be-b0ae-50b553e93893))
     (pin "2" (uuid 044d5633-aa49-4812-b297-ee086ba1b7ee))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "C3") (unit 1)
         )
@@ -14039,7 +14039,7 @@
     (pin "1" (uuid 66b30eb7-8319-4540-b9ed-b6d2bada5178))
     (pin "2" (uuid 8f7535b5-ad28-4a4c-ab82-23d7336b826f))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D47") (unit 1)
         )
@@ -14071,7 +14071,7 @@
     (pin "1" (uuid aa614d99-9983-4054-88a9-86ba216b2399))
     (pin "2" (uuid 52ab396a-232e-4839-83b4-1d7482f56c95))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D29") (unit 1)
         )
@@ -14103,7 +14103,7 @@
     (pin "1" (uuid 15ccee2d-0d0e-4d70-9ecd-c8a1973dd624))
     (pin "2" (uuid 6a095373-c28d-40b4-9269-7fc57c39974b))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D40") (unit 1)
         )
@@ -14120,7 +14120,7 @@
     (property "Value" "Switch w/LED" (at 617.22 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 622.3 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 622.3 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 624.84 342.9 90)
@@ -14133,7 +14133,7 @@
     (pin "5" (uuid 5d7bed03-88a9-4c40-936a-206df458b92f))
     (pin "6" (uuid 5b4a7902-45d9-47c8-a375-7b9f1da883a2))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW55") (unit 1)
         )
@@ -14165,7 +14165,7 @@
     (pin "1" (uuid 1cc0eb85-3edb-4808-a993-d9aa85e1338b))
     (pin "2" (uuid b2a9b6e1-9df8-47f5-95b3-987492d3e075))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D105") (unit 1)
         )
@@ -14182,7 +14182,7 @@
     (property "Value" "Switch w/LED" (at 185.42 384.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 190.5 389.89 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 190.5 389.89 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 387.35 90)
@@ -14195,7 +14195,7 @@
     (pin "5" (uuid c8ccfb2f-e8f1-453b-a295-1ae80f562e18))
     (pin "6" (uuid f89fa5ea-10e1-4c77-96a1-ef0276c3be1c))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW58") (unit 1)
         )
@@ -14206,7 +14206,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 627.38 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f6eb11e6-c718-4a36-b42b-ae7f6884b135)
-    (property "Reference" "D17" (at 629.92 246.38 90)
+    (property "Reference" "D16" (at 629.92 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 629.92 248.92 90)
@@ -14227,9 +14227,9 @@
     (pin "1" (uuid 3925f7ae-a1ff-4b88-baa1-5a6142899d99))
     (pin "2" (uuid 6b687e4e-6438-4412-b4e4-aa0cb83216a6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D17") (unit 1)
+          (reference "D16") (unit 1)
         )
       )
     )
@@ -14238,7 +14238,7 @@
   (symbol (lib_id "power:GND") (at 262.89 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid faad8f1e-6278-4fb6-8dd2-ac692d561fe6)
-    (property "Reference" "#PWR017" (at 262.89 73.66 0)
+    (property "Reference" "#PWR08" (at 262.89 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 262.89 72.39 0)
@@ -14252,9 +14252,9 @@
     )
     (pin "1" (uuid a964ebab-0fb7-4b52-912a-f2a8ea4be467))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -14263,7 +14263,7 @@
   (symbol (lib_id "ScottoKeebs:Placeholder_Diode") (at 424.18 247.65 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fbc70d7d-11d6-4149-94e4-333fc171e56a)
-    (property "Reference" "D9" (at 426.72 246.38 90)
+    (property "Reference" "D8" (at 426.72 246.38 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Diode" (at 426.72 248.92 90)
@@ -14284,9 +14284,9 @@
     (pin "1" (uuid 56b97edb-a264-4009-985e-80269ddf89cc))
     (pin "2" (uuid 6995edc0-83fd-4e05-a3f3-9946612baaf0))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-          (reference "D9") (unit 1)
+          (reference "D8") (unit 1)
         )
       )
     )
@@ -14301,7 +14301,7 @@
     (property "Value" "Switch w/LED" (at 490.22 340.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Greenwood:Hotswap_MX_Plated_LED_1u" (at 495.3 345.44 90)
+    (property "Footprint" "KeebLib:Hotswap_MX_Plated_LED_1u" (at 495.3 345.44 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 497.84 342.9 90)
@@ -14314,7 +14314,7 @@
     (pin "5" (uuid f34d655b-5894-4c9c-b84a-e3e4d1466386))
     (pin "6" (uuid 5eda3cef-7276-4930-89aa-c1aca326db82))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "SW50") (unit 1)
         )
@@ -14346,7 +14346,7 @@
     (pin "1" (uuid 87b3ec4d-d172-4e17-a087-3ee1b4ea669a))
     (pin "2" (uuid 2cf38f59-3365-45b3-93ff-a30f5b717ec6))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D34") (unit 1)
         )
@@ -14378,7 +14378,7 @@
     (pin "1" (uuid 1d854f64-24e1-47bd-abb0-6fa7a69e8d3f))
     (pin "2" (uuid 7573b7ba-dc7b-4b86-afd3-91aee0901249))
     (instances
-      (project "Greenwood18N2"
+      (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "D103") (unit 1)
         )
