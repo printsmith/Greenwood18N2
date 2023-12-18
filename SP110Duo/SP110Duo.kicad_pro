@@ -405,7 +405,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Greenwood18N2.kicad_pro",
+    "filename": "SP110Duo.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -496,7 +496,7 @@
       "idf": "",
       "netlist": "./",
       "specctra_dsn": "",
-      "step": "Southpaw_Dual_Nav.step",
+      "step": "SP110Duo.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
