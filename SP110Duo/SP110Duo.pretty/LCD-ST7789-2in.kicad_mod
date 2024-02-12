@@ -75,9 +75,14 @@
   (pad "6" thru_hole circle (at 3.81 -29.06 180) (size 1.6 1.6) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 52ad5837-0ad2-4808-b3f5-f76cf261fd01))
   (pad "7" thru_hole circle (at 6.35 -29.06 180) (size 1.6 1.6) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 85b40ef1-3bd1-452c-9eb9-b93e9706b2a7))
   (pad "8" thru_hole circle (at 8.89 -29.06 180) (size 1.6 1.6) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 56cab00e-20a0-4262-8b27-5f81d334cb2b))
-  (model "${KISYS3DMOD}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x09_P2.54mm_Vertical.wrl"
-    (offset (xyz 10.1 -32.1 0))
+  (model "${KICAD7_3DMODEL_DIR}/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x08_P2.54mm_Vertical.wrl"
+    (offset (xyz 8.75 29.1 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 90))
+  )
+  (model "${CUSTOM_3DMODEL_DIR}/2.0 TFT IPS - Module.stp"
+    (offset (xyz 0 0 10))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
   )
 )

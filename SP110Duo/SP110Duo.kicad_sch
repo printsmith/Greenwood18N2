@@ -10610,8 +10610,8 @@
     (property "Datasheet" "~" (at 363.22 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e3378d71-d800-4f9a-844e-73ecd2577ddd))
-    (pin "2" (uuid 3add18f3-d67a-4775-99ca-6ec920bcfb2f))
+    (pin "1" (uuid 8d0f5b5c-c190-4bfa-9192-8fcc3284e9d8))
+    (pin "2" (uuid 67644759-845e-409e-9811-f4e9c994c854))
     (instances
       (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
@@ -10722,6 +10722,30 @@
       (project "SP110Duo"
         (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
           (reference "#PWR018") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 347.98 176.53 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 7c12f38e-62e4-4cad-ada3-d50a94e07b07)
+    (property "Reference" "H10" (at 350.52 175.26 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 350.52 177.8 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" (at 347.98 176.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 347.98 176.53 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "SP110Duo"
+        (path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+          (reference "H10") (unit 1)
         )
       )
     )
@@ -12196,7 +12220,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 116.84 35.56 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid a599ccc1-56af-41c6-8704-9f7fc520d177)
     (property "Reference" "C1" (at 120.65 34.29 0)
       (effects (font (size 1.27 1.27)) (justify right))
