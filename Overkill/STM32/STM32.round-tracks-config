@@ -2,4 +2,5 @@ Default	True	2.0	3
 3V3	True	2.0	3
 LED_PWR	True	2.0	3
 VBUS	True	2.0	3
+V_USB	True	2.0	3
 False	True	False
