@@ -7345,7 +7345,7 @@
 				)
 			)
 		)
-		(symbol "Regulator_Linear:XC6206PxxxMR"
+		(symbol "Regulator_Linear:AP2127K-3.3"
 			(pin_names
 				(offset 0.254)
 			)
@@ -7353,15 +7353,7 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at -3.81 3.175 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "XC6206PxxxMR"
-				(at 0 3.175 0)
+				(at -5.08 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -7369,17 +7361,34 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+			(property "Value" "AP2127K-3.3"
 				(at 0 5.715 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 8.255 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
+			(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2127.pdf"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "300mA low dropout linear regulator, shutdown pin, 2.5V-6V input voltage, 3.3V fixed positive output, SOT-23-5"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7388,7 +7397,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
+			(property "ki_keywords" "linear regulator ldo fixed positive"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7397,7 +7406,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Torex LDO Voltage Regulator Fixed Positive"
+			(property "ki_fp_filters" "SOT?23?5*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -7406,18 +7415,9 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?23?3*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "XC6206PxxxMR_0_1"
+			(symbol "AP2127K-3.3_0_1"
 				(rectangle
-					(start -5.08 1.905)
+					(start -5.08 4.445)
 					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
@@ -7428,11 +7428,11 @@
 					)
 				)
 			)
-			(symbol "XC6206PxxxMR_1_1"
+			(symbol "AP2127K-3.3_1_1"
 				(pin power_in line
-					(at 0 -7.62 90)
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "GND"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7447,10 +7447,10 @@
 						)
 					)
 				)
-				(pin power_out line
-					(at 7.62 0 180)
+				(pin power_in line
+					(at 0 -7.62 90)
 					(length 2.54)
-					(name "VO"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7465,10 +7465,10 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
-					(name "VI"
+					(name "EN"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7476,6 +7476,42 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 0 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9134,16 +9170,10 @@
 		(uuid "00f961da-b96e-43d8-ac4b-d94b23b61017")
 	)
 	(junction
-		(at 612.14 125.73)
+		(at 660.4 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "01182f9c-4b9e-42ca-b49c-9a297cdbbeee")
-	)
-	(junction
-		(at 471.17 222.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0119e836-6691-466b-9700-d9e5cb46aa3a")
 	)
 	(junction
 		(at 214.63 100.33)
@@ -9152,7 +9182,13 @@
 		(uuid "0244a08e-c2d1-4bd8-b20f-0dd942f32494")
 	)
 	(junction
-		(at 595.63 125.73)
+		(at 509.27 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "024cd616-ae21-4790-8a11-9ec946d0e2e8")
+	)
+	(junction
+		(at 643.89 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0255e87e-b295-4e1e-8922-9b3a363f8467")
@@ -9224,12 +9260,6 @@
 		(uuid "058025eb-eb7f-4c11-a7cb-e75d0a7cea2d")
 	)
 	(junction
-		(at 554.99 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05a87a95-76bb-4b5b-a7a6-e26746b79740")
-	)
-	(junction
 		(at 712.47 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9248,7 +9278,7 @@
 		(uuid "06b85b87-c115-4a6f-af11-5d1cbbdc285e")
 	)
 	(junction
-		(at 577.85 125.73)
+		(at 626.11 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "06c49a86-571b-4ffa-8a8a-92cf2f23e7b7")
@@ -9314,22 +9344,10 @@
 		(uuid "0eda6e3e-96a2-487b-b06c-a8708bda554b")
 	)
 	(junction
-		(at 123.19 347.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0fb56ab1-0441-4304-a98e-417522846c2e")
-	)
-	(junction
 		(at 220.98 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1199afaf-302d-407e-a0de-2f95b4f74304")
-	)
-	(junction
-		(at 102.87 347.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "11ef9060-a0c0-4371-b6a8-c8d2e3be5102")
 	)
 	(junction
 		(at 71.12 297.18)
@@ -9398,16 +9416,16 @@
 		(uuid "16c81281-97f2-43a9-8fb7-30ee57a95935")
 	)
 	(junction
+		(at 314.96 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16ef47d6-82fe-44ba-8722-1b06a7ef9d74")
+	)
+	(junction
 		(at 101.6 508)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "17efcd06-fd2c-497c-802c-8b5144548033")
-	)
-	(junction
-		(at 471.17 209.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18594fbc-6098-45e6-a96a-780c3a7b4a9f")
 	)
 	(junction
 		(at 208.28 119.38)
@@ -9456,6 +9474,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1bd18be1-b6f6-41bc-a5ca-624e9fc69354")
+	)
+	(junction
+		(at 124.46 344.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c3ae73e-5c7d-404c-b95b-9675051ce8b8")
 	)
 	(junction
 		(at 783.59 152.4)
@@ -9546,12 +9570,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2553e49e-6ac3-4a73-8564-9c3ffffbb926")
-	)
-	(junction
-		(at 314.96 144.78)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "258e89cc-3af3-4afc-8065-60d76f4cc35e")
 	)
 	(junction
 		(at 52.07 119.38)
@@ -9686,6 +9704,12 @@
 		(uuid "3148d89f-051b-46a5-88be-209a90ca7bbf")
 	)
 	(junction
+		(at 113.03 355.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31666306-024c-49b6-8dc3-6561c3494032")
+	)
+	(junction
 		(at 180.34 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9768,6 +9792,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "36a7398d-fca2-4c73-a23b-4821b8410c15")
+	)
+	(junction
+		(at 93.98 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3735a1f3-e970-4ed1-9058-b19ab6e83ce3")
 	)
 	(junction
 		(at 605.79 43.18)
@@ -10040,6 +10070,12 @@
 		(uuid "4feed83f-dea3-40ee-ab29-f9468798c82c")
 	)
 	(junction
+		(at 52.07 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50259554-16a4-4b87-a762-ce15e7865afc")
+	)
+	(junction
 		(at 783.59 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10074,12 +10110,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "528075d2-34fb-4c46-8f67-44d0e08a63e7")
-	)
-	(junction
-		(at 554.99 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "529fbfda-5f42-41ab-8b78-693a0a2d034f")
 	)
 	(junction
 		(at 676.91 72.39)
@@ -10172,7 +10202,7 @@
 		(uuid "5b2e1e08-1a23-4c19-a5bd-65fe146a00d4")
 	)
 	(junction
-		(at 612.14 140.97)
+		(at 660.4 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5bd50e49-05ab-4baf-b86c-7e6a44052c84")
@@ -10214,13 +10244,7 @@
 		(uuid "5f9b2486-9a89-4395-8cd6-891696e2948d")
 	)
 	(junction
-		(at 52.07 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "606c5ffd-54bf-47ca-b3c7-dc06775ee561")
-	)
-	(junction
-		(at 629.92 125.73)
+		(at 678.18 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6083e0f5-2be2-4e95-b62d-64600ca5dd0e")
@@ -10238,10 +10262,28 @@
 		(uuid "61165972-3c6b-465c-95fb-8acae5ba6688")
 	)
 	(junction
+		(at 127 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6134209c-5887-4e4c-8b9d-47e975c3e7db")
+	)
+	(junction
 		(at 676.91 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "62e3df93-2c9e-4829-b1c4-86ef7dc28eb3")
+	)
+	(junction
+		(at 320.04 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63d5a80b-169b-416b-b03e-a0376bffb25a")
+	)
+	(junction
+		(at 509.27 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64328dc7-3336-4757-8c70-46d3a10a7a21")
 	)
 	(junction
 		(at 88.9 62.23)
@@ -10250,7 +10292,7 @@
 		(uuid "64e15658-61ca-481c-9d7c-1d7bd1db3496")
 	)
 	(junction
-		(at 681.99 125.73)
+		(at 730.25 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "653980e1-acba-493a-8b13-40baf269c780")
@@ -10328,7 +10370,7 @@
 		(uuid "6a4fc4e2-37ed-4589-ade4-d7874192537e")
 	)
 	(junction
-		(at 718.82 140.97)
+		(at 767.08 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6afc914f-e045-4b6f-adad-97c25c2042f6")
@@ -10346,6 +10388,12 @@
 		(uuid "6bef5e32-9d5d-4e51-839d-0c3f7aa0d7f5")
 	)
 	(junction
+		(at 529.59 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cecd07e-a92d-41b2-b699-31092a8a2049")
+	)
+	(junction
 		(at 182.88 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10356,6 +10404,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6ee18546-fbb4-42cf-b7df-f9751f1d2d80")
+	)
+	(junction
+		(at 118.11 138.43)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6f18dc07-099d-44b2-9d05-0d6ac18760ab")
 	)
 	(junction
 		(at 659.13 114.3)
@@ -10418,6 +10472,12 @@
 		(uuid "7203fc4f-05e3-46d9-bd39-46501757f53e")
 	)
 	(junction
+		(at 585.47 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "740f8fe6-75ef-43e8-aa19-91272bb3ad09")
+	)
+	(junction
 		(at 783.59 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10448,13 +10508,13 @@
 		(uuid "76ac1758-e7e0-4de0-87c1-4efd5b4a0adf")
 	)
 	(junction
-		(at 736.6 125.73)
+		(at 784.86 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "778ce7fb-b357-4e2b-afc3-fb8b0561e867")
 	)
 	(junction
-		(at 665.48 140.97)
+		(at 713.74 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77fd7e5f-a02e-4360-8cd7-213d5f04b91c")
@@ -10490,16 +10550,16 @@
 		(uuid "79a06cf7-7129-4594-bcc0-0c1ca12d6d6b")
 	)
 	(junction
+		(at 567.69 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79f95204-dac1-4968-a8d3-9f50f25cc7d8")
+	)
+	(junction
 		(at 402.59 209.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7a6f11d3-7d47-49d3-8caa-45cfa2e2f4cf")
-	)
-	(junction
-		(at 96.52 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7ad4fe3f-5d5a-4beb-9964-74254543bb25")
 	)
 	(junction
 		(at 260.35 87.63)
@@ -10520,12 +10580,6 @@
 		(uuid "7c54897a-72ba-448a-889e-5e412dde20b1")
 	)
 	(junction
-		(at 307.34 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7d671f5f-39a4-4a00-bbce-99c04f0e7f32")
-	)
-	(junction
 		(at 472.44 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10538,7 +10592,7 @@
 		(uuid "7eb0760b-881e-42eb-8a06-ba185e5018ab")
 	)
 	(junction
-		(at 736.6 140.97)
+		(at 784.86 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7f41f966-d824-458e-88bf-ecea9e62dade")
@@ -10620,12 +10674,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8557982e-8605-47df-80bb-839ef4896699")
-	)
-	(junction
-		(at 68.58 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "85601067-e81b-4f7e-8125-3ef7fdcb24f4")
 	)
 	(junction
 		(at 419.1 140.97)
@@ -10760,12 +10808,6 @@
 		(uuid "8febaa7b-6c5a-4faf-b91b-ebd423571a85")
 	)
 	(junction
-		(at 753.11 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "90830d62-07f0-4c9c-876b-be2abd31c6f7")
-	)
-	(junction
 		(at 166.37 264.16)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10790,6 +10832,12 @@
 		(uuid "9298e5b5-73f0-4c55-a2d6-4256ba3707f3")
 	)
 	(junction
+		(at 603.25 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93382c1f-c334-4dde-b63a-5578e234089f")
+	)
+	(junction
 		(at 265.43 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10800,12 +10848,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9375eaf4-cc3a-417d-85af-2e159c29472a")
-	)
-	(junction
-		(at 774.7 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94da0ba2-c06a-4c67-b9e6-6198ebbf0985")
 	)
 	(junction
 		(at 441.96 364.49)
@@ -10838,6 +10880,12 @@
 		(uuid "984c05a8-09a4-44c8-824b-c53e86cfc179")
 	)
 	(junction
+		(at 325.12 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "986dc9c1-d946-4d13-92ea-78dfd26dd463")
+	)
+	(junction
 		(at 730.25 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10848,6 +10896,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99ef234e-c688-4189-b869-4a207090efc3")
+	)
+	(junction
+		(at 101.6 344.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a01a4d8-c6b3-4480-90df-e469e2ddf56c")
 	)
 	(junction
 		(at 417.83 194.31)
@@ -10878,12 +10932,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9bc46223-1185-47d4-82f3-3af49e1d413d")
-	)
-	(junction
-		(at 81.28 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9bd4e5a7-eeb1-438f-94ba-35158edaf7bb")
 	)
 	(junction
 		(at 314.96 74.93)
@@ -10934,7 +10982,7 @@
 		(uuid "a06a633f-7c8a-4a09-a6e7-640846712180")
 	)
 	(junction
-		(at 647.7 140.97)
+		(at 695.96 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0e90f76-a90a-487d-9623-4f6ec6d77fd7")
@@ -11120,6 +11168,12 @@
 		(uuid "b0a6ab15-350a-409d-9e47-69802bc9ef83")
 	)
 	(junction
+		(at 529.59 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1a24c5c-487c-474b-9cae-3bbb86b00899")
+	)
+	(junction
 		(at 171.45 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11180,6 +11234,12 @@
 		(uuid "b6450b3b-4103-4e09-be60-d093f1181148")
 	)
 	(junction
+		(at 97.79 344.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b66804fb-aa20-4438-b37b-9355d1fed495")
+	)
+	(junction
 		(at 454.66 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11232,6 +11292,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bacd71e5-7a32-421a-bf02-3f6c6cd3a92c")
+	)
+	(junction
+		(at 68.58 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "baf27347-d258-4619-bf71-1615fc85f760")
 	)
 	(junction
 		(at 71.12 546.1)
@@ -11384,7 +11450,7 @@
 		(uuid "c5b04904-96f9-4559-ab12-4f0dc53f49d8")
 	)
 	(junction
-		(at 647.7 125.73)
+		(at 695.96 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6852cc3-27c1-4553-a3f3-25b75b701fe8")
@@ -11426,13 +11492,13 @@
 		(uuid "c7d9cb47-e6da-4f52-9be8-25f086498a09")
 	)
 	(junction
-		(at 699.77 140.97)
+		(at 748.03 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c84943b5-bdee-47ce-8b36-2f307257074b")
 	)
 	(junction
-		(at 681.99 140.97)
+		(at 730.25 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c91fe8cd-5693-4a02-91e6-e13679de130b")
@@ -11498,6 +11564,12 @@
 		(uuid "cd880cf9-213d-4c7c-aa0d-b8cc819aaf37")
 	)
 	(junction
+		(at 307.34 180.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd8c944e-8198-43b1-9bd8-ec91660b4e46")
+	)
+	(junction
 		(at 712.47 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11528,6 +11600,12 @@
 		(uuid "d0a4ebdb-3dcf-44bd-b6b9-a88e6fc5a51f")
 	)
 	(junction
+		(at 585.47 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d10fafcf-e3d7-47e7-b91b-494f1f792e82")
+	)
+	(junction
 		(at 308.61 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11552,13 +11630,7 @@
 		(uuid "d290ec63-5713-499a-87f5-e40da3d0ab7d")
 	)
 	(junction
-		(at 320.04 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d42a66a6-9f4b-41c7-b0bd-8fe4b837162c")
-	)
-	(junction
-		(at 595.63 140.97)
+		(at 643.89 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d608efbb-e0bd-4037-9be7-8b0a17f0f665")
@@ -11660,6 +11732,12 @@
 		(uuid "dded6eed-988a-4044-9752-8d2d8c8a8cb1")
 	)
 	(junction
+		(at 81.28 157.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de165950-aa32-4d00-b9bb-a94cbf63cf9b")
+	)
+	(junction
 		(at 196.85 271.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11708,7 +11786,7 @@
 		(uuid "e3bfbd3e-0e29-45c6-b434-b840057ef205")
 	)
 	(junction
-		(at 577.85 140.97)
+		(at 626.11 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e45680e1-16b3-4afd-9e98-6bf076943db9")
@@ -11726,7 +11804,7 @@
 		(uuid "e54624bf-b20b-4ff9-a73a-63a2fc4f1bb4")
 	)
 	(junction
-		(at 718.82 125.73)
+		(at 767.08 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e547261d-3076-4f3f-ba3f-7493887ec9f9")
@@ -11762,7 +11840,7 @@
 		(uuid "e95c7d17-879a-42c2-a3f0-4bcd0417b8c2")
 	)
 	(junction
-		(at 665.48 125.73)
+		(at 713.74 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e965e875-0cc0-40a9-8e21-9cad59215dfd")
@@ -11798,12 +11876,6 @@
 		(uuid "eaa8de1b-355d-4e15-b0d4-ba9f6db3674b")
 	)
 	(junction
-		(at 774.7 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "eae90593-2f95-408c-85ae-81d226926f4f")
-	)
-	(junction
 		(at 233.68 334.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11820,6 +11892,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eba3ada8-429a-4689-92e7-4b1719a5477d")
+	)
+	(junction
+		(at 567.69 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebb3aea8-d862-4c37-ad1c-d59a23295687")
 	)
 	(junction
 		(at 609.6 289.56)
@@ -11864,12 +11942,6 @@
 		(uuid "ed6e28ec-a343-4d5c-8b6d-2e31c6316959")
 	)
 	(junction
-		(at 753.11 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ede00f20-8b30-4518-9aa6-4ac5ada09128")
-	)
-	(junction
 		(at 246.38 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -11898,12 +11970,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef55a8e1-5b10-4f43-81d6-34614fc31f59")
-	)
-	(junction
-		(at 320.04 157.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ef87f4b2-784c-47fb-9a68-123e30ea0b55")
 	)
 	(junction
 		(at 146.05 87.63)
@@ -11948,16 +12014,10 @@
 		(uuid "f275990e-12f9-4606-9161-6a5a3c8f8efd")
 	)
 	(junction
-		(at 699.77 125.73)
+		(at 748.03 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f366be4c-bee3-455c-9140-d632c637a6e3")
-	)
-	(junction
-		(at 111.76 355.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f3df5f8c-2597-4b7c-9a81-767e27e669fa")
 	)
 	(junction
 		(at 88.9 144.78)
@@ -11990,7 +12050,7 @@
 		(uuid "f5c1a66c-cf56-455a-a59b-049823132a5b")
 	)
 	(junction
-		(at 629.92 140.97)
+		(at 678.18 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f600faa3-5869-4815-9d5a-9d80637e2293")
@@ -12054,6 +12114,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8e8d056-6213-44c3-b828-25f96be84bb3")
+	)
+	(junction
+		(at 603.25 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa676e76-6efc-4864-adda-fe5930bf2b21")
 	)
 	(junction
 		(at 133.35 125.73)
@@ -12417,7 +12483,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 347.98) (xy 123.19 347.98)
+			(xy 120.65 344.17) (xy 124.46 344.17)
 		)
 		(stroke
 			(width 0)
@@ -12457,7 +12523,7 @@
 	)
 	(wire
 		(pts
-			(xy 577.85 125.73) (xy 595.63 125.73)
+			(xy 626.11 125.73) (xy 643.89 125.73)
 		)
 		(stroke
 			(width 0)
@@ -12537,6 +12603,16 @@
 	)
 	(wire
 		(pts
+			(xy 320.04 161.29) (xy 325.12 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "084467e8-4f0c-42ab-8b84-bc8c0d63345f")
+	)
+	(wire
+		(pts
 			(xy 765.81 168.91) (xy 783.59 168.91)
 		)
 		(stroke
@@ -12554,6 +12630,16 @@
 			(type default)
 		)
 		(uuid "08bb281e-f4c6-497a-8917-0656359a6498")
+	)
+	(wire
+		(pts
+			(xy 817.88 160.02) (xy 807.72 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e0bd4a-8847-4e54-abf6-6883d159cf51")
 	)
 	(wire
 		(pts
@@ -12667,6 +12753,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 157.48) (xy 64.77 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a24f713-1285-4702-bb3f-25efb90b6442")
+	)
+	(wire
+		(pts
 			(xy 623.57 72.39) (xy 641.35 72.39)
 		)
 		(stroke
@@ -12687,7 +12783,7 @@
 	)
 	(wire
 		(pts
-			(xy 726.44 133.35) (xy 728.98 133.35)
+			(xy 774.7 133.35) (xy 777.24 133.35)
 		)
 		(stroke
 			(width 0)
@@ -12777,6 +12873,16 @@
 	)
 	(wire
 		(pts
+			(xy 501.65 160.02) (xy 556.26 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e413154-2ae8-48df-9df4-13589913898a")
+	)
+	(wire
+		(pts
 			(xy 232.41 144.78) (xy 226.06 144.78)
 		)
 		(stroke
@@ -12857,6 +12963,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 346.71) (xy 101.6 346.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11de74e8-90a8-4743-9130-c9a9ba6b7ab8")
+	)
+	(wire
+		(pts
 			(xy 120.65 547.37) (xy 118.11 547.37)
 		)
 		(stroke
@@ -12877,7 +12993,7 @@
 	)
 	(wire
 		(pts
-			(xy 603.25 133.35) (xy 604.52 133.35)
+			(xy 651.51 133.35) (xy 652.78 133.35)
 		)
 		(stroke
 			(width 0)
@@ -13047,7 +13163,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 347.98) (xy 123.19 347.98)
+			(xy 128.27 344.17) (xy 124.46 344.17)
 		)
 		(stroke
 			(width 0)
@@ -13064,16 +13180,6 @@
 			(type default)
 		)
 		(uuid "17538605-f360-4532-ad99-39059b807684")
-	)
-	(wire
-		(pts
-			(xy 93.98 111.76) (xy 96.52 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17613391-4eec-4e6c-bda6-e40f87d96cc7")
 	)
 	(wire
 		(pts
@@ -13137,6 +13243,16 @@
 	)
 	(wire
 		(pts
+			(xy 529.59 125.73) (xy 567.69 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1961f970-46ab-4621-aee8-c945335f2960")
+	)
+	(wire
+		(pts
 			(xy 694.69 58.42) (xy 712.47 58.42)
 		)
 		(stroke
@@ -13177,6 +13293,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 344.17) (xy 105.41 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b224569-f2ad-4951-b55b-8d435ed63096")
+	)
+	(wire
+		(pts
 			(xy 598.17 245.11) (xy 622.3 245.11)
 		)
 		(stroke
@@ -13184,6 +13310,16 @@
 			(type default)
 		)
 		(uuid "1b28a339-fe34-452f-8968-23409a7f5c70")
+	)
+	(wire
+		(pts
+			(xy 325.12 161.29) (xy 325.12 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b6786c6-5e78-4354-8366-67d251a7a0f1")
 	)
 	(wire
 		(pts
@@ -13297,13 +13433,13 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 157.48) (xy 335.28 157.48)
+			(xy 124.46 344.17) (xy 124.46 347.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1dfd4896-526d-4280-9487-d7f4a50bfebb")
+		(uuid "1e32c59b-d5fe-46b3-a505-9cd58463706d")
 	)
 	(wire
 		(pts
@@ -13394,6 +13530,16 @@
 			(type default)
 		)
 		(uuid "20ba9775-cf14-4b78-8ad7-03665d4ebb92")
+	)
+	(wire
+		(pts
+			(xy 72.39 157.48) (xy 81.28 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20d04e03-0dda-4cb2-888a-a5fc216e49c9")
 	)
 	(wire
 		(pts
@@ -13517,6 +13663,16 @@
 	)
 	(wire
 		(pts
+			(xy 302.26 163.83) (xy 302.26 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2482a182-7d62-4118-bfed-2dd0b698f675")
+	)
+	(wire
+		(pts
 			(xy 598.17 245.11) (xy 598.17 250.19)
 		)
 		(stroke
@@ -13547,7 +13703,7 @@
 	)
 	(wire
 		(pts
-			(xy 801.37 186.69) (xy 807.72 186.69)
+			(xy 801.37 186.69) (xy 817.88 186.69)
 		)
 		(stroke
 			(width 0)
@@ -13677,16 +13833,6 @@
 	)
 	(wire
 		(pts
-			(xy 492.76 160.02) (xy 480.06 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2942cb30-d5e2-4b86-8f34-64e2ded7cd9a")
-	)
-	(wire
-		(pts
 			(xy 684.53 80.01) (xy 687.07 80.01)
 		)
 		(stroke
@@ -13704,16 +13850,6 @@
 			(type default)
 		)
 		(uuid "29ac066d-e8d5-4043-b9ea-ef2fb37732a2")
-	)
-	(wire
-		(pts
-			(xy 471.17 209.55) (xy 482.6 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29c0ca2e-971e-4584-b2aa-ada2dc559e0c")
 	)
 	(wire
 		(pts
@@ -13794,16 +13930,6 @@
 			(type default)
 		)
 		(uuid "2a976745-3d34-44b9-be81-edea4f6790a6")
-	)
-	(wire
-		(pts
-			(xy 782.32 133.35) (xy 793.75 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab868f3-880d-46a9-8287-fa7121b089b2")
 	)
 	(wire
 		(pts
@@ -13957,6 +14083,16 @@
 	)
 	(wire
 		(pts
+			(xy 288.29 180.34) (xy 288.29 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dfa9083-b452-45dc-aa4c-981faae6d1b4")
+	)
+	(wire
+		(pts
 			(xy 86.36 430.53) (xy 77.47 430.53)
 		)
 		(stroke
@@ -13997,7 +14133,7 @@
 	)
 	(wire
 		(pts
-			(xy 288.29 176.53) (xy 307.34 176.53)
+			(xy 288.29 180.34) (xy 307.34 180.34)
 		)
 		(stroke
 			(width 0)
@@ -14097,7 +14233,7 @@
 	)
 	(wire
 		(pts
-			(xy 665.48 125.73) (xy 681.99 125.73)
+			(xy 713.74 125.73) (xy 730.25 125.73)
 		)
 		(stroke
 			(width 0)
@@ -14227,7 +14363,7 @@
 	)
 	(wire
 		(pts
-			(xy 647.7 125.73) (xy 665.48 125.73)
+			(xy 695.96 125.73) (xy 713.74 125.73)
 		)
 		(stroke
 			(width 0)
@@ -14244,26 +14380,6 @@
 			(type default)
 		)
 		(uuid "34b29458-6788-4a6f-a16d-a26e1362e4e3")
-	)
-	(wire
-		(pts
-			(xy 102.87 355.6) (xy 111.76 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "34baa805-949e-428f-a49a-3de94d01638f")
-	)
-	(wire
-		(pts
-			(xy 753.11 140.97) (xy 774.7 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "352564c2-8485-416e-a03b-6cbba968d6f5")
 	)
 	(wire
 		(pts
@@ -14357,7 +14473,7 @@
 	)
 	(wire
 		(pts
-			(xy 588.01 133.35) (xy 585.47 133.35)
+			(xy 636.27 133.35) (xy 633.73 133.35)
 		)
 		(stroke
 			(width 0)
@@ -14577,16 +14693,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 176.53) (xy 68.58 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b6b636f-b819-4bc2-984d-a11b5ff761aa")
-	)
-	(wire
-		(pts
 			(xy 180.34 157.48) (xy 193.04 157.48)
 		)
 		(stroke
@@ -14664,6 +14770,16 @@
 			(type default)
 		)
 		(uuid "3d862258-a409-443a-921e-19894e3e9b73")
+	)
+	(wire
+		(pts
+			(xy 509.27 125.73) (xy 529.59 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e0dbcd3-54bd-4e33-bdae-8562e12802ab")
 	)
 	(wire
 		(pts
@@ -14767,16 +14883,6 @@
 	)
 	(wire
 		(pts
-			(xy 753.11 125.73) (xy 774.7 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "415692dd-9745-48dd-b444-be97a905ded9")
-	)
-	(wire
-		(pts
 			(xy 419.1 125.73) (xy 436.88 125.73)
 		)
 		(stroke
@@ -14827,7 +14933,7 @@
 	)
 	(wire
 		(pts
-			(xy 554.99 140.97) (xy 577.85 140.97)
+			(xy 603.25 140.97) (xy 626.11 140.97)
 		)
 		(stroke
 			(width 0)
@@ -14847,6 +14953,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 344.17) (xy 101.6 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42a2098e-0b89-4c55-9888-56db4cb09727")
+	)
+	(wire
+		(pts
 			(xy 101.6 62.23) (xy 101.6 87.63)
 		)
 		(stroke
@@ -14854,6 +14970,16 @@
 			(type default)
 		)
 		(uuid "42a6e02f-282f-4a99-96ff-dd4e10e98de2")
+	)
+	(wire
+		(pts
+			(xy 529.59 140.97) (xy 567.69 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42d2bcc3-4068-4be2-b53e-91ee6d9edc5f")
 	)
 	(wire
 		(pts
@@ -14894,16 +15020,6 @@
 			(type default)
 		)
 		(uuid "436f9fd9-d444-4672-b770-231a342f7088")
-	)
-	(wire
-		(pts
-			(xy 482.6 212.09) (xy 482.6 209.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "441efdcf-3333-4d58-8f8c-5c644e709dda")
 	)
 	(wire
 		(pts
@@ -15177,16 +15293,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 355.6) (xy 123.19 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49723dca-319e-4875-a2fc-c098fe46f345")
-	)
-	(wire
-		(pts
 			(xy 335.28 246.38) (xy 328.93 246.38)
 		)
 		(stroke
@@ -15194,16 +15300,6 @@
 			(type default)
 		)
 		(uuid "49b94637-24f6-4900-a926-e2bbd2c95bce")
-	)
-	(wire
-		(pts
-			(xy 482.6 222.25) (xy 471.17 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a24f3a0-7f1a-4c59-bff6-5f59988d55be")
 	)
 	(wire
 		(pts
@@ -15254,6 +15350,16 @@
 			(type default)
 		)
 		(uuid "4ae6c3b7-8c83-4fc8-beed-c22e56ea56c0")
+	)
+	(wire
+		(pts
+			(xy 567.69 140.97) (xy 585.47 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b0acf14-8162-4c93-b40d-71bf9f8dcd84")
 	)
 	(wire
 		(pts
@@ -15317,6 +15423,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 344.17) (xy 97.79 347.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c9d343e-5ce8-49cb-83bb-f8f9570b8549")
+	)
+	(wire
+		(pts
 			(xy 189.23 327.66) (xy 189.23 331.47)
 		)
 		(stroke
@@ -15347,7 +15463,7 @@
 	)
 	(wire
 		(pts
-			(xy 299.72 157.48) (xy 320.04 157.48)
+			(xy 299.72 157.48) (xy 325.12 157.48)
 		)
 		(stroke
 			(width 0)
@@ -15397,7 +15513,7 @@
 	)
 	(wire
 		(pts
-			(xy 736.6 140.97) (xy 753.11 140.97)
+			(xy 784.86 140.97) (xy 801.37 140.97)
 		)
 		(stroke
 			(width 0)
@@ -15454,16 +15570,6 @@
 			(type default)
 		)
 		(uuid "4f969bc2-835d-4cc0-9040-2a9cdbf983c7")
-	)
-	(wire
-		(pts
-			(xy 480.06 133.35) (xy 492.76 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ff9362e-1c5a-4730-b1f2-b5a60a95c604")
 	)
 	(wire
 		(pts
@@ -15537,6 +15643,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 160.02) (xy 72.39 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5205c9e9-b3ec-4b9c-9dcb-05ce24628464")
+	)
+	(wire
+		(pts
 			(xy 196.85 57.15) (xy 196.85 62.23)
 		)
 		(stroke
@@ -15587,7 +15703,7 @@
 	)
 	(wire
 		(pts
-			(xy 655.32 133.35) (xy 657.86 133.35)
+			(xy 703.58 133.35) (xy 706.12 133.35)
 		)
 		(stroke
 			(width 0)
@@ -15644,6 +15760,16 @@
 			(type default)
 		)
 		(uuid "53a11dc3-2fc0-4ce2-8c4b-c42c464544c2")
+	)
+	(wire
+		(pts
+			(xy 106.68 157.48) (xy 148.59 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "540ca1b8-9d44-403d-9a8c-9b5f2d2f6750")
 	)
 	(wire
 		(pts
@@ -15787,7 +15913,7 @@
 	)
 	(wire
 		(pts
-			(xy 619.76 133.35) (xy 622.3 133.35)
+			(xy 668.02 133.35) (xy 670.56 133.35)
 		)
 		(stroke
 			(width 0)
@@ -15837,6 +15963,16 @@
 	)
 	(wire
 		(pts
+			(xy 492.76 133.35) (xy 492.76 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58bf4cea-01dd-4915-a565-47cf1f6180dd")
+	)
+	(wire
+		(pts
 			(xy 448.31 209.55) (xy 459.74 209.55)
 		)
 		(stroke
@@ -15847,7 +15983,7 @@
 	)
 	(wire
 		(pts
-			(xy 665.48 140.97) (xy 681.99 140.97)
+			(xy 713.74 140.97) (xy 730.25 140.97)
 		)
 		(stroke
 			(width 0)
@@ -15897,16 +16033,6 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 119.38) (xy 106.68 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a941b23-317d-4468-9f2b-77dc0e746560")
-	)
-	(wire
-		(pts
 			(xy 694.69 87.63) (xy 712.47 87.63)
 		)
 		(stroke
@@ -15924,6 +16050,16 @@
 			(type default)
 		)
 		(uuid "5b020485-d0c0-419f-8d29-0b5683074813")
+	)
+	(wire
+		(pts
+			(xy 509.27 140.97) (xy 529.59 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b1931e0-70c6-44d7-aa1a-27b072a63713")
 	)
 	(wire
 		(pts
@@ -15954,6 +16090,16 @@
 			(type default)
 		)
 		(uuid "5bba2eb2-fd99-435b-aebf-8d62e0459b53")
+	)
+	(wire
+		(pts
+			(xy 124.46 355.6) (xy 124.46 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c0c7ef9-f4a6-43e4-859f-313bd6acdf19")
 	)
 	(wire
 		(pts
@@ -16077,7 +16223,7 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 140.97) (xy 736.6 140.97)
+			(xy 767.08 140.97) (xy 784.86 140.97)
 		)
 		(stroke
 			(width 0)
@@ -16177,7 +16323,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 356.87) (xy 111.76 355.6)
+			(xy 113.03 356.87) (xy 113.03 355.6)
 		)
 		(stroke
 			(width 0)
@@ -16427,6 +16573,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 176.53) (xy 81.28 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "690c1302-55b5-403b-88e6-c02fb4fa25fe")
+	)
+	(wire
+		(pts
 			(xy 436.88 114.3) (xy 454.66 114.3)
 		)
 		(stroke
@@ -16547,7 +16703,7 @@
 	)
 	(wire
 		(pts
-			(xy 612.14 125.73) (xy 629.92 125.73)
+			(xy 660.4 125.73) (xy 678.18 125.73)
 		)
 		(stroke
 			(width 0)
@@ -16577,7 +16733,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 140.97) (xy 647.7 140.97)
+			(xy 678.18 140.97) (xy 695.96 140.97)
 		)
 		(stroke
 			(width 0)
@@ -16607,7 +16763,7 @@
 	)
 	(wire
 		(pts
-			(xy 707.39 133.35) (xy 711.2 133.35)
+			(xy 755.65 133.35) (xy 759.46 133.35)
 		)
 		(stroke
 			(width 0)
@@ -16767,7 +16923,7 @@
 	)
 	(wire
 		(pts
-			(xy 681.99 140.97) (xy 699.77 140.97)
+			(xy 730.25 140.97) (xy 748.03 140.97)
 		)
 		(stroke
 			(width 0)
@@ -16854,16 +17010,6 @@
 			(type default)
 		)
 		(uuid "730d2b09-9e03-49cd-9075-ec23e4be0cbd")
-	)
-	(wire
-		(pts
-			(xy 482.6 219.71) (xy 482.6 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73520b8d-30c1-4276-be8f-8a2df589b5ce")
 	)
 	(wire
 		(pts
@@ -16977,6 +17123,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 138.43) (xy 127 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75b43fa1-eda8-41d0-9772-cdb1d41da11d")
+	)
+	(wire
+		(pts
 			(xy 472.44 87.63) (xy 552.45 87.63)
 		)
 		(stroke
@@ -17007,7 +17163,7 @@
 	)
 	(wire
 		(pts
-			(xy 472.44 125.73) (xy 554.99 125.73)
+			(xy 472.44 125.73) (xy 509.27 125.73)
 		)
 		(stroke
 			(width 0)
@@ -17067,16 +17223,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 347.98) (xy 104.14 347.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77b3b55b-c816-4771-ac81-f9897a261447")
-	)
-	(wire
-		(pts
 			(xy 340.36 269.24) (xy 340.36 266.7)
 		)
 		(stroke
@@ -17127,7 +17273,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 176.53) (xy 81.28 176.53)
+			(xy 52.07 176.53) (xy 68.58 176.53)
 		)
 		(stroke
 			(width 0)
@@ -17337,16 +17483,6 @@
 	)
 	(wire
 		(pts
-			(xy 774.7 140.97) (xy 801.37 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "805dcd80-4883-4a25-a154-0dabedc758a5")
-	)
-	(wire
-		(pts
 			(xy 208.28 261.62) (xy 208.28 264.16)
 		)
 		(stroke
@@ -17497,6 +17633,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 157.48) (xy 64.77 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8354fd18-e2f1-49a5-aaf7-9dbc95a1b82a")
+	)
+	(wire
+		(pts
 			(xy 66.04 292.1) (xy 68.58 292.1)
 		)
 		(stroke
@@ -17517,7 +17663,7 @@
 	)
 	(wire
 		(pts
-			(xy 699.77 125.73) (xy 718.82 125.73)
+			(xy 748.03 125.73) (xy 767.08 125.73)
 		)
 		(stroke
 			(width 0)
@@ -17657,7 +17803,17 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 125.73) (xy 63.5 163.83)
+			(xy 314.96 144.78) (xy 314.96 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87075296-2833-4420-95e2-d448907ed6a8")
+	)
+	(wire
+		(pts
+			(xy 63.5 125.73) (xy 63.5 144.78)
 		)
 		(stroke
 			(width 0)
@@ -17724,16 +17880,6 @@
 			(type default)
 		)
 		(uuid "8a012af7-af3f-43d6-9bdf-66b5a00fb651")
-	)
-	(wire
-		(pts
-			(xy 774.7 125.73) (xy 801.37 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a28615a-4fe0-4190-8464-901adf4956a6")
 	)
 	(wire
 		(pts
@@ -17847,16 +17993,6 @@
 	)
 	(wire
 		(pts
-			(xy 556.26 160.02) (xy 547.37 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cbf92cb-c001-45f9-96ef-c0292a8bdb51")
-	)
-	(wire
-		(pts
 			(xy 631.19 80.01) (xy 633.73 80.01)
 		)
 		(stroke
@@ -17907,6 +18043,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 119.38) (xy 106.68 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8da64f57-3559-4208-b3e0-a28619ed08d2")
+	)
+	(wire
+		(pts
 			(xy 414.02 219.71) (xy 414.02 222.25)
 		)
 		(stroke
@@ -17927,7 +18073,7 @@
 	)
 	(wire
 		(pts
-			(xy 629.92 125.73) (xy 647.7 125.73)
+			(xy 678.18 125.73) (xy 695.96 125.73)
 		)
 		(stroke
 			(width 0)
@@ -18127,6 +18273,16 @@
 	)
 	(wire
 		(pts
+			(xy 575.31 133.35) (xy 577.85 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91abc7ce-6b8d-456e-94b6-c7741cb413e3")
+	)
+	(wire
+		(pts
 			(xy 271.78 119.38) (xy 284.48 119.38)
 		)
 		(stroke
@@ -18134,16 +18290,6 @@
 			(type default)
 		)
 		(uuid "91af37a1-50c9-45b2-803d-3cf0aee0532a")
-	)
-	(wire
-		(pts
-			(xy 492.76 133.35) (xy 492.76 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91cb3ec9-fca9-464a-b24d-6ea3ec975f06")
 	)
 	(wire
 		(pts
@@ -18217,7 +18363,7 @@
 	)
 	(wire
 		(pts
-			(xy 647.7 140.97) (xy 665.48 140.97)
+			(xy 695.96 140.97) (xy 713.74 140.97)
 		)
 		(stroke
 			(width 0)
@@ -18247,7 +18393,7 @@
 	)
 	(wire
 		(pts
-			(xy 736.6 125.73) (xy 753.11 125.73)
+			(xy 784.86 125.73) (xy 801.37 125.73)
 		)
 		(stroke
 			(width 0)
@@ -18257,7 +18403,7 @@
 	)
 	(wire
 		(pts
-			(xy 595.63 140.97) (xy 612.14 140.97)
+			(xy 643.89 140.97) (xy 660.4 140.97)
 		)
 		(stroke
 			(width 0)
@@ -18274,6 +18420,16 @@
 			(type default)
 		)
 		(uuid "96012029-922a-44dc-88b3-f0aef01ae9ba")
+	)
+	(wire
+		(pts
+			(xy 325.12 157.48) (xy 335.28 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9623e7fb-6d24-48cd-b648-5321136d925b")
 	)
 	(wire
 		(pts
@@ -18294,6 +18450,26 @@
 			(type default)
 		)
 		(uuid "965abccb-78e9-4bb2-baa9-5873bd490a66")
+	)
+	(wire
+		(pts
+			(xy 68.58 157.48) (xy 68.58 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9690a99b-2be3-4bb5-a779-ba9a0e16ace1")
+	)
+	(wire
+		(pts
+			(xy 492.76 160.02) (xy 480.06 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "969b34f5-d6b8-4164-8c9a-1c0c73cbad69")
 	)
 	(wire
 		(pts
@@ -18414,6 +18590,16 @@
 			(type default)
 		)
 		(uuid "99ddeef5-b86b-4d28-bec3-e02ee41f41b5")
+	)
+	(wire
+		(pts
+			(xy 97.79 355.6) (xy 97.79 353.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e6078a-07d5-4875-adde-02abbc9465f6")
 	)
 	(wire
 		(pts
@@ -18607,16 +18793,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 349.25) (xy 123.19 347.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f88d842-52ae-4935-8af5-bb371d12b2be")
-	)
-	(wire
-		(pts
 			(xy 419.1 114.3) (xy 436.88 114.3)
 		)
 		(stroke
@@ -18657,7 +18833,7 @@
 	)
 	(wire
 		(pts
-			(xy 699.77 140.97) (xy 718.82 140.97)
+			(xy 748.03 140.97) (xy 767.08 140.97)
 		)
 		(stroke
 			(width 0)
@@ -18857,7 +19033,7 @@
 	)
 	(wire
 		(pts
-			(xy 562.61 133.35) (xy 570.23 133.35)
+			(xy 610.87 133.35) (xy 618.49 133.35)
 		)
 		(stroke
 			(width 0)
@@ -19017,6 +19193,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 355.6) (xy 113.03 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa72eb34-9219-4edc-bebc-26f36dbc1483")
+	)
+	(wire
+		(pts
 			(xy 228.6 125.73) (xy 232.41 125.73)
 		)
 		(stroke
@@ -19107,6 +19293,16 @@
 	)
 	(wire
 		(pts
+			(xy 516.89 133.35) (xy 521.97 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "accce472-66ba-42c1-8537-54f0c5152a43")
+	)
+	(wire
+		(pts
 			(xy 77.47 473.71) (xy 86.36 473.71)
 		)
 		(stroke
@@ -19167,7 +19363,7 @@
 	)
 	(wire
 		(pts
-			(xy 307.34 176.53) (xy 320.04 176.53)
+			(xy 307.34 180.34) (xy 320.04 180.34)
 		)
 		(stroke
 			(width 0)
@@ -19557,7 +19753,7 @@
 	)
 	(wire
 		(pts
-			(xy 689.61 133.35) (xy 692.15 133.35)
+			(xy 737.87 133.35) (xy 740.41 133.35)
 		)
 		(stroke
 			(width 0)
@@ -19577,7 +19773,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 138.43) (xy 144.78 138.43)
+			(xy 106.68 138.43) (xy 118.11 138.43)
 		)
 		(stroke
 			(width 0)
@@ -19737,6 +19933,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 346.71) (xy 101.6 344.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bda966f4-a4f7-4e5a-8501-e80dedf2ef30")
+	)
+	(wire
+		(pts
 			(xy 287.02 74.93) (xy 299.72 74.93)
 		)
 		(stroke
@@ -19817,7 +20023,7 @@
 	)
 	(wire
 		(pts
-			(xy 612.14 140.97) (xy 629.92 140.97)
+			(xy 660.4 140.97) (xy 678.18 140.97)
 		)
 		(stroke
 			(width 0)
@@ -19934,6 +20140,16 @@
 			(type default)
 		)
 		(uuid "c1c39fc8-0582-4a1f-b690-909f24af5d8a")
+	)
+	(wire
+		(pts
+			(xy 567.69 125.73) (xy 585.47 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cea012-8e8d-4b19-b224-4a96c9182341")
 	)
 	(wire
 		(pts
@@ -20087,7 +20303,7 @@
 	)
 	(wire
 		(pts
-			(xy 807.72 186.69) (xy 807.72 160.02)
+			(xy 817.88 186.69) (xy 817.88 160.02)
 		)
 		(stroke
 			(width 0)
@@ -20127,7 +20343,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 347.98) (xy 102.87 347.98)
+			(xy 95.25 344.17) (xy 97.79 344.17)
 		)
 		(stroke
 			(width 0)
@@ -20154,16 +20370,6 @@
 			(type default)
 		)
 		(uuid "c72e1bf8-e52f-4ed2-92b5-39699583af86")
-	)
-	(wire
-		(pts
-			(xy 123.19 355.6) (xy 123.19 354.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7421c1d-13a2-44eb-9eca-85949e816358")
 	)
 	(wire
 		(pts
@@ -20214,16 +20420,6 @@
 			(type default)
 		)
 		(uuid "c8776f9e-319a-4b96-bfb9-8bb1b5a61009")
-	)
-	(wire
-		(pts
-			(xy 760.73 133.35) (xy 767.08 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c87cf550-b9eb-4f41-a492-245d6266154f")
 	)
 	(wire
 		(pts
@@ -20377,16 +20573,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 354.33) (xy 102.87 355.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd94b216-025b-457d-b881-4021afa6b04d")
-	)
-	(wire
-		(pts
 			(xy 340.36 254) (xy 340.36 256.54)
 		)
 		(stroke
@@ -20527,7 +20713,7 @@
 	)
 	(wire
 		(pts
-			(xy 595.63 125.73) (xy 612.14 125.73)
+			(xy 643.89 125.73) (xy 660.4 125.73)
 		)
 		(stroke
 			(width 0)
@@ -20587,16 +20773,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 157.48) (xy 81.28 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2c78c76-51fd-4dfa-a548-b8315ffe94d5")
-	)
-	(wire
-		(pts
 			(xy 274.32 74.93) (xy 287.02 74.93)
 		)
 		(stroke
@@ -20647,7 +20823,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 119.38) (xy 96.52 119.38)
+			(xy 81.28 119.38) (xy 93.98 119.38)
 		)
 		(stroke
 			(width 0)
@@ -20677,7 +20853,7 @@
 	)
 	(wire
 		(pts
-			(xy 744.22 133.35) (xy 745.49 133.35)
+			(xy 792.48 133.35) (xy 793.75 133.35)
 		)
 		(stroke
 			(width 0)
@@ -20807,7 +20983,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.96 144.78) (xy 314.96 163.83)
+			(xy 314.96 148.59) (xy 314.96 167.64)
 		)
 		(stroke
 			(width 0)
@@ -21064,6 +21240,16 @@
 			(type default)
 		)
 		(uuid "db79ee2a-1d1a-41b5-a8b2-7c2a27ca9f6c")
+	)
+	(wire
+		(pts
+			(xy 113.03 355.6) (xy 124.46 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbad0b2c-1dcd-466f-a958-52632e9db819")
 	)
 	(wire
 		(pts
@@ -21327,7 +21513,17 @@
 	)
 	(wire
 		(pts
-			(xy 681.99 125.73) (xy 699.77 125.73)
+			(xy 585.47 140.97) (xy 603.25 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e445be27-93a5-4690-96c3-c3c5a7238587")
+	)
+	(wire
+		(pts
+			(xy 730.25 125.73) (xy 748.03 125.73)
 		)
 		(stroke
 			(width 0)
@@ -21367,7 +21563,7 @@
 	)
 	(wire
 		(pts
-			(xy 577.85 140.97) (xy 595.63 140.97)
+			(xy 626.11 140.97) (xy 643.89 140.97)
 		)
 		(stroke
 			(width 0)
@@ -21437,7 +21633,17 @@
 	)
 	(wire
 		(pts
-			(xy 320.04 176.53) (xy 332.74 176.53)
+			(xy 64.77 160.02) (xy 72.39 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6c831c9-bb9f-4eab-9411-93490f28acd6")
+	)
+	(wire
+		(pts
+			(xy 320.04 180.34) (xy 332.74 180.34)
 		)
 		(stroke
 			(width 0)
@@ -21617,7 +21823,7 @@
 	)
 	(wire
 		(pts
-			(xy 554.99 125.73) (xy 577.85 125.73)
+			(xy 603.25 125.73) (xy 626.11 125.73)
 		)
 		(stroke
 			(width 0)
@@ -21627,23 +21833,13 @@
 	)
 	(wire
 		(pts
-			(xy 718.82 125.73) (xy 736.6 125.73)
+			(xy 767.08 125.73) (xy 784.86 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "eb2a5b28-6521-4125-8de3-3fd6ec8b77d5")
-	)
-	(wire
-		(pts
-			(xy 547.37 160.02) (xy 547.37 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eb75dcaf-6460-499f-a377-a148a51bea79")
 	)
 	(wire
 		(pts
@@ -21677,16 +21873,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 349.25) (xy 102.87 347.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec3bca0b-5d1b-481d-bdc4-96cdfd633633")
-	)
-	(wire
-		(pts
 			(xy 571.5 160.02) (xy 581.66 160.02)
 		)
 		(stroke
@@ -21707,7 +21893,7 @@
 	)
 	(wire
 		(pts
-			(xy 637.54 133.35) (xy 640.08 133.35)
+			(xy 685.8 133.35) (xy 688.34 133.35)
 		)
 		(stroke
 			(width 0)
@@ -22067,6 +22253,16 @@
 	)
 	(wire
 		(pts
+			(xy 492.76 133.35) (xy 480.06 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4171142-1516-41fc-969a-6c88ec68935a")
+	)
+	(wire
+		(pts
 			(xy 598.17 260.35) (xy 598.17 274.32)
 		)
 		(stroke
@@ -22117,6 +22313,16 @@
 	)
 	(wire
 		(pts
+			(xy 537.21 133.35) (xy 560.07 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4c6281d-736b-455f-ad64-5dbbea5ee89e")
+	)
+	(wire
+		(pts
 			(xy 71.12 297.18) (xy 71.12 284.48)
 		)
 		(stroke
@@ -22147,7 +22353,7 @@
 	)
 	(wire
 		(pts
-			(xy 472.44 140.97) (xy 554.99 140.97)
+			(xy 472.44 140.97) (xy 509.27 140.97)
 		)
 		(stroke
 			(width 0)
@@ -22217,6 +22423,26 @@
 	)
 	(wire
 		(pts
+			(xy 585.47 125.73) (xy 603.25 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6c30d70-d6cb-48c6-81d1-d32269ea5a90")
+	)
+	(wire
+		(pts
+			(xy 113.03 354.33) (xy 113.03 355.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6eac119-e63b-444c-9961-5d79eb35cd5b")
+	)
+	(wire
+		(pts
 			(xy 585.47 289.56) (xy 598.17 289.56)
 		)
 		(stroke
@@ -22267,6 +22493,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 138.43) (xy 144.78 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f887f2c3-80d0-4a56-bd36-c65bbaa2b95f")
+	)
+	(wire
+		(pts
 			(xy 68.58 119.38) (xy 81.28 119.38)
 		)
 		(stroke
@@ -22277,7 +22513,7 @@
 	)
 	(wire
 		(pts
-			(xy 673.1 133.35) (xy 674.37 133.35)
+			(xy 721.36 133.35) (xy 722.63 133.35)
 		)
 		(stroke
 			(width 0)
@@ -22327,16 +22563,6 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 157.48) (xy 148.59 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9fec091-170e-40aa-b6c6-60a7575a19bb")
-	)
-	(wire
-		(pts
 			(xy 212.09 504.19) (xy 213.36 504.19)
 		)
 		(stroke
@@ -22344,6 +22570,16 @@
 			(type default)
 		)
 		(uuid "fa7a8e63-e104-4973-9a56-aa4f2e59216b")
+	)
+	(wire
+		(pts
+			(xy 501.65 160.02) (xy 501.65 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fadafa04-8b7f-4599-920e-b2e9581c46b6")
 	)
 	(wire
 		(pts
@@ -22544,6 +22780,16 @@
 			(type default)
 		)
 		(uuid "ff97a671-7bfa-48fc-afa0-ea934c2e7fdd")
+	)
+	(wire
+		(pts
+			(xy 327.66 163.83) (xy 327.66 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff9d7e1e-7f44-4697-b240-718d642e3055")
 	)
 	(wire
 		(pts
@@ -23167,7 +23413,7 @@
 	)
 	(global_label "ENC2_A"
 		(shape input)
-		(at 77.47 476.25 180)
+		(at 77.47 478.79 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23177,7 +23423,7 @@
 		)
 		(uuid "03e65b17-2cea-4613-bb7a-b043281a98c6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 67.4696 476.25 0)
+			(at 67.4696 478.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23209,7 +23455,7 @@
 	)
 	(global_label "COL8"
 		(shape input)
-		(at 77.47 415.29 180)
+		(at 77.47 417.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23219,7 +23465,7 @@
 		)
 		(uuid "0bec3248-2919-4e48-8d28-d58547593d14")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.6467 415.29 0)
+			(at 69.6467 417.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23251,7 +23497,7 @@
 	)
 	(global_label "COL3"
 		(shape input)
-		(at 132.08 448.31 0)
+		(at 132.08 450.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23261,7 +23507,7 @@
 		)
 		(uuid "0c37be66-5823-43f9-b5fd-cfa472858a4b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.9033 448.31 0)
+			(at 139.9033 450.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23463,22 +23709,22 @@
 	)
 	(global_label "ROW0"
 		(shape input)
-		(at 77.47 483.87 180)
+		(at 132.08 461.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "17bfbbb3-2b41-4680-8718-68f384076ed9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.2234 483.87 0)
+			(at 140.3266 461.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -23571,7 +23817,7 @@
 	)
 	(global_label "COL5"
 		(shape input)
-		(at 132.08 453.39 0)
+		(at 132.08 455.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23581,7 +23827,7 @@
 		)
 		(uuid "209df126-55c7-4ff1-ab06-bd4a78566080")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.9033 453.39 0)
+			(at 139.9033 455.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23741,7 +23987,7 @@
 	)
 	(global_label "RKJ-B"
 		(shape input)
-		(at 406.4 431.8 0)
+		(at 421.64 431.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23751,7 +23997,7 @@
 		)
 		(uuid "34392a54-7f09-4439-abbf-f09dd1bcbee4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 415.7352 431.8 0)
+			(at 430.9752 431.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23867,7 +24113,7 @@
 	)
 	(global_label "RKJ-P"
 		(shape input)
-		(at 421.64 431.8 0)
+		(at 439.42 431.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23877,7 +24123,7 @@
 		)
 		(uuid "3ef49b21-fc4d-49be-885e-0ce052a93051")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 430.9752 431.8 0)
+			(at 448.7552 431.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23911,7 +24157,7 @@
 	)
 	(global_label "RKJ-D"
 		(shape input)
-		(at 457.2 431.8 0)
+		(at 406.4 431.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -23921,7 +24167,7 @@
 		)
 		(uuid "429b7750-1ab9-4f39-86ee-69aa6c5f40e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 466.5352 431.8 0)
+			(at 415.7352 431.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24105,7 +24351,7 @@
 	)
 	(global_label "COL9"
 		(shape input)
-		(at 77.47 417.83 180)
+		(at 77.47 420.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -24115,7 +24361,7 @@
 		)
 		(uuid "54d88ce1-2767-48e6-a6c1-023562140858")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.6467 417.83 0)
+			(at 69.6467 420.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24383,7 +24629,7 @@
 	)
 	(global_label "ROW3"
 		(shape input)
-		(at 421.64 439.42 180)
+		(at 406.4 439.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -24393,7 +24639,7 @@
 		)
 		(uuid "6996c93d-4957-4329-9c9a-f5d80f5dfb43")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 413.3934 439.42 0)
+			(at 398.1534 439.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24787,22 +25033,22 @@
 	)
 	(global_label "ENC2_B"
 		(shape input)
-		(at 132.08 461.01 0)
+		(at 77.47 476.25 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "8c4b8df7-72fa-4eab-ad9c-a4a564477b51")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 142.2618 461.01 0)
+			(at 67.2882 476.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -25129,7 +25375,7 @@
 	)
 	(global_label "COL4"
 		(shape input)
-		(at 132.08 450.85 0)
+		(at 132.08 453.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -25139,7 +25385,7 @@
 		)
 		(uuid "a3bbd0b0-ef77-4feb-9c35-f3367c6acf1c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.9033 450.85 0)
+			(at 139.9033 453.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25605,26 +25851,6 @@
 			)
 		)
 	)
-	(global_label "PLUG_DETECT"
-		(shape input)
-		(at 77.47 420.37 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bca3d547-475f-427b-bca1-06ce2d5d715b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 77.47 420.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "CURR_1500mA_OK"
 		(shape output)
 		(at 77.47 448.31 180)
@@ -25647,7 +25873,7 @@
 	)
 	(global_label "ROW2"
 		(shape input)
-		(at 406.4 439.42 180)
+		(at 421.64 439.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -25657,7 +25883,7 @@
 		)
 		(uuid "c300a0a1-4019-43df-9dff-35a9d048fde7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 398.1534 439.42 0)
+			(at 413.3934 439.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25669,7 +25895,7 @@
 	)
 	(global_label "COL7"
 		(shape input)
-		(at 77.47 412.75 180)
+		(at 77.47 415.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -25679,7 +25905,7 @@
 		)
 		(uuid "c4104875-828d-4922-8dd0-ba524515bcbe")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.6467 412.75 0)
+			(at 69.6467 415.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25691,7 +25917,7 @@
 	)
 	(global_label "RKJ-A"
 		(shape input)
-		(at 439.42 431.8 0)
+		(at 457.2 431.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -25701,7 +25927,7 @@
 		)
 		(uuid "c7b1c28b-39a1-46a9-9b7a-69de6a622624")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 448.5738 431.8 0)
+			(at 466.3538 431.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25837,7 +26063,7 @@
 	)
 	(global_label "COL1"
 		(shape input)
-		(at 77.47 481.33 180)
+		(at 77.47 483.87 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -25847,7 +26073,7 @@
 		)
 		(uuid "db2a4062-9673-4aee-8f9b-179708fece98")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.6467 481.33 0)
+			(at 69.6467 483.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25921,22 +26147,22 @@
 	)
 	(global_label "COL6"
 		(shape input)
-		(at 132.08 455.93 0)
+		(at 77.47 412.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "df0326d7-4fd6-40c3-aae2-d4059065ab63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 139.9033 455.93 0)
+			(at 69.6467 412.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -26159,7 +26385,7 @@
 	)
 	(global_label "COL0"
 		(shape input)
-		(at 77.47 478.79 180)
+		(at 77.47 481.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -26169,7 +26395,7 @@
 		)
 		(uuid "ed12acc7-9654-4fbe-a458-fb1148ba36f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.6467 478.79 0)
+			(at 69.6467 481.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26456,7 +26682,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00bef122-1d8c-4465-beb1-a4e5cc1d8e9e")
-		(property "Reference" "MX99"
+		(property "Reference" "MX101"
 			(at 81.534 162.56 0)
 			(effects
 				(font
@@ -26509,7 +26735,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX99")
+					(reference "MX101")
 					(unit 1)
 				)
 			)
@@ -26589,7 +26815,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "015dafff-bd67-48aa-b35e-79365f9c6ffd")
-		(property "Reference" "D83"
+		(property "Reference" "D85"
 			(at 109.474 156.21 0)
 			(effects
 				(font
@@ -26662,7 +26888,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D83")
+					(reference "D85")
 					(unit 1)
 				)
 			)
@@ -27177,7 +27403,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04a77409-97bc-497a-971f-25ae0f0d4ade")
-		(property "Reference" "D114"
+		(property "Reference" "D115"
 			(at 403.606 433.07 0)
 			(effects
 				(font
@@ -27250,7 +27476,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D114")
+					(reference "D115")
 					(unit 1)
 				)
 			)
@@ -27472,7 +27698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "05cdf61c-556c-4867-b602-f41ff286afca")
-		(property "Reference" "MX76"
+		(property "Reference" "MX78"
 			(at 288.544 124.46 0)
 			(effects
 				(font
@@ -27525,7 +27751,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX76")
+					(reference "MX78")
 					(unit 1)
 				)
 			)
@@ -27608,7 +27834,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08111140-a505-4d44-8821-948baa414e87")
-		(property "Reference" "MX81"
+		(property "Reference" "MX83"
 			(at 81.534 143.51 0)
 			(effects
 				(font
@@ -27661,7 +27887,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX81")
+					(reference "MX83")
 					(unit 1)
 				)
 			)
@@ -27983,7 +28209,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a616391-e3a8-429a-9bf9-991dd022f1b6")
-		(property "Reference" "LED92"
+		(property "Reference" "LED94"
 			(at 710.946 153.67 0)
 			(effects
 				(font
@@ -28042,7 +28268,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED92")
+					(reference "LED94")
 					(unit 1)
 				)
 			)
@@ -28132,7 +28358,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b684f80-4c79-44ba-a051-2653b5076217")
-		(property "Reference" "D100"
+		(property "Reference" "D102"
 			(at 104.394 175.26 0)
 			(effects
 				(font
@@ -28205,7 +28431,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D100")
+					(reference "D102")
 					(unit 1)
 				)
 			)
@@ -28213,15 +28439,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 332.74 172.72 90)
+		(at 332.74 176.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0b6d91b9-50c0-4535-a89d-06e1f0df5eae")
-		(property "Reference" "D111"
-			(at 329.946 170.18 0)
+		(property "Reference" "D113"
+			(at 329.946 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28230,7 +28456,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 325.374 174.244 90)
+			(at 325.374 178.054 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28240,7 +28466,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:D_SOD-123"
-			(at 332.74 172.72 0)
+			(at 332.74 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28249,7 +28475,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 332.74 172.72 0)
+			(at 332.74 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28258,7 +28484,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 332.74 172.72 0)
+			(at 332.74 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28267,7 +28493,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 332.74 172.72 0)
+			(at 332.74 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28276,7 +28502,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 332.74 172.72 0)
+			(at 332.74 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28293,7 +28519,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D111")
+					(reference "D113")
 					(unit 1)
 				)
 			)
@@ -28464,7 +28690,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0e1592c1-2394-46a7-96a0-83541b10a25b")
-		(property "Reference" "MX78"
+		(property "Reference" "MX80"
 			(at 335.534 124.46 0)
 			(effects
 				(font
@@ -28517,7 +28743,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX78")
+					(reference "MX80")
 					(unit 1)
 				)
 			)
@@ -28663,15 +28889,15 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 317.5 166.37 0)
+		(at 317.5 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0ee10471-e599-4c52-abcd-651e97bbeb00")
-		(property "Reference" "MX110"
-			(at 320.294 162.56 0)
+		(property "Reference" "MX112"
+			(at 320.294 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28679,7 +28905,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 322.326 161.29 0)
+			(at 322.326 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28688,7 +28914,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:SW_MX_HS_1u"
-			(at 317.5 166.37 0)
+			(at 317.5 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28697,7 +28923,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 166.37 0)
+			(at 317.5 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28706,7 +28932,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 317.5 166.37 0)
+			(at 317.5 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28723,7 +28949,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX110")
+					(reference "MX112")
 					(unit 1)
 				)
 			)
@@ -28731,15 +28957,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 801.37 133.35 0)
+		(at 529.59 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0f6c24a9-8c06-42f2-b44c-bf1f60afd478")
-		(property "Reference" "LED78"
-			(at 804.164 127 0)
+		(property "Reference" "LED66"
+			(at 532.384 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28747,7 +28973,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 816.61 129.5714 0)
+			(at 544.83 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28756,7 +28982,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 801.37 133.35 0)
+			(at 529.59 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28765,7 +28991,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 801.37 133.35 0)
+			(at 529.59 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28774,7 +29000,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 801.37 133.35 0)
+			(at 529.59 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28797,7 +29023,75 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED78")
+					(reference "LED66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 124.46 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0fa0efce-17ad-4871-9f29-26f2528e7a00")
+		(property "Reference" "MX66"
+			(at 127.254 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 129.286 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Keyboard:SW_MX_HS_1u"
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 124.46 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "85c94e85-9354-4b4e-a56b-748f841c594e")
+		)
+		(pin "1"
+			(uuid "865b7460-75ea-475e-a1bc-d24f53b24e64")
+		)
+		(instances
+			(project "STM32"
+				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+					(reference "MX66")
 					(unit 1)
 				)
 			)
@@ -28812,7 +29106,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0fbf9bd8-c388-43a0-9b0f-5c509ff547ae")
-		(property "Reference" "MX107"
+		(property "Reference" "MX109"
 			(at 269.494 162.56 0)
 			(effects
 				(font
@@ -28865,7 +29159,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX107")
+					(reference "MX109")
 					(unit 1)
 				)
 			)
@@ -28880,7 +29174,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0ff1593b-abfa-48a9-a2dc-cacd014ca153")
-		(property "Reference" "D102"
+		(property "Reference" "D104"
 			(at 160.274 175.26 0)
 			(effects
 				(font
@@ -28953,7 +29247,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D102")
+					(reference "D104")
 					(unit 1)
 				)
 			)
@@ -29043,7 +29337,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "10906df0-bd7d-4988-b182-8be4535ba6ad")
-		(property "Reference" "MX104"
+		(property "Reference" "MX106"
 			(at 198.374 162.56 0)
 			(effects
 				(font
@@ -29096,7 +29390,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX104")
+					(reference "MX106")
 					(unit 1)
 				)
 			)
@@ -29104,15 +29398,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 647.7 133.35 0)
+		(at 695.96 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "110b5274-e78d-4ae0-9900-09ab3b47322f")
-		(property "Reference" "LED70"
-			(at 650.494 127 0)
+		(property "Reference" "LED74"
+			(at 698.754 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29120,7 +29414,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 662.94 129.5714 0)
+			(at 711.2 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29129,7 +29423,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 647.7 133.35 0)
+			(at 695.96 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29138,7 +29432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 647.7 133.35 0)
+			(at 695.96 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29147,7 +29441,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 647.7 133.35 0)
+			(at 695.96 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29170,7 +29464,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED70")
+					(reference "LED74")
 					(unit 1)
 				)
 			)
@@ -29186,7 +29480,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "114c1cb5-8c59-4f20-a71e-3d862dde7cce")
-		(property "Reference" "LED91"
+		(property "Reference" "LED93"
 			(at 693.166 153.67 0)
 			(effects
 				(font
@@ -29245,7 +29539,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED91")
+					(reference "LED93")
 					(unit 1)
 				)
 			)
@@ -29335,7 +29629,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1181a5c4-9c85-49b0-ba5a-f5b7aaeea6fe")
-		(property "Reference" "MX97"
+		(property "Reference" "MX98"
 			(at 335.534 143.51 0)
 			(effects
 				(font
@@ -29388,7 +29682,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX97")
+					(reference "MX98")
 					(unit 1)
 				)
 			)
@@ -29403,7 +29697,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "119019a5-e794-4631-b5eb-945efdba784c")
-		(property "Reference" "MX101"
+		(property "Reference" "MX103"
 			(at 138.684 162.56 0)
 			(effects
 				(font
@@ -29456,7 +29750,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX101")
+					(reference "MX103")
 					(unit 1)
 				)
 			)
@@ -29709,7 +30003,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "13bbde38-422e-4046-91f4-f9011079c0ed")
-		(property "Reference" "D117"
+		(property "Reference" "D118"
 			(at 454.406 433.07 0)
 			(effects
 				(font
@@ -29782,7 +30076,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D117")
+					(reference "D118")
 					(unit 1)
 				)
 			)
@@ -30029,15 +30323,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 736.6 133.35 0)
+		(at 784.86 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "15f1bba2-dc58-448d-a8a7-169168ad67b7")
-		(property "Reference" "LED75"
-			(at 739.394 127 0)
+		(property "Reference" "LED79"
+			(at 787.654 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30045,7 +30339,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 751.84 129.5714 0)
+			(at 800.1 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30054,7 +30348,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 736.6 133.35 0)
+			(at 784.86 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30063,7 +30357,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 736.6 133.35 0)
+			(at 784.86 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30072,7 +30366,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 736.6 133.35 0)
+			(at 784.86 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30095,7 +30389,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED75")
+					(reference "LED79")
 					(unit 1)
 				)
 			)
@@ -30111,7 +30405,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17417077-8562-4980-a2a8-a8d1d2996a99")
-		(property "Reference" "LED87"
+		(property "Reference" "LED89"
 			(at 622.046 153.67 0)
 			(effects
 				(font
@@ -30170,7 +30464,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED87")
+					(reference "LED89")
 					(unit 1)
 				)
 			)
@@ -30259,7 +30553,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "188db50e-c555-4034-9b76-1076b66a121b")
-		(property "Reference" "D72"
+		(property "Reference" "D74"
 			(at 240.284 137.16 0)
 			(effects
 				(font
@@ -30332,7 +30626,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D72")
+					(reference "D74")
 					(unit 1)
 				)
 			)
@@ -30348,7 +30642,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "18c208a1-5207-4762-a75e-e996c3dc5fee")
-		(property "Reference" "LED88"
+		(property "Reference" "LED90"
 			(at 639.826 153.67 0)
 			(effects
 				(font
@@ -30407,7 +30701,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED88")
+					(reference "LED90")
 					(unit 1)
 				)
 			)
@@ -30571,15 +30865,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 307.34 172.72 90)
+		(at 307.34 176.53 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1b291c19-a6e6-4de5-8583-f2896c757088")
-		(property "Reference" "D109"
-			(at 304.546 170.18 0)
+		(property "Reference" "D111"
+			(at 304.546 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30588,7 +30882,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 299.974 174.244 90)
+			(at 299.974 178.054 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30598,7 +30892,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:D_SOD-123"
-			(at 307.34 172.72 0)
+			(at 307.34 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30607,7 +30901,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 307.34 172.72 0)
+			(at 307.34 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30616,7 +30910,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 307.34 172.72 0)
+			(at 307.34 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30625,7 +30919,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 307.34 172.72 0)
+			(at 307.34 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30634,7 +30928,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 307.34 172.72 0)
+			(at 307.34 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30651,7 +30945,81 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D109")
+					(reference "D111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Keyboard:MX_SK6803MINI-E")
+		(at 585.47 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1bb499c6-d552-4001-9eb7-76131f7807af")
+		(property "Reference" "LED68"
+			(at 588.264 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6803MINI-E"
+			(at 600.71 129.5714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Keyboard:LED_MX_6028R"
+			(at 585.47 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 585.47 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 585.47 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "480ad7ba-3d6e-4ec6-a128-aa6801aebdf6")
+		)
+		(pin "2"
+			(uuid "0cf43dec-c988-4ab6-a008-6d98cb283ac7")
+		)
+		(pin "1"
+			(uuid "15c8b5fd-f442-4f2f-9b12-43853716aa15")
+		)
+		(pin "3"
+			(uuid "3bba8b8c-594f-4149-8483-83978a66eaf1")
+		)
+		(instances
+			(project "STM32"
+				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+					(reference "LED68")
 					(unit 1)
 				)
 			)
@@ -31759,7 +32127,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22d4032a-d72c-467c-9d8c-875eee63e75f")
-		(property "Reference" "D65"
+		(property "Reference" "D67"
 			(at 141.986 132.08 0)
 			(effects
 				(font
@@ -31832,7 +32200,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D65")
+					(reference "D67")
 					(unit 1)
 				)
 			)
@@ -31847,7 +32215,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22ec3ffa-e6db-4e24-aa08-94a7f5de6f1d")
-		(property "Reference" "D79"
+		(property "Reference" "D81"
 			(at 54.864 156.21 0)
 			(effects
 				(font
@@ -31920,7 +32288,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D79")
+					(reference "D81")
 					(unit 1)
 				)
 			)
@@ -32543,7 +32911,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ad0973d-0f5f-4f0c-a685-1a3abfac0c26")
-		(property "Reference" "D74"
+		(property "Reference" "D76"
 			(at 264.414 137.16 0)
 			(effects
 				(font
@@ -32616,7 +32984,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D74")
+					(reference "D76")
 					(unit 1)
 				)
 			)
@@ -32973,7 +33341,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ea0ee6f-f77c-4f8e-a490-a5851cc534f3")
-		(property "Reference" "MX77"
+		(property "Reference" "MX79"
 			(at 308.864 124.46 0)
 			(effects
 				(font
@@ -33026,7 +33394,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX77")
+					(reference "MX79")
 					(unit 1)
 				)
 			)
@@ -33129,7 +33497,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "30f4b9d8-ec8b-4b0f-9963-312ab56acc65")
-		(property "Reference" "MX91"
+		(property "Reference" "MX93"
 			(at 244.094 143.51 0)
 			(effects
 				(font
@@ -33182,7 +33550,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX91")
+					(reference "MX93")
 					(unit 1)
 				)
 			)
@@ -33197,7 +33565,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "313832d1-5955-4218-8e9b-d2fc161a4252")
-		(property "Reference" "MX82"
+		(property "Reference" "MX84"
 			(at 94.234 143.51 0)
 			(effects
 				(font
@@ -33250,7 +33618,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX82")
+					(reference "MX84")
 					(unit 1)
 				)
 			)
@@ -33330,7 +33698,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31fb3491-6cb8-4ead-a69c-90edc0b581b6")
-		(property "Reference" "MX74"
+		(property "Reference" "MX76"
 			(at 261.874 124.46 0)
 			(effects
 				(font
@@ -33383,7 +33751,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX74")
+					(reference "MX76")
 					(unit 1)
 				)
 			)
@@ -33621,7 +33989,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "353216d5-38e8-4d95-8ebb-d06d22bbe50e")
-		(property "Reference" "D71"
+		(property "Reference" "D73"
 			(at 221.996 132.08 0)
 			(effects
 				(font
@@ -33694,7 +34062,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D71")
+					(reference "D73")
 					(unit 1)
 				)
 			)
@@ -33844,7 +34212,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37162f43-9acf-4991-bf6f-69ccfa30a178")
-		(property "Reference" "D66"
+		(property "Reference" "D68"
 			(at 164.084 137.16 0)
 			(effects
 				(font
@@ -33917,7 +34285,95 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D66")
+					(reference "D68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 118.11 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "376bab25-8d01-4a69-a764-13f51ef471e4")
+		(property "Reference" "D65"
+			(at 120.904 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 125.476 133.096 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Keyboard:D_SOD-123"
+			(at 118.11 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 118.11 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 118.11 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 118.11 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9d9812e-2bd6-442f-a3c9-9392e01154da")
+		)
+		(pin "2"
+			(uuid "a17cd183-7b85-41fb-ae8c-fc41bd83c43a")
+		)
+		(instances
+			(project "STM32"
+				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+					(reference "D65")
 					(unit 1)
 				)
 			)
@@ -33925,7 +34381,7 @@
 	)
 	(symbol
 		(lib_id "Djinn-rescue:VDD-power")
-		(at 93.98 347.98 0)
+		(at 95.25 344.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -33933,7 +34389,7 @@
 		(dnp no)
 		(uuid "37aab58b-ff67-4cda-b7d9-0dba9ab2df42")
 		(property "Reference" "#PWR067"
-			(at 93.98 351.79 0)
+			(at 95.25 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33942,7 +34398,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 94.361 343.5858 0)
+			(at 95.631 339.7758 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33950,7 +34406,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 93.98 347.98 0)
+			(at 95.25 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33959,7 +34415,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 347.98 0)
+			(at 95.25 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33968,7 +34424,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 347.98 0)
+			(at 95.25 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34219,7 +34675,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "39d1bf36-9946-4599-b76a-d22891611a3c")
-		(property "Reference" "MX69"
+		(property "Reference" "MX71"
 			(at 199.644 124.46 0)
 			(effects
 				(font
@@ -34272,7 +34728,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX69")
+					(reference "MX71")
 					(unit 1)
 				)
 			)
@@ -34287,7 +34743,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "39f7e8a5-618d-4543-9d61-7cfcd12c33ad")
-		(property "Reference" "MX84"
+		(property "Reference" "MX86"
 			(at 148.844 143.51 0)
 			(effects
 				(font
@@ -34341,7 +34797,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX84")
+					(reference "MX86")
 					(unit 1)
 				)
 			)
@@ -34423,15 +34879,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 665.48 133.35 0)
+		(at 713.74 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "3bb15d9a-4e76-4f68-807e-0aeabfc1dfa9")
-		(property "Reference" "LED71"
-			(at 668.274 127 0)
+		(property "Reference" "LED75"
+			(at 716.534 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34439,7 +34895,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 680.72 129.5714 0)
+			(at 728.98 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34448,7 +34904,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 665.48 133.35 0)
+			(at 713.74 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34457,7 +34913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 665.48 133.35 0)
+			(at 713.74 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34466,7 +34922,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 665.48 133.35 0)
+			(at 713.74 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34489,7 +34945,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED71")
+					(reference "LED75")
 					(unit 1)
 				)
 			)
@@ -34636,7 +35092,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3d52f8b5-6b8a-4f7d-802e-3291fe0a43e1")
-		(property "Reference" "MX102"
+		(property "Reference" "MX104"
 			(at 157.734 162.56 0)
 			(effects
 				(font
@@ -34689,7 +35145,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX102")
+					(reference "MX104")
 					(unit 1)
 				)
 			)
@@ -34697,7 +35153,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 123.19 351.79 180)
+		(at 124.46 350.52 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34706,7 +35162,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e329df4-cfc1-4822-bc58-fdff07a554e5")
 		(property "Reference" "C17"
-			(at 125.73 350.5136 0)
+			(at 127 349.2436 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34714,8 +35170,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1u"
-			(at 125.73 353.0536 0)
+		(property "Value" "4.7u"
+			(at 127 351.7836 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34724,7 +35180,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 123.19 351.79 0)
+			(at 124.46 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34733,7 +35189,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 351.79 0)
+			(at 124.46 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34742,7 +35198,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 123.19 351.79 0)
+			(at 124.46 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -35196,78 +35652,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Regulator_Linear:XC6206PxxxMR")
-		(at 111.76 347.98 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "422ccf87-c6da-4218-b89b-8f7f17026399")
-		(property "Reference" "U5"
-			(at 111.76 341.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "AZ1117H-3.3TRE1"
-			(at 111.76 344.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
-			(at 111.76 342.265 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.torexsemi.com/file/xc6206/XC6206.pdf"
-			(at 111.76 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Positive 60-250mA Low Dropout Regulator, Fixed Output, SOT-23"
-			(at 111.76 347.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "128b2e91-45bc-4cb5-b647-f2a2e03daa96")
-		)
-		(pin "2"
-			(uuid "95d4a0d7-0551-4424-bd52-a78e771336ed")
-		)
-		(pin "3"
-			(uuid "96b1bd5f-65ff-459e-afc3-f8ddd181832b")
-		)
-		(instances
-			(project "SP110Duo"
-				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 163.83 96.52 90)
 		(unit 1)
@@ -35364,7 +35748,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "428cc658-4bfa-4c19-8166-b29e39576721")
-		(property "Reference" "MX100"
+		(property "Reference" "MX102"
 			(at 101.854 162.56 0)
 			(effects
 				(font
@@ -35417,7 +35801,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX100")
+					(reference "MX102")
 					(unit 1)
 				)
 			)
@@ -35795,7 +36179,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "48474e49-f535-4703-8934-1d2e37428027")
-		(property "Reference" "LED110"
+		(property "Reference" "LED112"
 			(at 776.224 180.34 0)
 			(effects
 				(font
@@ -35854,7 +36238,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED110")
+					(reference "LED112")
 					(unit 1)
 				)
 			)
@@ -35869,7 +36253,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "486c9b16-00ae-4431-a0bc-71ce51f8e27c")
-		(property "Reference" "MX71"
+		(property "Reference" "MX73"
 			(at 225.044 124.46 0)
 			(effects
 				(font
@@ -35922,7 +36306,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX71")
+					(reference "MX73")
 					(unit 1)
 				)
 			)
@@ -36281,7 +36665,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b048380-0e98-4ae2-a029-738ac3f48413")
-		(property "Reference" "MX72"
+		(property "Reference" "MX74"
 			(at 237.744 124.46 0)
 			(effects
 				(font
@@ -36334,7 +36718,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX72")
+					(reference "MX74")
 					(unit 1)
 				)
 			)
@@ -36438,7 +36822,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4dcfd6d6-7d30-48dc-93e6-fb9959269438")
-		(property "Reference" "LED93"
+		(property "Reference" "LED95"
 			(at 728.726 153.67 0)
 			(effects
 				(font
@@ -36497,7 +36881,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED93")
+					(reference "LED95")
 					(unit 1)
 				)
 			)
@@ -37039,7 +37423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5034097b-b435-4cec-ad30-c49f430d8dec")
-		(property "Reference" "D94"
+		(property "Reference" "D96"
 			(at 287.274 156.21 0)
 			(effects
 				(font
@@ -37112,7 +37496,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D94")
+					(reference "D96")
 					(unit 1)
 				)
 			)
@@ -37127,7 +37511,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50482215-a55c-4c53-b340-559ea240ccaa")
-		(property "Reference" "D95"
+		(property "Reference" "D97"
 			(at 296.926 151.13 0)
 			(effects
 				(font
@@ -37200,7 +37584,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D95")
+					(reference "D97")
 					(unit 1)
 				)
 			)
@@ -37365,75 +37749,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Djinn-rescue:CP-Device")
-		(at 482.6 215.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "50d8b83c-836e-48e2-ba96-2aebc8d20dae")
-		(property "Reference" "C33"
-			(at 485.5972 214.7316 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100u"
-			(at 485.5972 217.043 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-6032-15_Kemet-U_Pad2.25x2.35mm_HandSolder"
-			(at 483.5652 219.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 482.6 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 482.6 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b7df133-8a80-4e60-929a-c9e5fba1da73")
-		)
-		(pin "2"
-			(uuid "89366f1c-e773-40ea-b8c2-a3088ba58315")
-		)
-		(instances
-			(project "STM32"
-				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "C33")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D")
 		(at 68.58 96.52 90)
 		(unit 1)
@@ -37530,7 +37845,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "52951968-cb08-4d1d-97d4-d7d981d99839")
-		(property "Reference" "MX83"
+		(property "Reference" "MX85"
 			(at 106.934 143.51 0)
 			(effects
 				(font
@@ -37583,7 +37898,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX83")
+					(reference "MX85")
 					(unit 1)
 				)
 			)
@@ -38116,7 +38431,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "56663466-8714-481d-9c6f-af05038464f9")
-		(property "Reference" "MX65"
+		(property "Reference" "MX67"
 			(at 145.034 124.46 0)
 			(effects
 				(font
@@ -38169,7 +38484,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX65")
+					(reference "MX67")
 					(unit 1)
 				)
 			)
@@ -38259,7 +38574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "57d129fa-d554-4689-8cf6-00a81736d364")
-		(property "Reference" "D105"
+		(property "Reference" "D107"
 			(at 220.726 170.18 0)
 			(effects
 				(font
@@ -38332,7 +38647,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D105")
+					(reference "D107")
 					(unit 1)
 				)
 			)
@@ -38347,7 +38662,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "57faf788-1eed-4d4d-80f5-7f60ea531e04")
-		(property "Reference" "D106"
+		(property "Reference" "D108"
 			(at 241.046 170.18 0)
 			(effects
 				(font
@@ -38420,7 +38735,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D106")
+					(reference "D108")
 					(unit 1)
 				)
 			)
@@ -38724,7 +39039,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a6d9b13-dd64-4126-9e1f-2e46c971578c")
-		(property "Reference" "MX79"
+		(property "Reference" "MX81"
 			(at 52.324 143.51 0)
 			(effects
 				(font
@@ -38777,7 +39092,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX79")
+					(reference "MX81")
 					(unit 1)
 				)
 			)
@@ -38785,7 +39100,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 96.52 115.57 90)
+		(at 93.98 115.57 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38793,7 +39108,7 @@
 		(dnp no)
 		(uuid "5a709965-1ba1-4c7c-98a4-90ac6f34f7c7")
 		(property "Reference" "D43"
-			(at 93.726 113.03 0)
+			(at 91.186 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38802,7 +39117,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 89.154 117.094 90)
+			(at 86.614 117.094 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38812,7 +39127,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:D_SOD-123"
-			(at 96.52 115.57 0)
+			(at 93.98 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38821,7 +39136,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 96.52 115.57 0)
+			(at 93.98 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38830,7 +39145,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 96.52 115.57 0)
+			(at 93.98 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38839,7 +39154,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 96.52 115.57 0)
+			(at 93.98 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38848,7 +39163,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 96.52 115.57 0)
+			(at 93.98 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38968,7 +39283,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b6bd91e-c74d-40b1-bd52-f58b09864531")
-		(property "Reference" "LED105"
+		(property "Reference" "LED107"
 			(at 658.114 180.34 0)
 			(effects
 				(font
@@ -39027,7 +39342,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED105")
+					(reference "LED107")
 					(unit 1)
 				)
 			)
@@ -39110,7 +39425,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d7948f2-d614-4cc6-8844-f119f50bbc94")
-		(property "Reference" "MX92"
+		(property "Reference" "MX94"
 			(at 256.794 143.51 0)
 			(effects
 				(font
@@ -39163,7 +39478,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX92")
+					(reference "MX94")
 					(unit 1)
 				)
 			)
@@ -39318,7 +39633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f26d45f-f44a-42ad-ad9a-f46321dc19cd")
-		(property "Reference" "MX68"
+		(property "Reference" "MX70"
 			(at 186.944 124.46 0)
 			(effects
 				(font
@@ -39371,7 +39686,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX68")
+					(reference "MX70")
 					(unit 1)
 				)
 			)
@@ -39680,15 +39995,15 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 66.04 166.37 0)
+		(at 66.04 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6175b487-fd56-425b-af58-8d729115ae74")
-		(property "Reference" "MX80"
-			(at 68.834 162.56 0)
+		(property "Reference" "MX82"
+			(at 68.834 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39696,7 +40011,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 70.866 161.29 0)
+			(at 70.866 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39705,7 +40020,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:SW_MX_HS_2u_Vertical"
-			(at 66.04 166.37 0)
+			(at 66.04 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39714,7 +40029,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 166.37 0)
+			(at 66.04 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39723,7 +40038,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 66.04 166.37 0)
+			(at 66.04 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -39740,7 +40055,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX80")
+					(reference "MX82")
 					(unit 1)
 				)
 			)
@@ -39832,7 +40147,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61e0f054-8ecf-4b87-87bc-8685822831e9")
-		(property "Reference" "LED104"
+		(property "Reference" "LED106"
 			(at 623.824 180.34 0)
 			(effects
 				(font
@@ -39891,7 +40206,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED104")
+					(reference "LED106")
 					(unit 1)
 				)
 			)
@@ -39972,7 +40287,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62517108-b432-47e0-86e0-8071a1c02c64")
-		(property "Reference" "D91"
+		(property "Reference" "D93"
 			(at 241.046 151.13 0)
 			(effects
 				(font
@@ -40045,7 +40360,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D91")
+					(reference "D93")
 					(unit 1)
 				)
 			)
@@ -40053,15 +40368,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 629.92 133.35 0)
+		(at 678.18 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "629b0d7c-6641-4352-90fe-27aa24af4346")
-		(property "Reference" "LED69"
-			(at 632.714 127 0)
+		(property "Reference" "LED73"
+			(at 680.974 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40069,7 +40384,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 645.16 129.5714 0)
+			(at 693.42 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40078,7 +40393,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 629.92 133.35 0)
+			(at 678.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40087,7 +40402,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 629.92 133.35 0)
+			(at 678.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40096,7 +40411,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 629.92 133.35 0)
+			(at 678.18 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40119,7 +40434,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED69")
+					(reference "LED73")
 					(unit 1)
 				)
 			)
@@ -40289,7 +40604,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 130.81 347.98 0)
+		(at 128.27 344.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -40298,7 +40613,7 @@
 		(fields_autoplaced yes)
 		(uuid "65284ae3-67c8-4d05-b0bd-c8982fde457c")
 		(property "Reference" "#PWR032"
-			(at 130.81 351.79 0)
+			(at 128.27 347.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40307,7 +40622,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 130.81 342.9 0)
+			(at 128.27 339.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40315,7 +40630,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 347.98 0)
+			(at 128.27 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40324,7 +40639,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 347.98 0)
+			(at 128.27 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40333,7 +40648,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 130.81 347.98 0)
+			(at 128.27 344.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40451,7 +40766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6553d5d3-ad20-4001-b59d-d65006bdf2f9")
-		(property "Reference" "LED79"
+		(property "Reference" "LED81"
 			(at 394.716 153.67 0)
 			(effects
 				(font
@@ -40510,7 +40825,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED79")
+					(reference "LED81")
 					(unit 1)
 				)
 			)
@@ -40526,7 +40841,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "659ddad7-5856-4269-ac80-8db3386e296a")
-		(property "Reference" "LED84"
+		(property "Reference" "LED86"
 			(at 561.086 153.67 0)
 			(effects
 				(font
@@ -40585,7 +40900,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED84")
+					(reference "LED86")
 					(unit 1)
 				)
 			)
@@ -40671,7 +40986,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "66259dec-e285-407c-8dbc-a4dbfdc97e63")
-		(property "Reference" "LED94"
+		(property "Reference" "LED96"
 			(at 746.506 153.67 0)
 			(effects
 				(font
@@ -40730,7 +41045,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED94")
+					(reference "LED96")
 					(unit 1)
 				)
 			)
@@ -41125,15 +41440,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 68.58 172.72 90)
+		(at 68.58 153.67 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6798def1-1b1d-4cae-94f1-58dc59342a46")
-		(property "Reference" "D80"
-			(at 65.786 170.18 0)
+		(property "Reference" "D82"
+			(at 65.786 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41142,7 +41457,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 61.214 174.244 90)
+			(at 61.214 155.194 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41152,7 +41467,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:D_SOD-123"
-			(at 68.58 172.72 0)
+			(at 68.58 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41161,7 +41476,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 68.58 172.72 0)
+			(at 68.58 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41170,7 +41485,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 68.58 172.72 0)
+			(at 68.58 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41179,7 +41494,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 68.58 172.72 0)
+			(at 68.58 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41188,7 +41503,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 68.58 172.72 0)
+			(at 68.58 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41205,7 +41520,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D80")
+					(reference "D82")
 					(unit 1)
 				)
 			)
@@ -41213,15 +41528,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 554.99 133.35 0)
+		(at 603.25 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "685683d2-e587-40d3-a5ce-f9df4f00cd52")
-		(property "Reference" "LED65"
-			(at 557.784 127 0)
+		(property "Reference" "LED69"
+			(at 606.044 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41229,7 +41544,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 570.23 129.5714 0)
+			(at 618.49 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41238,7 +41553,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 554.99 133.35 0)
+			(at 603.25 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41247,7 +41562,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 554.99 133.35 0)
+			(at 603.25 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41256,7 +41571,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 554.99 133.35 0)
+			(at 603.25 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -41279,7 +41594,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED65")
+					(reference "LED69")
 					(unit 1)
 				)
 			)
@@ -41564,7 +41879,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a8b2174-37da-4990-8af7-d6ea3db498ba")
-		(property "Reference" "LED95"
+		(property "Reference" "LED97"
 			(at 763.016 153.67 0)
 			(effects
 				(font
@@ -41623,7 +41938,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED95")
+					(reference "LED97")
 					(unit 1)
 				)
 			)
@@ -41639,7 +41954,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6ab6b9ed-aeef-4c8f-b193-6aecbe391b75")
-		(property "Reference" "LED83"
+		(property "Reference" "LED85"
 			(at 469.646 153.67 0)
 			(effects
 				(font
@@ -41698,7 +42013,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED83")
+					(reference "LED85")
 					(unit 1)
 				)
 			)
@@ -41935,7 +42250,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6bafa711-b347-40c3-bd77-ac0681a0ec1c")
-		(property "Reference" "LED102"
+		(property "Reference" "LED104"
 			(at 578.104 180.34 0)
 			(effects
 				(font
@@ -41994,7 +42309,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED102")
+					(reference "LED104")
 					(unit 1)
 				)
 			)
@@ -42311,7 +42626,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6fb6e8f3-7246-44c8-9f2b-3d165df35a12")
-		(property "Reference" "MX75"
+		(property "Reference" "MX77"
 			(at 274.574 124.46 0)
 			(effects
 				(font
@@ -42364,7 +42679,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX75")
+					(reference "MX77")
 					(unit 1)
 				)
 			)
@@ -42454,7 +42769,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7193292b-a023-44bb-aabb-6d81d4c80d1d")
-		(property "Reference" "MX85"
+		(property "Reference" "MX87"
 			(at 167.894 143.51 0)
 			(effects
 				(font
@@ -42507,7 +42822,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX85")
+					(reference "MX87")
 					(unit 1)
 				)
 			)
@@ -42598,7 +42913,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "72e7e553-c840-416a-a503-6cbe34dae7a9")
-		(property "Reference" "LED80"
+		(property "Reference" "LED82"
 			(at 413.766 153.67 0)
 			(effects
 				(font
@@ -42657,7 +42972,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED80")
+					(reference "LED82")
 					(unit 1)
 				)
 			)
@@ -42665,15 +42980,15 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 304.8 166.37 0)
+		(at 304.8 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7407ca01-f108-4fec-90f4-1102d942ca81")
-		(property "Reference" "MX109"
-			(at 307.594 162.56 0)
+		(property "Reference" "MX111"
+			(at 307.594 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42681,7 +42996,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 309.626 161.29 0)
+			(at 309.626 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42690,7 +43005,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:SW_MX_HS_1u"
-			(at 304.8 166.37 0)
+			(at 304.8 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42699,7 +43014,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 304.8 166.37 0)
+			(at 304.8 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42708,7 +43023,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 304.8 166.37 0)
+			(at 304.8 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42725,7 +43040,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX109")
+					(reference "MX111")
 					(unit 1)
 				)
 			)
@@ -42740,7 +43055,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74783d9a-9720-4283-a508-6c45302d4a97")
-		(property "Reference" "D103"
+		(property "Reference" "D105"
 			(at 169.926 170.18 0)
 			(effects
 				(font
@@ -42813,7 +43128,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D103")
+					(reference "D105")
 					(unit 1)
 				)
 			)
@@ -43142,7 +43457,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7724a167-02c4-44b9-b896-8e59891b7665")
-		(property "Reference" "LED103"
+		(property "Reference" "LED105"
 			(at 597.154 180.34 0)
 			(effects
 				(font
@@ -43201,7 +43516,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED103")
+					(reference "LED105")
 					(unit 1)
 				)
 			)
@@ -43209,15 +43524,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 681.99 133.35 0)
+		(at 730.25 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7781e538-7a4e-42ee-96a1-4b2416bce0b9")
-		(property "Reference" "LED72"
-			(at 684.784 127 0)
+		(property "Reference" "LED76"
+			(at 733.044 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43225,7 +43540,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 697.23 129.5714 0)
+			(at 745.49 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43234,7 +43549,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 681.99 133.35 0)
+			(at 730.25 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43243,7 +43558,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 681.99 133.35 0)
+			(at 730.25 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43252,7 +43567,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 681.99 133.35 0)
+			(at 730.25 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43275,7 +43590,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED72")
+					(reference "LED76")
 					(unit 1)
 				)
 			)
@@ -43290,7 +43605,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "78b232fb-3d9a-4066-ad99-ea2f998bb7bb")
-		(property "Reference" "D98"
+		(property "Reference" "D100"
 			(at 54.864 175.26 0)
 			(effects
 				(font
@@ -43363,7 +43678,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D98")
+					(reference "D100")
 					(unit 1)
 				)
 			)
@@ -43674,7 +43989,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ab14e4d-f6fd-4e65-8456-29f4e64e4789")
-		(property "Reference" "D108"
+		(property "Reference" "D110"
 			(at 285.496 175.26 0)
 			(effects
 				(font
@@ -43747,7 +44062,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D108")
+					(reference "D110")
 					(unit 1)
 				)
 			)
@@ -43902,15 +44217,15 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 330.2 166.37 0)
+		(at 330.2 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7cb256f5-fafd-4aa7-b0d8-584b24c84dc0")
-		(property "Reference" "MX111"
-			(at 332.994 162.56 0)
+		(property "Reference" "MX113"
+			(at 332.994 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43918,7 +44233,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 335.026 161.29 0)
+			(at 335.026 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43927,7 +44242,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:SW_MX_HS_1u"
-			(at 330.2 166.37 0)
+			(at 330.2 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43936,7 +44251,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 330.2 166.37 0)
+			(at 330.2 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43945,7 +44260,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 330.2 166.37 0)
+			(at 330.2 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43962,7 +44277,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX111")
+					(reference "MX113")
 					(unit 1)
 				)
 			)
@@ -44065,7 +44380,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7cf523ef-25fb-40f9-b427-37d5bdc0a0b7")
-		(property "Reference" "D81"
+		(property "Reference" "D83"
 			(at 84.074 156.21 0)
 			(effects
 				(font
@@ -44138,7 +44453,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D81")
+					(reference "D83")
 					(unit 1)
 				)
 			)
@@ -44291,7 +44606,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ed0ceac-d667-439e-b0ab-2ebf72892263")
-		(property "Reference" "D69"
+		(property "Reference" "D71"
 			(at 196.596 132.08 0)
 			(effects
 				(font
@@ -44364,7 +44679,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D69")
+					(reference "D71")
 					(unit 1)
 				)
 			)
@@ -44372,15 +44687,15 @@
 	)
 	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
-		(at 317.5 147.32 0)
+		(at 317.5 151.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "7ed83838-3dc1-45b6-b9bb-0e39631a9bdc")
-		(property "Reference" "MX96"
-			(at 320.294 143.51 0)
+		(property "Reference" "MX99"
+			(at 320.294 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44388,7 +44703,7 @@
 			)
 		)
 		(property "Value" "MX_SW_HS"
-			(at 322.326 142.24 0)
+			(at 322.326 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44397,7 +44712,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:SW_MX_HS_1u"
-			(at 317.5 147.32 0)
+			(at 317.5 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44406,7 +44721,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 317.5 147.32 0)
+			(at 317.5 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44415,7 +44730,7 @@
 			)
 		)
 		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
-			(at 317.5 147.32 0)
+			(at 317.5 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44432,7 +44747,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX96")
+					(reference "MX99")
 					(unit 1)
 				)
 			)
@@ -44448,7 +44763,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ee9951a-3d04-4825-bc17-c03c658847db")
-		(property "Reference" "LED90"
+		(property "Reference" "LED92"
 			(at 675.386 153.67 0)
 			(effects
 				(font
@@ -44507,7 +44822,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED90")
+					(reference "LED92")
 					(unit 1)
 				)
 			)
@@ -44887,7 +45202,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "81b7ea9e-594d-4e0c-9205-96fb7f56abe4")
-		(property "Reference" "MX89"
+		(property "Reference" "MX91"
 			(at 218.694 143.51 0)
 			(effects
 				(font
@@ -44940,7 +45255,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX89")
+					(reference "MX91")
 					(unit 1)
 				)
 			)
@@ -45023,7 +45338,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "827ab7e6-0756-481c-a36b-535be5140ad3")
-		(property "Reference" "MX86"
+		(property "Reference" "MX88"
 			(at 180.594 143.51 0)
 			(effects
 				(font
@@ -45076,7 +45391,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX86")
+					(reference "MX88")
 					(unit 1)
 				)
 			)
@@ -45091,7 +45406,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8354e0b8-8dc5-4714-97ea-cbdd77eb369a")
-		(property "Reference" "MX95"
+		(property "Reference" "MX97"
 			(at 299.974 143.51 0)
 			(effects
 				(font
@@ -45144,7 +45459,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX95")
+					(reference "MX97")
 					(unit 1)
 				)
 			)
@@ -45624,7 +45939,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86cb7f9f-32b1-4593-a1bf-802616469bb3")
-		(property "Reference" "D113"
+		(property "Reference" "D114"
 			(at 385.826 433.07 0)
 			(effects
 				(font
@@ -45697,7 +46012,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D113")
+					(reference "D114")
 					(unit 1)
 				)
 			)
@@ -45790,7 +46105,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8737206d-1668-4526-b5a0-1fd8ff39f84d")
-		(property "Reference" "MX103"
+		(property "Reference" "MX105"
 			(at 172.974 162.56 0)
 			(effects
 				(font
@@ -45843,7 +46158,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX103")
+					(reference "MX105")
 					(unit 1)
 				)
 			)
@@ -46146,15 +46461,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 774.7 133.35 0)
+		(at 509.27 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "89d23f5f-814e-42fe-9fb2-1b0cffd5b569")
-		(property "Reference" "LED77"
-			(at 777.494 127 0)
+		(property "Reference" "LED65"
+			(at 512.064 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46162,7 +46477,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 789.94 129.5714 0)
+			(at 524.51 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46171,7 +46486,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 774.7 133.35 0)
+			(at 509.27 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46180,7 +46495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 774.7 133.35 0)
+			(at 509.27 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46189,7 +46504,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 774.7 133.35 0)
+			(at 509.27 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46212,7 +46527,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED77")
+					(reference "LED65")
 					(unit 1)
 				)
 			)
@@ -46437,7 +46752,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8bdbd6a2-63fa-443d-9da6-cb790bd19091")
-		(property "Reference" "MX98"
+		(property "Reference" "MX100"
 			(at 52.324 162.56 0)
 			(effects
 				(font
@@ -46490,7 +46805,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX98")
+					(reference "MX100")
 					(unit 1)
 				)
 			)
@@ -46843,7 +47158,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d4b9124-42b8-4c9c-b09e-a7c062ec56c4")
-		(property "Reference" "D97"
+		(property "Reference" "D98"
 			(at 332.486 151.13 0)
 			(effects
 				(font
@@ -46916,7 +47231,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D97")
+					(reference "D98")
 					(unit 1)
 				)
 			)
@@ -47000,7 +47315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8e0043f0-5a62-4267-adcf-6280419764aa")
-		(property "Reference" "D90"
+		(property "Reference" "D92"
 			(at 233.934 156.21 0)
 			(effects
 				(font
@@ -47073,7 +47388,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D90")
+					(reference "D92")
 					(unit 1)
 				)
 			)
@@ -47222,7 +47537,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8f3662dc-0ce0-455f-8554-30a02b550ee0")
-		(property "Reference" "D86"
+		(property "Reference" "D88"
 			(at 183.134 156.21 0)
 			(effects
 				(font
@@ -47295,7 +47610,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D86")
+					(reference "D88")
 					(unit 1)
 				)
 			)
@@ -47670,7 +47985,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "90e02f39-230c-45dd-86f5-48f91de74897")
-		(property "Reference" "LED111"
+		(property "Reference" "LED113"
 			(at 796.544 180.34 0)
 			(effects
 				(font
@@ -47729,7 +48044,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED111")
+					(reference "LED113")
 					(unit 1)
 				)
 			)
@@ -47745,7 +48060,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "91229572-09dc-441f-9169-6c352caddb8d")
-		(property "Reference" "LED82"
+		(property "Reference" "LED84"
 			(at 451.866 153.67 0)
 			(effects
 				(font
@@ -47804,7 +48119,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED82")
+					(reference "LED84")
 					(unit 1)
 				)
 			)
@@ -48271,15 +48586,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 612.14 133.35 0)
+		(at 660.4 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "936efb62-ab28-4f49-92be-58e73daa98e3")
-		(property "Reference" "LED68"
-			(at 614.934 127 0)
+		(property "Reference" "LED72"
+			(at 663.194 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48287,7 +48602,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 627.38 129.5714 0)
+			(at 675.64 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48296,7 +48611,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 612.14 133.35 0)
+			(at 660.4 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48305,7 +48620,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 612.14 133.35 0)
+			(at 660.4 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48314,7 +48629,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 612.14 133.35 0)
+			(at 660.4 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -48337,7 +48652,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED68")
+					(reference "LED72")
 					(unit 1)
 				)
 			)
@@ -48426,7 +48741,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9550c4d8-b333-42af-8082-32867d552023")
-		(property "Reference" "MX73"
+		(property "Reference" "MX75"
 			(at 250.444 124.46 0)
 			(effects
 				(font
@@ -48479,7 +48794,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX73")
+					(reference "MX75")
 					(unit 1)
 				)
 			)
@@ -48494,7 +48809,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "96aa6e08-aef5-46fb-bae7-2ab94493d07f")
-		(property "Reference" "D116"
+		(property "Reference" "D117"
 			(at 436.626 433.07 0)
 			(effects
 				(font
@@ -48567,7 +48882,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D116")
+					(reference "D117")
 					(unit 1)
 				)
 			)
@@ -48582,7 +48897,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9727d8a3-fdcb-4903-81f4-05dd449ebd4d")
-		(property "Reference" "D101"
+		(property "Reference" "D103"
 			(at 135.636 170.18 0)
 			(effects
 				(font
@@ -48655,7 +48970,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D101")
+					(reference "D103")
 					(unit 1)
 				)
 			)
@@ -49559,7 +49874,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9fcde7de-d14b-4b76-b4dd-2ea616226031")
-		(property "Reference" "D87"
+		(property "Reference" "D89"
 			(at 190.246 151.13 0)
 			(effects
 				(font
@@ -49632,7 +49947,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D87")
+					(reference "D89")
 					(unit 1)
 				)
 			)
@@ -49647,7 +49962,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9fd3db6e-9e4f-4ce7-b894-6fd00318b990")
-		(property "Reference" "MX94"
+		(property "Reference" "MX96"
 			(at 284.734 143.51 0)
 			(effects
 				(font
@@ -49700,7 +50015,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX94")
+					(reference "MX96")
 					(unit 1)
 				)
 			)
@@ -49782,7 +50097,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a072f818-ecc6-41f1-8f95-dda9e2d4d7cf")
-		(property "Reference" "LED85"
+		(property "Reference" "LED87"
 			(at 586.486 153.67 0)
 			(effects
 				(font
@@ -49841,7 +50156,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED85")
+					(reference "LED87")
 					(unit 1)
 				)
 			)
@@ -50018,7 +50333,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a1e5e834-c195-47a6-b554-6268a5495f97")
-		(property "Reference" "D78"
+		(property "Reference" "D80"
 			(at 332.486 132.08 0)
 			(effects
 				(font
@@ -50091,7 +50406,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D78")
+					(reference "D80")
 					(unit 1)
 				)
 			)
@@ -50418,7 +50733,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3719ab7-3847-4c2f-877a-1c56f55678e1")
-		(property "Reference" "D88"
+		(property "Reference" "D90"
 			(at 208.534 156.21 0)
 			(effects
 				(font
@@ -50491,7 +50806,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D88")
+					(reference "D90")
 					(unit 1)
 				)
 			)
@@ -50506,7 +50821,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a39edaf8-40a9-4623-83df-f5f739190c33")
-		(property "Reference" "LED98"
+		(property "Reference" "LED100"
 			(at 400.304 180.34 0)
 			(effects
 				(font
@@ -50565,7 +50880,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED98")
+					(reference "LED100")
 					(unit 1)
 				)
 			)
@@ -50580,7 +50895,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3f15857-d3c9-4865-8754-dbee07620ead")
-		(property "Reference" "D89"
+		(property "Reference" "D91"
 			(at 215.646 151.13 0)
 			(effects
 				(font
@@ -50653,7 +50968,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D89")
+					(reference "D91")
 					(unit 1)
 				)
 			)
@@ -50742,7 +51057,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a52c2acd-6e91-4aaf-8a87-48b657c8f69a")
-		(property "Reference" "D119"
+		(property "Reference" "D120"
 			(at 200.152 415.3916 90)
 			(effects
 				(font
@@ -50796,7 +51111,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D119")
+					(reference "D120")
 					(unit 1)
 				)
 			)
@@ -51113,7 +51428,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a91e6960-a357-453a-91c0-d86dd24fddea")
-		(property "Reference" "LED109"
+		(property "Reference" "LED111"
 			(at 755.904 180.34 0)
 			(effects
 				(font
@@ -51172,7 +51487,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED109")
+					(reference "LED111")
 					(unit 1)
 				)
 			)
@@ -51180,15 +51495,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 577.85 133.35 0)
+		(at 626.11 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "a97abcce-4539-48ec-88a6-b4a75acf1011")
-		(property "Reference" "LED66"
-			(at 580.644 127 0)
+		(property "Reference" "LED70"
+			(at 628.904 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51196,7 +51511,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 593.09 129.5714 0)
+			(at 641.35 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51205,7 +51520,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 577.85 133.35 0)
+			(at 626.11 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51214,7 +51529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 577.85 133.35 0)
+			(at 626.11 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51223,7 +51538,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 577.85 133.35 0)
+			(at 626.11 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51246,7 +51561,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED66")
+					(reference "LED70")
 					(unit 1)
 				)
 			)
@@ -51828,6 +52143,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D")
+		(at 127 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad856e26-4ef4-44f4-a296-4344d0078e9a")
+		(property "Reference" "D66"
+			(at 129.794 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "D"
+			(at 134.366 133.096 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Keyboard:D_SOD-123"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb6723b4-5974-4966-bc73-5b27d2b5ab0b")
+		)
+		(pin "2"
+			(uuid "fd401b24-54e1-48d6-b816-c4c4c3244a71")
+		)
+		(instances
+			(project "STM32"
+				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+					(reference "D66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Djinn-rescue:CP-Device")
 		(at 459.74 215.9 0)
 		(unit 1)
@@ -51970,7 +52373,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ae17290b-2384-4fd0-93eb-c3367a6bc728")
-		(property "Reference" "D67"
+		(property "Reference" "D69"
 			(at 171.196 132.08 0)
 			(effects
 				(font
@@ -52043,7 +52446,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D67")
+					(reference "D69")
 					(unit 1)
 				)
 			)
@@ -52773,6 +53176,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AP2127K-3.3")
+		(at 113.03 346.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1bef732-12c5-4019-be02-7ce1943636da")
+		(property "Reference" "U5"
+			(at 113.03 338.0232 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP2127K-3.3"
+			(at 113.03 340.3346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5_HandSoldering"
+			(at 113.03 338.455 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2127.pdf"
+			(at 113.03 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94418105-d09e-42a7-9e28-fc1f9692c857")
+		)
+		(pin "2"
+			(uuid "dba6b027-c430-4dba-99e8-9fbe533e5091")
+		)
+		(pin "4"
+			(uuid "c8c9c4e3-fe36-46a5-ad00-8255776ba331")
+		)
+		(pin "5"
+			(uuid "958a392b-5635-467c-8094-8c1beaca635e")
+		)
+		(pin "3"
+			(uuid "f0e1dd9a-1831-411a-aa06-77615cef8492")
+		)
+		(instances
+			(project "STM32"
+				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
 		(at 241.3 166.37 0)
 		(unit 1)
@@ -52781,7 +53260,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1c12abf-e46e-41ee-a543-04584f353f7d")
-		(property "Reference" "MX106"
+		(property "Reference" "MX108"
 			(at 244.094 162.56 0)
 			(effects
 				(font
@@ -52834,7 +53313,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX106")
+					(reference "MX108")
 					(unit 1)
 				)
 			)
@@ -52849,7 +53328,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1cfab96-dacd-4f8d-b47b-19f5ef1a80bc")
-		(property "Reference" "D75"
+		(property "Reference" "D77"
 			(at 271.526 132.08 0)
 			(effects
 				(font
@@ -52922,7 +53401,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D75")
+					(reference "D77")
 					(unit 1)
 				)
 			)
@@ -53080,7 +53559,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2de976b-fd3b-4e20-bb1c-df707cf1bfcc")
-		(property "Reference" "D77"
+		(property "Reference" "D79"
 			(at 311.404 137.16 0)
 			(effects
 				(font
@@ -53153,7 +53632,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D77")
+					(reference "D79")
 					(unit 1)
 				)
 			)
@@ -53381,7 +53860,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b6dad3b7-596c-4dcc-ab15-a306dc6d232d")
-		(property "Reference" "MX105"
+		(property "Reference" "MX107"
 			(at 223.774 162.56 0)
 			(effects
 				(font
@@ -53434,7 +53913,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX105")
+					(reference "MX107")
 					(unit 1)
 				)
 			)
@@ -53802,6 +54281,80 @@
 		)
 	)
 	(symbol
+		(lib_id "Keyboard:MX_SK6803MINI-E")
+		(at 567.69 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9408d97-8aff-4a41-a828-6f49da2c0fef")
+		(property "Reference" "LED67"
+			(at 570.484 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SK6803MINI-E"
+			(at 582.93 129.5714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Keyboard:LED_MX_6028R"
+			(at 567.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 567.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
+			(at 567.69 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "7c647384-64c6-44b4-a1d0-bae510f0b9b4")
+		)
+		(pin "2"
+			(uuid "3ea85c70-d505-4caf-83bd-6f62eacc3e84")
+		)
+		(pin "1"
+			(uuid "c6b09cf9-c633-4821-994d-84a4f1b70928")
+		)
+		(pin "3"
+			(uuid "668278f3-afd3-4275-b2d0-232ef2dc05cf")
+		)
+		(instances
+			(project "STM32"
+				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+					(reference "LED67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Djinn-rescue:+3V3-power")
 		(at 219.71 398.78 0)
 		(mirror y)
@@ -53945,7 +54498,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba19dbfa-af5e-49be-9848-492260194519")
-		(property "Reference" "LED81"
+		(property "Reference" "LED83"
 			(at 432.816 153.67 0)
 			(effects
 				(font
@@ -54004,7 +54557,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED81")
+					(reference "LED83")
 					(unit 1)
 				)
 			)
@@ -54083,7 +54636,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "baf8f6d2-44d3-4ad4-b042-3dcf549c0b36")
-		(property "Reference" "LED106"
+		(property "Reference" "LED108"
 			(at 688.594 180.34 0)
 			(effects
 				(font
@@ -54142,7 +54695,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED106")
+					(reference "LED108")
 					(unit 1)
 				)
 			)
@@ -54157,7 +54710,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bbe5b8a0-4eea-4b64-a1d3-60bfca3b27ad")
-		(property "Reference" "MX70"
+		(property "Reference" "MX72"
 			(at 212.344 124.46 0)
 			(effects
 				(font
@@ -54210,7 +54763,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX70")
+					(reference "MX72")
 					(unit 1)
 				)
 			)
@@ -54225,7 +54778,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc51c604-1206-4877-84f1-50ec01c805dc")
-		(property "Reference" "MX88"
+		(property "Reference" "MX90"
 			(at 205.994 143.51 0)
 			(effects
 				(font
@@ -54278,7 +54831,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX88")
+					(reference "MX90")
 					(unit 1)
 				)
 			)
@@ -54293,7 +54846,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bccebfb7-1b9d-44fb-9ac8-7cf94a668e32")
-		(property "Reference" "MX108"
+		(property "Reference" "MX110"
 			(at 288.544 162.56 0)
 			(effects
 				(font
@@ -54346,7 +54899,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX108")
+					(reference "MX110")
 					(unit 1)
 				)
 			)
@@ -54354,15 +54907,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 699.77 133.35 0)
+		(at 748.03 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "bd8b7129-2422-4d8b-86eb-1b52f6824a38")
-		(property "Reference" "LED73"
-			(at 702.564 127 0)
+		(property "Reference" "LED77"
+			(at 750.824 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54370,7 +54923,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 715.01 129.5714 0)
+			(at 763.27 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54379,7 +54932,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 699.77 133.35 0)
+			(at 748.03 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54388,7 +54941,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 699.77 133.35 0)
+			(at 748.03 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54397,7 +54950,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 699.77 133.35 0)
+			(at 748.03 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54420,7 +54973,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED73")
+					(reference "LED77")
 					(unit 1)
 				)
 			)
@@ -54436,7 +54989,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be75b02e-fce0-4d77-be08-041846076ab0")
-		(property "Reference" "LED96"
+		(property "Reference" "LED98"
 			(at 797.306 153.67 0)
 			(effects
 				(font
@@ -54495,7 +55048,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED96")
+					(reference "LED98")
 					(unit 1)
 				)
 			)
@@ -54574,7 +55127,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c055771c-1d57-4a0d-8b8c-cf980b4532ae")
-		(property "Reference" "D73"
+		(property "Reference" "D75"
 			(at 247.396 132.08 0)
 			(effects
 				(font
@@ -54647,7 +55200,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D73")
+					(reference "D75")
 					(unit 1)
 				)
 			)
@@ -54784,6 +55337,74 @@
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
 					(reference "MX12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_marbastlib-mx:MX_SW_HS_CPG151101S11")
+		(at 115.57 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c3129070-38ca-47fb-819a-dcd520504e43")
+		(property "Reference" "MX65"
+			(at 118.364 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MX_SW_HS"
+			(at 120.396 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Keyboard:SW_MX_HS_1u"
+			(at 115.57 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted, Kailh CPG151101S11 for Cherry MX style switches"
+			(at 115.57 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6386a88a-00f7-4734-8445-99e758e8f390")
+		)
+		(pin "1"
+			(uuid "dae6fdc5-7dfa-4e95-b607-6450d0671db4")
+		)
+		(instances
+			(project "STM32"
+				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
+					(reference "MX65")
 					(unit 1)
 				)
 			)
@@ -55298,7 +55919,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 102.87 351.79 180)
+		(at 97.79 350.52 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -55306,7 +55927,7 @@
 		(dnp no)
 		(uuid "c7277897-9d53-4f05-a915-8f27829b39d4")
 		(property "Reference" "C16"
-			(at 96.52 350.52 0)
+			(at 91.44 349.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55314,8 +55935,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "1u"
-			(at 96.52 353.06 0)
+		(property "Value" "4.7u"
+			(at 91.44 351.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55324,7 +55945,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 102.87 351.79 0)
+			(at 97.79 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55333,7 +55954,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 102.87 351.79 0)
+			(at 97.79 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55342,7 +55963,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 102.87 351.79 0)
+			(at 97.79 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -55374,7 +55995,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c7ad5a79-bc91-44a3-8d25-c8823a974d0c")
-		(property "Reference" "D92"
+		(property "Reference" "D94"
 			(at 259.334 156.21 0)
 			(effects
 				(font
@@ -55447,7 +56068,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D92")
+					(reference "D94")
 					(unit 1)
 				)
 			)
@@ -55694,7 +56315,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca86ce65-3188-402b-917e-330cc4ae283c")
-		(property "Reference" "MX67"
+		(property "Reference" "MX69"
 			(at 174.244 124.46 0)
 			(effects
 				(font
@@ -55747,7 +56368,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX67")
+					(reference "MX69")
 					(unit 1)
 				)
 			)
@@ -55762,7 +56383,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "caa00ebb-b198-4347-8bf0-9ef9e051d442")
-		(property "Reference" "LED107"
+		(property "Reference" "LED109"
 			(at 715.264 180.34 0)
 			(effects
 				(font
@@ -55821,7 +56442,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED107")
+					(reference "LED109")
 					(unit 1)
 				)
 			)
@@ -55837,7 +56458,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "caa100c0-9ac7-4e2d-8372-900e29a42df0")
-		(property "Reference" "D120"
+		(property "Reference" "D121"
 			(at 200.152 445.6684 90)
 			(effects
 				(font
@@ -55891,7 +56512,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D120")
+					(reference "D121")
 					(unit 1)
 				)
 			)
@@ -56051,7 +56672,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cce9b4d4-c607-40be-9dd7-f3a118b68c39")
-		(property "Reference" "MX93"
+		(property "Reference" "MX95"
 			(at 269.494 143.51 0)
 			(effects
 				(font
@@ -56104,7 +56725,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX93")
+					(reference "MX95")
 					(unit 1)
 				)
 			)
@@ -56487,7 +57108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d16a8721-112c-4716-9ce7-6537753c36fd")
-		(property "Reference" "D93"
+		(property "Reference" "D95"
 			(at 266.446 151.13 0)
 			(effects
 				(font
@@ -56560,7 +57181,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D93")
+					(reference "D95")
 					(unit 1)
 				)
 			)
@@ -56663,7 +57284,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d27261b8-a1d1-4889-be95-f8b194ecea89")
-		(property "Reference" "LED100"
+		(property "Reference" "LED102"
 			(at 466.344 180.34 0)
 			(effects
 				(font
@@ -56722,7 +57343,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED100")
+					(reference "LED102")
 					(unit 1)
 				)
 			)
@@ -56880,7 +57501,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d4470a72-3547-4814-9111-82190a12afca")
-		(property "Reference" "D68"
+		(property "Reference" "D70"
 			(at 189.484 137.16 0)
 			(effects
 				(font
@@ -56953,7 +57574,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D68")
+					(reference "D70")
 					(unit 1)
 				)
 			)
@@ -57169,15 +57790,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 753.11 133.35 0)
+		(at 801.37 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d71fae8f-89a5-4ab7-a364-d0722698e3b5")
-		(property "Reference" "LED76"
-			(at 755.904 127 0)
+		(property "Reference" "LED80"
+			(at 804.164 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57185,7 +57806,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 768.35 129.5714 0)
+			(at 816.61 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57194,7 +57815,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 753.11 133.35 0)
+			(at 801.37 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57203,7 +57824,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 753.11 133.35 0)
+			(at 801.37 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57212,7 +57833,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 753.11 133.35 0)
+			(at 801.37 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57235,7 +57856,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED76")
+					(reference "LED80")
 					(unit 1)
 				)
 			)
@@ -57684,15 +58305,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 320.04 153.67 270)
+		(at 320.04 157.48 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d97c3564-23c0-4b77-a2ff-46043221cf41")
-		(property "Reference" "D96"
-			(at 322.834 156.21 0)
+		(property "Reference" "D99"
+			(at 322.834 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57701,7 +58322,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 327.406 152.146 90)
+			(at 327.406 155.956 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57711,7 +58332,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:D_SOD-123"
-			(at 320.04 153.67 0)
+			(at 320.04 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57720,7 +58341,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 320.04 153.67 0)
+			(at 320.04 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57729,7 +58350,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 320.04 153.67 0)
+			(at 320.04 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57738,7 +58359,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 320.04 153.67 0)
+			(at 320.04 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57747,7 +58368,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 320.04 153.67 0)
+			(at 320.04 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -57764,7 +58385,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D96")
+					(reference "D99")
 					(unit 1)
 				)
 			)
@@ -58000,7 +58621,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd0e7c37-77fc-4a00-818a-57551275b2f6")
-		(property "Reference" "D84"
+		(property "Reference" "D86"
 			(at 145.796 151.13 0)
 			(effects
 				(font
@@ -58073,7 +58694,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D84")
+					(reference "D86")
 					(unit 1)
 				)
 			)
@@ -58088,7 +58709,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd22b77b-4559-4f84-aa11-8fd191e47e98")
-		(property "Reference" "MX90"
+		(property "Reference" "MX92"
 			(at 231.394 143.51 0)
 			(effects
 				(font
@@ -58141,7 +58762,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX90")
+					(reference "MX92")
 					(unit 1)
 				)
 			)
@@ -58389,7 +59010,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "deede8b9-c3c7-4270-99bb-e1919a00ab47")
-		(property "Reference" "D85"
+		(property "Reference" "D87"
 			(at 164.846 151.13 0)
 			(effects
 				(font
@@ -58462,7 +59083,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D85")
+					(reference "D87")
 					(unit 1)
 				)
 			)
@@ -58699,7 +59320,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e153e50a-ffe3-4202-839c-29ff1cb43870")
-		(property "Reference" "LED101"
+		(property "Reference" "LED103"
 			(at 559.054 180.34 0)
 			(effects
 				(font
@@ -58758,7 +59379,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED101")
+					(reference "LED103")
 					(unit 1)
 				)
 			)
@@ -58773,7 +59394,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e2b6f48f-4fbe-44ba-93d0-72155c1d9cbf")
-		(property "Reference" "MX87"
+		(property "Reference" "MX89"
 			(at 193.294 143.51 0)
 			(effects
 				(font
@@ -58826,7 +59447,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX87")
+					(reference "MX89")
 					(unit 1)
 				)
 			)
@@ -58908,7 +59529,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 111.76 356.87 0)
+		(at 113.03 356.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -58917,7 +59538,7 @@
 		(fields_autoplaced yes)
 		(uuid "e48de8d1-43f5-49f6-98fa-87735d1a7f3f")
 		(property "Reference" "#PWR035"
-			(at 111.76 363.22 0)
+			(at 113.03 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58926,7 +59547,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 111.76 361.95 0)
+			(at 113.03 361.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58934,7 +59555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 356.87 0)
+			(at 113.03 356.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58943,7 +59564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 356.87 0)
+			(at 113.03 356.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -58952,7 +59573,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 111.76 356.87 0)
+			(at 113.03 356.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59196,7 +59817,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6daccfa-aa8f-424e-9426-6ac25aaa58df")
-		(property "Reference" "MX66"
+		(property "Reference" "MX68"
 			(at 161.544 124.46 0)
 			(effects
 				(font
@@ -59249,7 +59870,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "MX66")
+					(reference "MX68")
 					(unit 1)
 				)
 			)
@@ -59264,7 +59885,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e70a43e1-8d9b-406e-96e3-323364f6ca38")
-		(property "Reference" "D70"
+		(property "Reference" "D72"
 			(at 214.884 137.16 0)
 			(effects
 				(font
@@ -59337,7 +59958,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D70")
+					(reference "D72")
 					(unit 1)
 				)
 			)
@@ -59352,7 +59973,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e771c1c9-3fd9-43a2-9eec-9913a6c24011")
-		(property "Reference" "D104"
+		(property "Reference" "D106"
 			(at 195.326 170.18 0)
 			(effects
 				(font
@@ -59425,7 +60046,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D104")
+					(reference "D106")
 					(unit 1)
 				)
 			)
@@ -59497,15 +60118,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 718.82 133.35 0)
+		(at 767.08 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e7ee7a9b-a225-4d31-80f0-f057f8e3e44d")
-		(property "Reference" "LED74"
-			(at 721.614 127 0)
+		(property "Reference" "LED78"
+			(at 769.874 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59513,7 +60134,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 734.06 129.5714 0)
+			(at 782.32 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59522,7 +60143,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 718.82 133.35 0)
+			(at 767.08 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59531,7 +60152,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 718.82 133.35 0)
+			(at 767.08 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59540,7 +60161,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 718.82 133.35 0)
+			(at 767.08 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -59563,7 +60184,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED74")
+					(reference "LED78")
 					(unit 1)
 				)
 			)
@@ -59783,7 +60404,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ea2823a6-7a16-4bd2-86f1-2ce4570dfb33")
-		(property "Reference" "LED108"
+		(property "Reference" "LED110"
 			(at 736.854 180.34 0)
 			(effects
 				(font
@@ -59842,7 +60463,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED108")
+					(reference "LED110")
 					(unit 1)
 				)
 			)
@@ -60014,7 +60635,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ebaa6f82-294d-4d31-bd59-bedf4d0acc69")
-		(property "Reference" "D115"
+		(property "Reference" "D116"
 			(at 418.846 433.07 0)
 			(effects
 				(font
@@ -60087,7 +60708,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D115")
+					(reference "D116")
 					(unit 1)
 				)
 			)
@@ -60571,7 +61192,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ee2598d7-fd25-4b26-a147-c12be62b7e36")
-		(property "Reference" "D82"
+		(property "Reference" "D84"
 			(at 91.186 151.13 0)
 			(effects
 				(font
@@ -60644,7 +61265,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D82")
+					(reference "D84")
 					(unit 1)
 				)
 			)
@@ -60893,7 +61514,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef3fa153-8b56-4581-80df-b8eaa32f4e97")
-		(property "Reference" "D107"
+		(property "Reference" "D109"
 			(at 266.446 170.18 0)
 			(effects
 				(font
@@ -60966,7 +61587,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D107")
+					(reference "D109")
 					(unit 1)
 				)
 			)
@@ -60982,7 +61603,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef874b92-40e9-49ef-b7f3-d05bde443a3c")
-		(property "Reference" "LED86"
+		(property "Reference" "LED88"
 			(at 604.266 153.67 0)
 			(effects
 				(font
@@ -61041,7 +61662,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED86")
+					(reference "LED88")
 					(unit 1)
 				)
 			)
@@ -61124,7 +61745,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f086a21e-5d41-48c2-a8cb-beccd23d9c09")
-		(property "Reference" "LED99"
+		(property "Reference" "LED101"
 			(at 420.624 180.34 0)
 			(effects
 				(font
@@ -61183,7 +61804,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED99")
+					(reference "LED101")
 					(unit 1)
 				)
 			)
@@ -61199,7 +61820,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f09e6723-5bcf-47ad-8fb5-82d227d06287")
-		(property "Reference" "LED89"
+		(property "Reference" "LED91"
 			(at 657.606 153.67 0)
 			(effects
 				(font
@@ -61258,7 +61879,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED89")
+					(reference "LED91")
 					(unit 1)
 				)
 			)
@@ -61487,7 +62108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f2c21c76-0932-4d6a-aa3c-b85be131b3be")
-		(property "Reference" "D112"
+		(property "Reference" "D119"
 			(at 473.71 416.814 0)
 			(effects
 				(font
@@ -61560,7 +62181,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D112")
+					(reference "D119")
 					(unit 1)
 				)
 			)
@@ -62209,7 +62830,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f4d7e30b-921b-4575-ace1-82ece2029ead")
-		(property "Reference" "D99"
+		(property "Reference" "D101"
 			(at 84.074 175.26 0)
 			(effects
 				(font
@@ -62282,7 +62903,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D99")
+					(reference "D101")
 					(unit 1)
 				)
 			)
@@ -62790,15 +63411,15 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 320.04 172.72 270)
+		(at 320.04 176.53 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "fb4cf434-0e59-4f4f-8925-c820eead0759")
-		(property "Reference" "D110"
-			(at 322.834 175.26 0)
+		(property "Reference" "D112"
+			(at 322.834 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62807,7 +63428,7 @@
 			)
 		)
 		(property "Value" "D"
-			(at 327.406 171.196 90)
+			(at 327.406 175.006 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62817,7 +63438,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:D_SOD-123"
-			(at 320.04 172.72 0)
+			(at 320.04 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62826,7 +63447,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 320.04 172.72 0)
+			(at 320.04 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62835,7 +63456,7 @@
 			)
 		)
 		(property "Description" "Diode"
-			(at 320.04 172.72 0)
+			(at 320.04 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62844,7 +63465,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 320.04 172.72 0)
+			(at 320.04 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62853,7 +63474,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 320.04 172.72 0)
+			(at 320.04 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -62870,7 +63491,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D110")
+					(reference "D112")
 					(unit 1)
 				)
 			)
@@ -63015,7 +63636,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fcd2254a-6feb-415f-b34c-c0645edf149a")
-		(property "Reference" "D76"
+		(property "Reference" "D78"
 			(at 291.084 137.16 0)
 			(effects
 				(font
@@ -63088,7 +63709,7 @@
 		(instances
 			(project "SP110Duo"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D76")
+					(reference "D78")
 					(unit 1)
 				)
 			)
@@ -63104,7 +63725,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fd7d7f63-c63a-4722-b214-67f12b550a39")
-		(property "Reference" "D118"
+		(property "Reference" "D122"
 			(at 110.998 270.6116 90)
 			(effects
 				(font
@@ -63158,7 +63779,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "D118")
+					(reference "D122")
 					(unit 1)
 				)
 			)
@@ -63377,7 +63998,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe7ad6c8-ec16-4d88-bc14-9fc4fcd1082d")
-		(property "Reference" "LED97"
+		(property "Reference" "LED99"
 			(at 780.796 154.94 0)
 			(effects
 				(font
@@ -63436,7 +64057,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED97")
+					(reference "LED99")
 					(unit 1)
 				)
 			)
@@ -63444,15 +64065,15 @@
 	)
 	(symbol
 		(lib_id "Keyboard:MX_SK6803MINI-E")
-		(at 595.63 133.35 0)
+		(at 643.89 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ff487cf4-0883-4d76-9c00-2a4e65d8ae20")
-		(property "Reference" "LED67"
-			(at 598.424 127 0)
+		(property "Reference" "LED71"
+			(at 646.684 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63460,7 +64081,7 @@
 			)
 		)
 		(property "Value" "MX_SK6803MINI-E"
-			(at 610.87 129.5714 0)
+			(at 659.13 129.5714 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63469,7 +64090,7 @@
 			)
 		)
 		(property "Footprint" "Keyboard:LED_MX_6028R"
-			(at 595.63 133.35 0)
+			(at 643.89 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63478,7 +64099,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 595.63 133.35 0)
+			(at 643.89 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63487,7 +64108,7 @@
 			)
 		)
 		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
-			(at 595.63 133.35 0)
+			(at 643.89 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -63510,7 +64131,7 @@
 		(instances
 			(project "STM32"
 				(path "/9efe463e-e9e8-4c7d-9e2c-b657456ce19f"
-					(reference "LED67")
+					(reference "LED71")
 					(unit 1)
 				)
 			)
